@@ -1,0 +1,285 @@
+/* ================================================================
+   THE SCI-FI IDEA BANK — pulp magazine chrome
+   Palette: cream paper / burnt orange / teal / mustard / deep navy
+   ================================================================ */
+:root{
+  --paper:      #F2E8D5;
+  --paper-2:    #E7D9BE;
+  --ink:        #17253F;   /* deep navy */
+  --orange:     #C8552B;   /* burnt orange */
+  --teal:       #1E7A73;
+  --mustard:    #D9A521;
+  --rule:       3px;
+}
+
+*{ box-sizing:border-box; }
+
+html,body{
+  margin:0; padding:0; height:100%; overflow:hidden;
+  background:var(--paper); color:var(--ink);
+  font-family:"Courier New", Courier, "Nimbus Mono PS", monospace;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Bold condensed display face — system stacks only, no runtime CDN. */
+h1,h2,.display,.pulp-btn,#hud-year,.badge,.load-title{
+  font-family: "Haettenschweiler", "Arial Narrow Bold", "Arial Narrow",
+               "Oswald", "Impact", "Franklin Gothic Medium", sans-serif;
+  font-stretch:condensed;
+  letter-spacing:.02em;
+}
+
+/* ---------------------------------------------------------- canvas layer */
+#canvas-wrap{ position:fixed; inset:0; }
+#scene{ display:block; width:100%; height:100%; }
+
+#labels{ position:absolute; inset:0; pointer-events:none; overflow:hidden; }
+.node-label{
+  position:absolute; transform:translate(12px,-50%);
+  font-size:10px; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--ink); background:rgba(242,232,213,.72);
+  border-left:2px solid var(--orange);
+  padding:1px 5px; white-space:nowrap;
+  max-width:210px; overflow:hidden; text-overflow:ellipsis;
+  will-change:transform,opacity;
+}
+.node-label.unbuilt{ border-left-color:var(--teal); color:#12403C; }
+/* a live search hit: full plate, mustard flag, so the results read as results */
+.node-label.hit{
+  background:var(--paper); border-left-color:var(--mustard); border-left-width:4px;
+  font-weight:700; box-shadow:2px 2px 0 rgba(23,37,63,.18);
+}
+
+/* paper grain + halftone haze over the whole scene */
+#grain{
+  position:absolute; inset:0; pointer-events:none; opacity:.5;
+  mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/><feColorMatrix type='saturate' values='0'/></filter><rect width='180' height='180' filter='url(%23n)' opacity='0.35'/></svg>");
+}
+#vignette{
+  position:absolute; inset:0; pointer-events:none;
+  background:
+    radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 45%, rgba(23,37,63,.22) 100%),
+    repeating-radial-gradient(circle at 0 0, rgba(200,85,43,.055) 0 1px, transparent 1px 4px);
+}
+
+/* ------------------------------------------------------------- masthead */
+#masthead{
+  position:fixed; top:0; left:0; right:0; z-index:30;
+  display:flex; align-items:flex-end; justify-content:space-between;
+  gap:16px; padding:10px 18px 8px;
+  background:linear-gradient(var(--paper) 62%, rgba(242,232,213,0));
+  border-bottom:0;
+}
+#masthead::after{
+  content:""; position:absolute; left:14px; right:14px; bottom:2px; height:0;
+  border-top:var(--rule) solid var(--ink);
+  box-shadow:0 4px 0 -1px var(--orange);
+}
+#masthead h1{
+  margin:0; font-size:clamp(22px,3.4vw,42px); line-height:.92;
+  text-transform:uppercase; color:var(--ink);
+  text-shadow:2px 2px 0 var(--orange);
+}
+.subtitle{
+  margin:2px 0 0; font-size:11px; letter-spacing:.34em; text-transform:uppercase;
+  color:var(--teal);
+}
+.mast-right{ display:flex; gap:8px; padding-bottom:4px; align-items:flex-start; }
+
+/* ------------------------------------------------------------- search
+   Same plate-and-hard-shadow construction as .pulp-btn, so the field reads
+   as one of the row of controls rather than as a browser widget dropped in
+   among them. The count hangs under the box and never resizes it. */
+.search-wrap{ position:relative; display:flex; }
+#search{
+  font-family:inherit; font-size:12px; letter-spacing:.12em; text-transform:uppercase;
+  width:210px; padding:7px 26px 7px 10px;
+  color:var(--ink); background:var(--paper);
+  border:2px solid var(--ink); border-radius:0;
+  box-shadow:3px 3px 0 var(--teal);
+  outline:none;
+  transition:box-shadow .12s ease, background .15s;
+}
+#search::placeholder{ color:var(--ink); opacity:.42; letter-spacing:.1em; }
+#search:focus{ background:#FFF9EC; box-shadow:3px 3px 0 var(--orange); }
+.search-clear{
+  position:absolute; top:2px; right:2px; width:22px; height:calc(100% - 4px);
+  display:none; align-items:center; justify-content:center;
+  font-size:16px; line-height:1; cursor:pointer;
+  color:var(--ink); background:transparent; border:0; padding:0;
+}
+.search-wrap.filled .search-clear{ display:flex; }
+.search-clear:hover{ color:var(--rust); }
+.search-count{
+  position:absolute; left:0; top:100%; margin-top:3px;
+  font-size:10px; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--teal); white-space:nowrap; pointer-events:none;
+}
+.search-count.none{ color:var(--rust); font-weight:700; }
+
+.pulp-btn{
+  font-size:12px; letter-spacing:.12em; text-transform:uppercase;
+  padding:7px 12px; cursor:pointer;
+  color:var(--paper); background:var(--ink);
+  border:2px solid var(--ink); border-radius:0;
+  box-shadow:3px 3px 0 var(--orange);
+  transition:transform .09s ease, box-shadow .09s ease, background .15s;
+}
+.pulp-btn:hover{ transform:translate(-1px,-1px); box-shadow:4px 4px 0 var(--orange); }
+.pulp-btn:active{ transform:translate(2px,2px); box-shadow:1px 1px 0 var(--orange); }
+.pulp-btn.toggle.on{ background:var(--teal); border-color:var(--teal); box-shadow:3px 3px 0 var(--mustard); }
+.pulp-btn.ghost{ background:var(--paper); color:var(--ink); box-shadow:3px 3px 0 var(--teal); }
+/* RESET VIEW: dim while you face forward, lit once the view is turned away. */
+.pulp-btn.astray{
+  background:var(--mustard); color:var(--ink); border-color:var(--ink);
+  box-shadow:3px 3px 0 var(--orange);
+}
+
+/* ------------------------------------------------------------------ HUD */
+#hud{ position:fixed; left:20px; bottom:22px; z-index:25; pointer-events:none; }
+.hud-plate{
+  background:var(--paper); border:var(--rule) solid var(--ink);
+  box-shadow:5px 5px 0 var(--mustard);
+  padding:6px 14px 8px; display:inline-block; min-width:172px;
+}
+.hud-label{ font-size:9px; letter-spacing:.3em; color:var(--teal); }
+#hud-year{ font-size:46px; line-height:.95; color:var(--orange); }
+.hud-era{ font-size:9px; letter-spacing:.22em; color:var(--ink); opacity:.7; }
+#hud-bar{
+  margin-top:9px; width:190px; height:9px;
+  border:2px solid var(--ink); background:var(--paper);
+}
+#hud-bar-fill{ height:100%; width:0%; background:var(--orange); }
+.hud-legend{
+  margin-top:7px; display:flex; gap:14px; font-size:9px; letter-spacing:.16em;
+}
+.hud-legend .dot{
+  display:inline-block; width:8px; height:8px; border-radius:50%;
+  border:1.5px solid var(--ink); vertical-align:-1px; margin-right:4px;
+}
+.dot.built{ background:var(--orange); }
+.dot.unbuilt{ background:var(--teal); }
+
+#scroll-hint{
+  position:fixed; bottom:26px; left:50%; transform:translateX(-50%); z-index:25;
+  font-size:10px; letter-spacing:.24em; color:var(--ink); opacity:.62;
+  pointer-events:none; transition:opacity .6s;
+}
+#scroll-hint.gone{ opacity:0; }
+
+/* ----------------------------------------------------- cover paper card
+   A book cover pinned to the page like a plate in a pulp magazine: cream
+   mount, heavy rule, hard offset shadow, knocked a degree and a half off
+   square. The picture area is sized in the markup from the manifest's real
+   pixel dimensions, so the box is already the right shape before the image
+   arrives and nothing shifts when it lands. */
+.pulp-plate{
+  margin:0; padding:5px 5px 7px; line-height:0;
+  background:var(--paper); border:2px solid var(--ink);
+  transform:rotate(-1.6deg);
+}
+.pulp-plate .plate-slot{ display:block; background:var(--paper-2); }
+.pulp-plate img{ display:block; width:100%; height:100%; object-fit:cover; }
+
+/* -------------------------------------------------------------- tooltip */
+#tooltip{
+  position:fixed; z-index:40; pointer-events:none; display:none;
+  font-size:11px; letter-spacing:.08em; text-transform:uppercase;
+  background:var(--ink); color:var(--paper);
+  padding:6px 9px 8px; box-shadow:3px 3px 0 var(--orange);
+  max-width:300px;
+}
+/* Flex, not float: the plate is rotated, and a float+overflow clearfix would
+   clip its corners and its shadow. With no cover there is simply one child,
+   and the tooltip is exactly the text box it has always been. */
+#tooltip .tt-row{ display:flex; align-items:flex-start; gap:9px; }
+#tooltip .tt-name{ display:block; }
+#tooltip .tt-text{ min-width:0; padding-top:1px; }
+#tooltip .tt-sub{ display:block; color:var(--mustard); font-size:9px; letter-spacing:.14em; }
+#tooltip .tt-plate{ flex:0 0 auto; box-shadow:3px 3px 0 var(--mustard); }
+
+/* ---------------------------------------------------------- detail card */
+#card{
+  position:fixed; top:96px; right:18px; width:min(390px, 40vw); max-height:calc(100vh - 150px);
+  z-index:35; overflow:auto;
+  background:var(--paper); border:var(--rule) solid var(--ink);
+  box-shadow:9px 9px 0 var(--ink), 9px 9px 0 3px var(--orange);
+  padding:16px 18px 20px;
+  transform:translateX(120%); opacity:0;
+  transition:transform .38s cubic-bezier(.2,.8,.25,1), opacity .3s;
+}
+#card.open{ transform:none; opacity:1; }
+#card-close{
+  position:absolute; top:6px; right:8px; border:none; background:none;
+  font-size:26px; line-height:1; cursor:pointer; color:var(--ink);
+}
+.card-year{
+  font-size:11px; letter-spacing:.28em; color:var(--teal);
+}
+#card h2{
+  margin:2px 0 8px; font-size:27px; line-height:1; text-transform:uppercase;
+  color:var(--ink);
+}
+.card-src{ font-size:11px; line-height:1.5; margin:0 0 12px; }
+.card-src em{ color:var(--orange); font-style:normal; }
+.card-desc{ font-size:12px; line-height:1.65; margin:0 0 14px; }
+.card-rule{ clear:both; border-top:2px dashed var(--ink); opacity:.45; margin:12px 0; }
+
+/* dossier plate: the description sets around it, magazine-style */
+#card .card-plate{
+  float:left; margin:2px 16px 12px 0;
+  box-shadow:5px 5px 0 var(--orange);
+}
+/* Third-party publisher artwork — the credit is always present, never loud. */
+.cover-credit{
+  clear:both; margin:16px 0 0; font-size:9px; line-height:1.55;
+  letter-spacing:.01em; color:var(--ink); opacity:.48;
+}
+.kv{ font-size:11px; line-height:1.6; display:flex; gap:8px; margin-bottom:4px; }
+.kv b{ color:var(--teal); letter-spacing:.1em; min-width:104px; flex:0 0 104px; text-transform:uppercase; font-weight:normal; }
+.card-actions{ margin-top:14px; display:flex; gap:8px; flex-wrap:wrap; }
+
+/* starburst badge */
+.badge{
+  display:inline-block; margin:0 0 8px; padding:9px 15px;
+  font-size:15px; letter-spacing:.1em; color:var(--paper);
+  background:var(--orange);
+  clip-path:polygon(50% 0%,60% 8%,73% 3%,77% 16%,91% 15%,89% 29%,100% 35%,92% 46%,100% 57%,89% 66%,92% 80%,78% 80%,74% 94%,61% 88%,50% 100%,39% 88%,26% 94%,22% 80%,8% 80%,11% 66%,0% 57%,8% 46%,0% 35%,11% 29%,9% 15%,23% 16%,27% 3%,40% 8%);
+  padding:16px 26px; transform:rotate(-6deg);
+}
+.badge.fiction{ background:var(--teal); }
+
+/* ----------------------------------------------------------- help modal */
+#help{
+  position:fixed; inset:0; z-index:60; display:flex; align-items:center; justify-content:center;
+  background:rgba(23,37,63,.4);
+}
+#help[hidden]{ display:none; }
+.help-inner{
+  background:var(--paper); border:var(--rule) solid var(--ink);
+  box-shadow:10px 10px 0 var(--orange);
+  padding:24px 28px; max-width:560px;
+}
+.help-inner h2{ margin:0 0 12px; font-size:28px; text-transform:uppercase; }
+.help-inner ul{ margin:0 0 18px; padding-left:18px; font-size:12px; line-height:1.85; }
+.help-inner b{ color:var(--orange); }
+
+/* -------------------------------------------------------------- loading */
+#loading{
+  position:fixed; inset:0; z-index:80; display:flex; align-items:center; justify-content:center;
+  background:var(--paper); transition:opacity .7s;
+}
+#loading.gone{ opacity:0; pointer-events:none; }
+.load-inner{ text-align:center; }
+.load-title{ font-size:44px; text-transform:uppercase; text-shadow:3px 3px 0 var(--orange); }
+.load-sub{ font-size:11px; letter-spacing:.3em; margin-top:10px; color:var(--teal); }
+
+@media (max-width:720px){
+  #card{ width:auto; left:12px; right:12px; top:auto; bottom:12px; max-height:52vh; }
+  .mast-right{ flex-wrap:wrap; justify-content:flex-end; gap:6px; }
+  .mast-right .pulp-btn{ font-size:10px; padding:6px 8px; }
+  #search{ width:132px; font-size:10px; padding:6px 22px 6px 8px; }
+  #hud{ left:12px; bottom:14px; transform:scale(.85); transform-origin:bottom left; }
+  #scroll-hint{ display:none; }
+}

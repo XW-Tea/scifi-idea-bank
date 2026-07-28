@@ -1,0 +1,2903 @@
+{
+  "generated": "2026-07-27T16:36:21.972Z",
+  "model": "qwen2.5:14b",
+  "promptVersion": "v2",
+  "ideas": 3746,
+  "classified": 3746,
+  "laneOrder": [
+    "materials",
+    "energy",
+    "transport",
+    "space",
+    "weapons",
+    "robots",
+    "living",
+    "medicine",
+    "bio",
+    "mind",
+    "society",
+    "surveillance",
+    "comms",
+    "computing"
+  ],
+  "distribution": [
+    {
+      "slug": "materials",
+      "label": "Materials & Manufacturing",
+      "count": 258,
+      "pct": 6.89
+    },
+    {
+      "slug": "energy",
+      "label": "Energy & Environment",
+      "count": 165,
+      "pct": 4.4
+    },
+    {
+      "slug": "transport",
+      "label": "Transport & Vehicles",
+      "count": 357,
+      "pct": 9.53
+    },
+    {
+      "slug": "space",
+      "label": "Space & Flight",
+      "count": 527,
+      "pct": 14.07
+    },
+    {
+      "slug": "weapons",
+      "label": "Weapons & Warfare",
+      "count": 251,
+      "pct": 6.7
+    },
+    {
+      "slug": "robots",
+      "label": "Robots & Automata",
+      "count": 404,
+      "pct": 10.78
+    },
+    {
+      "slug": "living",
+      "label": "Food & Daily Life",
+      "count": 285,
+      "pct": 7.61
+    },
+    {
+      "slug": "medicine",
+      "label": "Medicine & the Body",
+      "count": 225,
+      "pct": 6.01
+    },
+    {
+      "slug": "bio",
+      "label": "Genetics & Life Engineering",
+      "count": 134,
+      "pct": 3.58
+    },
+    {
+      "slug": "mind",
+      "label": "Mind & Perception",
+      "count": 260,
+      "pct": 6.94
+    },
+    {
+      "slug": "society",
+      "label": "Society & Economy",
+      "count": 72,
+      "pct": 1.92
+    },
+    {
+      "slug": "surveillance",
+      "label": "Surveillance & Identity",
+      "count": 175,
+      "pct": 4.67
+    },
+    {
+      "slug": "comms",
+      "label": "Communication & Media",
+      "count": 374,
+      "pct": 9.98
+    },
+    {
+      "slug": "computing",
+      "label": "Computing & Intelligence",
+      "count": 259,
+      "pct": 6.91
+    }
+  ],
+  "gates": [],
+  "gatesTripped": 0,
+  "confidence": {
+    "high": 2421,
+    "medium": 976,
+    "low": 349,
+    "lowPct": 9.32,
+    "mediumPct": 26.05,
+    "highPct": 64.63
+  },
+  "fallback": {
+    "count": 2,
+    "pct": 0.05
+  },
+  "vaultDomains": [
+    {
+      "slug": "machines",
+      "count": 865,
+      "pct": 23.09
+    },
+    {
+      "slug": "planet",
+      "count": 645,
+      "pct": 17.22
+    },
+    {
+      "slug": "culture",
+      "count": 521,
+      "pct": 13.91
+    },
+    {
+      "slug": "intelligence",
+      "count": 429,
+      "pct": 11.45
+    },
+    {
+      "slug": "health",
+      "count": 394,
+      "pct": 10.52
+    },
+    {
+      "slug": "governance",
+      "count": 270,
+      "pct": 7.21
+    },
+    {
+      "slug": "work",
+      "count": 227,
+      "pct": 6.06
+    },
+    {
+      "slug": "geopolitics",
+      "count": 152,
+      "pct": 4.06
+    },
+    {
+      "slug": "wealth",
+      "count": 101,
+      "pct": 2.7
+    },
+    {
+      "slug": "society",
+      "count": 85,
+      "pct": 2.27
+    },
+    {
+      "slug": "learning",
+      "count": 57,
+      "pct": 1.52
+    }
+  ],
+  "distinctSubjects": 3353,
+  "topSubjects": [
+    {
+      "subject": "ray gun",
+      "count": 22
+    },
+    {
+      "subject": "video telephone",
+      "count": 14
+    },
+    {
+      "subject": "robot",
+      "count": 8
+    },
+    {
+      "subject": "force field",
+      "count": 8
+    },
+    {
+      "subject": "time travel",
+      "count": 8
+    },
+    {
+      "subject": "space suit",
+      "count": 7
+    },
+    {
+      "subject": "video phone",
+      "count": 7
+    },
+    {
+      "subject": "teleportation",
+      "count": 7
+    },
+    {
+      "subject": "android",
+      "count": 6
+    },
+    {
+      "subject": "spaceship",
+      "count": 5
+    },
+    {
+      "subject": "synthetic food",
+      "count": 5
+    },
+    {
+      "subject": "exoskeleton",
+      "count": 5
+    },
+    {
+      "subject": "propulsion",
+      "count": 5
+    },
+    {
+      "subject": "airlock",
+      "count": 4
+    },
+    {
+      "subject": "remote control",
+      "count": 4
+    },
+    {
+      "subject": "network",
+      "count": 4
+    },
+    {
+      "subject": "autonomous car",
+      "count": 4
+    },
+    {
+      "subject": "memory erasure",
+      "count": 4
+    },
+    {
+      "subject": "space station",
+      "count": 4
+    },
+    {
+      "subject": "flying car",
+      "count": 4
+    },
+    {
+      "subject": "stasis field",
+      "count": 4
+    },
+    {
+      "subject": "data storage",
+      "count": 4
+    },
+    {
+      "subject": "force shield",
+      "count": 4
+    },
+    {
+      "subject": "artificial gravity",
+      "count": 4
+    },
+    {
+      "subject": "disintegration ray",
+      "count": 4
+    },
+    {
+      "subject": "video glasses",
+      "count": 4
+    },
+    {
+      "subject": "antigravity",
+      "count": 4
+    },
+    {
+      "subject": "weightlessness",
+      "count": 3
+    },
+    {
+      "subject": "vacuum suit",
+      "count": 3
+    },
+    {
+      "subject": "virtual world",
+      "count": 3
+    },
+    {
+      "subject": "implant",
+      "count": 3
+    },
+    {
+      "subject": "floating island",
+      "count": 3
+    },
+    {
+      "subject": "sleep aid",
+      "count": 3
+    },
+    {
+      "subject": "telepresence",
+      "count": 3
+    },
+    {
+      "subject": "artificial life",
+      "count": 3
+    },
+    {
+      "subject": "ion drive",
+      "count": 3
+    },
+    {
+      "subject": "instant travel",
+      "count": 3
+    },
+    {
+      "subject": "solar power",
+      "count": 3
+    },
+    {
+      "subject": "hovercraft",
+      "count": 3
+    },
+    {
+      "subject": "habitat",
+      "count": 3
+    },
+    {
+      "subject": "spacecraft",
+      "count": 3
+    },
+    {
+      "subject": "brain implant",
+      "count": 3
+    },
+    {
+      "subject": "mass driver",
+      "count": 3
+    },
+    {
+      "subject": "driverless taxi",
+      "count": 3
+    },
+    {
+      "subject": "habitable planet search",
+      "count": 3
+    },
+    {
+      "subject": "supercomputer",
+      "count": 3
+    },
+    {
+      "subject": "computer",
+      "count": 3
+    },
+    {
+      "subject": "terraforming",
+      "count": 3
+    },
+    {
+      "subject": "scanner",
+      "count": 3
+    },
+    {
+      "subject": "vehicle",
+      "count": 3
+    },
+    {
+      "subject": "explosive",
+      "count": 3
+    },
+    {
+      "subject": "acceleration chair",
+      "count": 3
+    },
+    {
+      "subject": "time machine",
+      "count": 3
+    },
+    {
+      "subject": "telepathy device",
+      "count": 3
+    },
+    {
+      "subject": "brain stimulator",
+      "count": 3
+    },
+    {
+      "subject": "therapy device",
+      "count": 3
+    },
+    {
+      "subject": "vat meat",
+      "count": 3
+    },
+    {
+      "subject": "gravity nullifier",
+      "count": 3
+    },
+    {
+      "subject": "cold sleep",
+      "count": 3
+    },
+    {
+      "subject": "robot strike",
+      "count": 3
+    }
+  ],
+  "spotChecks": [
+    {
+      "probe": "video telephone",
+      "expected": "comms",
+      "matched": 1,
+      "agree": 1,
+      "agreePct": 100,
+      "breakdown": {
+        "comms": 1
+      },
+      "examples": [
+        {
+          "device": "Videophone",
+          "year": 1928,
+          "domain": "comms",
+          "confidence": "high",
+          "subject": "videophone"
+        }
+      ]
+    },
+    {
+      "probe": "ray gun",
+      "expected": "weapons",
+      "matched": 16,
+      "agree": 14,
+      "agreePct": 87.5,
+      "breakdown": {
+        "weapons": 14,
+        "materials": 1,
+        "energy": 1
+      },
+      "examples": [
+        {
+          "device": "Heat Ray",
+          "year": 1898,
+          "domain": "weapons",
+          "confidence": "high",
+          "subject": "ray gun"
+        },
+        {
+          "device": "Slaver Disintegrator",
+          "year": 1970,
+          "domain": "weapons",
+          "confidence": "high",
+          "subject": "disintegrator gun"
+        },
+        {
+          "device": "Bethé blasters",
+          "year": 1957,
+          "domain": "weapons",
+          "confidence": "high",
+          "subject": "city destroyer"
+        },
+        {
+          "device": "Neutron Disruption Blaster",
+          "year": 1951,
+          "domain": "weapons",
+          "confidence": "high",
+          "subject": "neutron blaster"
+        },
+        {
+          "device": "Mining Disintegrator",
+          "year": 1967,
+          "domain": "materials",
+          "confidence": "medium",
+          "subject": "disintegrator"
+        },
+        {
+          "device": "Stationary Automatic Blaster",
+          "year": 1949,
+          "domain": "weapons",
+          "confidence": "high",
+          "subject": "ray gun"
+        },
+        {
+          "device": "Meteor Blasters",
+          "year": 1945,
+          "domain": "energy",
+          "confidence": "high",
+          "subject": "debris shield"
+        },
+        {
+          "device": "Thermodyne Heat Ray",
+          "year": 1942,
+          "domain": "weapons",
+          "confidence": "high",
+          "subject": "heat ray"
+        }
+      ]
+    },
+    {
+      "probe": "suspended animation",
+      "expected": "medicine",
+      "matched": 2,
+      "agree": 2,
+      "agreePct": 100,
+      "breakdown": {
+        "medicine": 2
+      },
+      "examples": [
+        {
+          "device": "Stasis (Cold Sleep, Hibernation)",
+          "year": 1956,
+          "domain": "medicine",
+          "confidence": "high",
+          "subject": "cold sleep"
+        },
+        {
+          "device": "Suspended Animation (Frigorific Process)",
+          "year": 1879,
+          "domain": "medicine",
+          "confidence": "high",
+          "subject": "cryostorage"
+        }
+      ]
+    },
+    {
+      "probe": "terraforming",
+      "expected": "energy",
+      "matched": 2,
+      "agree": 1,
+      "agreePct": 50,
+      "breakdown": {
+        "energy": 1,
+        "bio": 1
+      },
+      "examples": [
+        {
+          "device": "Terraforming",
+          "year": 1942,
+          "domain": "energy",
+          "confidence": "high",
+          "subject": "terraforming"
+        },
+        {
+          "device": "Red Weed (Terraforming Plant)",
+          "year": 1898,
+          "domain": "bio",
+          "confidence": "high",
+          "subject": "terra plant"
+        }
+      ]
+    },
+    {
+      "probe": "thought recorder",
+      "expected": "mind",
+      "matched": 3,
+      "agree": 3,
+      "agreePct": 100,
+      "breakdown": {
+        "mind": 3
+      },
+      "examples": [
+        {
+          "device": "Mind-Reading with MRI",
+          "year": 2009,
+          "domain": "mind",
+          "confidence": "high",
+          "subject": "brain imaging"
+        },
+        {
+          "device": "Memory Recording",
+          "year": 1977,
+          "domain": "mind",
+          "confidence": "high",
+          "subject": "memory recording"
+        },
+        {
+          "device": "Thought-Record Helmet",
+          "year": 1958,
+          "domain": "mind",
+          "confidence": "high",
+          "subject": "thought helmet"
+        }
+      ]
+    }
+  ],
+  "sample40": [
+    {
+      "id": 845,
+      "year": 1936,
+      "device": "Audiphone",
+      "domain": "comms",
+      "confidence": "medium",
+      "subject": "space comms",
+      "vaultDomain": "culture",
+      "fallback": false,
+      "line": "Audiphone (1936) -> comms (medium)"
+    },
+    {
+      "id": 128,
+      "year": 1899,
+      "device": "Moving Roadway",
+      "domain": "transport",
+      "confidence": "high",
+      "subject": "moving roadway",
+      "vaultDomain": "machines",
+      "fallback": false,
+      "line": "Moving Roadway (1899) -> transport (high)"
+    },
+    {
+      "id": 42,
+      "year": 2014,
+      "device": "Oxygen Fountain",
+      "domain": "energy",
+      "confidence": "medium",
+      "subject": "oxygen factory",
+      "vaultDomain": "planet",
+      "fallback": false,
+      "line": "Oxygen Fountain (2014) -> energy (medium)"
+    },
+    {
+      "id": 1450,
+      "year": 1950,
+      "device": "Voice-Clock",
+      "domain": "comms",
+      "confidence": "high",
+      "subject": "audio clock",
+      "vaultDomain": "culture",
+      "fallback": false,
+      "line": "Voice-Clock (1950) -> comms (high)"
+    },
+    {
+      "id": 268,
+      "year": 2003,
+      "device": "Little Bird",
+      "domain": "robots",
+      "confidence": "high",
+      "subject": "little bird",
+      "vaultDomain": "machines",
+      "fallback": false,
+      "line": "Little Bird (2003) -> robots (high)"
+    },
+    {
+      "id": 353,
+      "year": 1929,
+      "device": "Mechanical Hand",
+      "domain": "robots",
+      "confidence": "high",
+      "subject": "mechanical hand",
+      "vaultDomain": "machines",
+      "fallback": false,
+      "line": "Mechanical Hand (1929) -> robots (high)"
+    },
+    {
+      "id": 2234,
+      "year": 1952,
+      "device": "Off-Planet",
+      "domain": "space",
+      "confidence": "high",
+      "subject": "off planet",
+      "vaultDomain": "planet",
+      "fallback": false,
+      "line": "Off-Planet (1952) -> space (high)"
+    },
+    {
+      "id": 2554,
+      "year": 1943,
+      "device": "Robot Chef",
+      "domain": "robots",
+      "confidence": "high",
+      "subject": "robot cook",
+      "vaultDomain": "machines",
+      "fallback": false,
+      "line": "Robot Chef (1943) -> robots (high)"
+    },
+    {
+      "id": 220,
+      "year": 2005,
+      "device": "Flexy (or Flexies)",
+      "domain": "computing",
+      "confidence": "high",
+      "subject": "flexible computer",
+      "vaultDomain": "intelligence",
+      "fallback": false,
+      "line": "Flexy (or Flexies) (2005) -> computing (high)"
+    },
+    {
+      "id": 579,
+      "year": 1932,
+      "device": "Torpoon",
+      "domain": "transport",
+      "confidence": "medium",
+      "subject": "underwater craft",
+      "vaultDomain": "machines",
+      "fallback": false,
+      "line": "Torpoon (1932) -> transport (medium)"
+    },
+    {
+      "id": 779,
+      "year": 1985,
+      "device": "Sniffer Robot",
+      "domain": "robots",
+      "confidence": "medium",
+      "subject": "sniffer robot",
+      "vaultDomain": "machines",
+      "fallback": false,
+      "line": "Sniffer Robot (1985) -> robots (medium)"
+    },
+    {
+      "id": 631,
+      "year": 1990,
+      "device": "Dozer",
+      "domain": "living",
+      "confidence": "medium",
+      "subject": "co2 person",
+      "vaultDomain": "society",
+      "fallback": false,
+      "line": "Dozer (1990) -> living (medium)"
+    },
+    {
+      "id": 1864,
+      "year": 1958,
+      "device": "Life Detector Shield",
+      "domain": "bio",
+      "confidence": "medium",
+      "subject": "life shield",
+      "vaultDomain": "health",
+      "fallback": false,
+      "line": "Life Detector Shield (1958) -> bio (medium)"
+    },
+    {
+      "id": 1635,
+      "year": 1964,
+      "device": "Chalf (Quick-Scribe Powder)",
+      "domain": "materials",
+      "confidence": "low",
+      "subject": "self-writing powder",
+      "vaultDomain": "culture",
+      "fallback": false,
+      "line": "Chalf (Quick-Scribe Powder) (1964) -> materials (low)"
+    },
+    {
+      "id": 2530,
+      "year": 1944,
+      "device": "Mal de Void",
+      "domain": "space",
+      "confidence": "high",
+      "subject": "space sickness",
+      "vaultDomain": "planet",
+      "fallback": false,
+      "line": "Mal de Void (1944) -> space (high)"
+    },
+    {
+      "id": 1712,
+      "year": 1962,
+      "device": "Lunar Web",
+      "domain": "space",
+      "confidence": "medium",
+      "subject": "lunar web",
+      "vaultDomain": "planet",
+      "fallback": false,
+      "line": "Lunar Web (1962) -> space (medium)"
+    },
+    {
+      "id": 2052,
+      "year": 1955,
+      "device": "Unit Analyst Robot",
+      "domain": "robots",
+      "confidence": "high",
+      "subject": "robot",
+      "vaultDomain": "machines",
+      "fallback": false,
+      "line": "Unit Analyst Robot (1955) -> robots (high)"
+    },
+    {
+      "id": 671,
+      "year": 1933,
+      "device": "Osprey Space Armor",
+      "domain": "space",
+      "confidence": "medium",
+      "subject": "space suit",
+      "vaultDomain": "machines",
+      "fallback": false,
+      "line": "Osprey Space Armor (1933) -> space (medium)"
+    },
+    {
+      "id": 893,
+      "year": 1938,
+      "device": "Etherphone Receiver",
+      "domain": "comms",
+      "confidence": "low",
+      "subject": "earpiece",
+      "vaultDomain": "culture",
+      "fallback": false,
+      "line": "Etherphone Receiver (1938) -> comms (low)"
+    },
+    {
+      "id": 2358,
+      "year": 1951,
+      "device": "Butler-Valet Robot",
+      "domain": "robots",
+      "confidence": "high",
+      "subject": "butler robot",
+      "vaultDomain": "machines",
+      "fallback": false,
+      "line": "Butler-Valet Robot (1951) -> robots (high)"
+    },
+    {
+      "id": 2787,
+      "year": 1940,
+      "device": "Radium-Action Lighter",
+      "domain": "living",
+      "confidence": "low",
+      "subject": "lighter",
+      "vaultDomain": "culture",
+      "fallback": false,
+      "line": "Radium-Action Lighter (1940) -> living (low)"
+    },
+    {
+      "id": 2870,
+      "year": 1939,
+      "device": "Synthite Food",
+      "domain": "living",
+      "confidence": "high",
+      "subject": "synthetic food",
+      "vaultDomain": "health",
+      "fallback": false,
+      "line": "Synthite Food (1939) -> living (high)"
+    },
+    {
+      "id": 533,
+      "year": 1931,
+      "device": "Telephotography",
+      "domain": "comms",
+      "confidence": "high",
+      "subject": "telephoto-display",
+      "vaultDomain": "culture",
+      "fallback": false,
+      "line": "Telephotography (1931) -> comms (high)"
+    },
+    {
+      "id": 2134,
+      "year": 1954,
+      "device": "Thought Pattern Divination",
+      "domain": "mind",
+      "confidence": "medium",
+      "subject": "thought divination",
+      "vaultDomain": "intelligence",
+      "fallback": false,
+      "line": "Thought Pattern Divination (1954) -> mind (medium)"
+    },
+    {
+      "id": 3559,
+      "year": 1928,
+      "device": "Space-Lanes",
+      "domain": "space",
+      "confidence": "high",
+      "subject": "space lanes",
+      "vaultDomain": "planet",
+      "fallback": false,
+      "line": "Space-Lanes (1928) -> space (high)"
+    },
+    {
+      "id": 1898,
+      "year": 1957,
+      "device": "Jump-Along",
+      "domain": "computing",
+      "confidence": "high",
+      "subject": "jump comp",
+      "vaultDomain": "intelligence",
+      "fallback": false,
+      "line": "Jump-Along (1957) -> computing (high)"
+    },
+    {
+      "id": 1949,
+      "year": 1957,
+      "device": "Teleoperated Lab Robot",
+      "domain": "robots",
+      "confidence": "high",
+      "subject": "lab robot",
+      "vaultDomain": "machines",
+      "fallback": false,
+      "line": "Teleoperated Lab Robot (1957) -> robots (high)"
+    },
+    {
+      "id": 1933,
+      "year": 1957,
+      "device": "Machine Psychologist",
+      "domain": "computing",
+      "confidence": "high",
+      "subject": "machine psychologist",
+      "vaultDomain": "intelligence",
+      "fallback": false,
+      "line": "Machine Psychologist (1957) -> computing (high)"
+    },
+    {
+      "id": 3217,
+      "year": 1932,
+      "device": "Daisy Projector",
+      "domain": "comms",
+      "confidence": "high",
+      "subject": "interplanetary comm",
+      "vaultDomain": "culture",
+      "fallback": false,
+      "line": "Daisy Projector (1932) -> comms (high)"
+    },
+    {
+      "id": 2831,
+      "year": 1940,
+      "device": "Robot Suicide",
+      "domain": "robots",
+      "confidence": "high",
+      "subject": "robot suicide",
+      "vaultDomain": "intelligence",
+      "fallback": false,
+      "line": "Robot Suicide (1940) -> robots (high)"
+    },
+    {
+      "id": 3324,
+      "year": 1931,
+      "device": "Robot-Deranger",
+      "domain": "robots",
+      "confidence": "high",
+      "subject": "robot deranger",
+      "vaultDomain": "machines",
+      "fallback": false,
+      "line": "Robot-Deranger (1931) -> robots (high)"
+    },
+    {
+      "id": 203,
+      "year": 2006,
+      "device": "Persuader",
+      "domain": "surveillance",
+      "confidence": "high",
+      "subject": "compliance device",
+      "vaultDomain": "governance",
+      "fallback": false,
+      "line": "Persuader (2006) -> surveillance (high)"
+    },
+    {
+      "id": 2808,
+      "year": 1940,
+      "device": "Voder",
+      "domain": "comms",
+      "confidence": "high",
+      "subject": "speech device",
+      "vaultDomain": "intelligence",
+      "fallback": false,
+      "line": "Voder (1940) -> comms (high)"
+    },
+    {
+      "id": 2747,
+      "year": 1941,
+      "device": "Vanwinkling",
+      "domain": "mind",
+      "confidence": "low",
+      "subject": "time travel",
+      "vaultDomain": "society",
+      "fallback": false,
+      "line": "Vanwinkling (1941) -> mind (low)"
+    },
+    {
+      "id": 1067,
+      "year": 1976,
+      "device": "Hangman",
+      "domain": "robots",
+      "confidence": "high",
+      "subject": "telefactoring device",
+      "vaultDomain": "machines",
+      "fallback": false,
+      "line": "Hangman (1976) -> robots (high)"
+    },
+    {
+      "id": 3014,
+      "year": 1936,
+      "device": "Tubular Field of Force",
+      "domain": "transport",
+      "confidence": "medium",
+      "subject": "teleportation",
+      "vaultDomain": "planet",
+      "fallback": false,
+      "line": "Tubular Field of Force (1936) -> transport (medium)"
+    },
+    {
+      "id": 1406,
+      "year": 1967,
+      "device": "Mechanical Cobra",
+      "domain": "mind",
+      "confidence": "high",
+      "subject": "brain wave detector",
+      "vaultDomain": "governance",
+      "fallback": false,
+      "line": "Mechanical Cobra (1967) -> mind (high)"
+    },
+    {
+      "id": 170,
+      "year": 1911,
+      "device": "Automatic-Electric Packing Machine",
+      "domain": "computing",
+      "confidence": "high",
+      "subject": "packing machine",
+      "vaultDomain": "work",
+      "fallback": false,
+      "line": "Automatic-Electric Packing Machine (1911) -> computing (high)"
+    },
+    {
+      "id": 204,
+      "year": 1918,
+      "device": "Photophone",
+      "domain": "comms",
+      "confidence": "high",
+      "subject": "video phone",
+      "vaultDomain": "culture",
+      "fallback": false,
+      "line": "Photophone (1918) -> comms (high)"
+    },
+    {
+      "id": 1646,
+      "year": 1953,
+      "device": "Autonomous Car Intercommunication",
+      "domain": "transport",
+      "confidence": "high",
+      "subject": "car comm",
+      "vaultDomain": "work",
+      "fallback": false,
+      "line": "Autonomous Car Intercommunication (1953) -> transport (high)"
+    }
+  ],
+  "timing": {
+    "wallClockMs": 0,
+    "newlyClassified": 0,
+    "msPerIdea": 0,
+    "soloRetries": 0,
+    "batchesWithTrouble": 0
+  },
+  "llm": {
+    "calls": 0,
+    "ms": 0,
+    "errors": 0,
+    "fallbacks": 0,
+    "promptChars": 0,
+    "avgCallMs": 0
+  },
+  "trouble": [],
+  "subjectPass": {
+    "multiIdeaSubjects": 242,
+    "splitSubjects": 100,
+    "movedIdeas": 123,
+    "laneBefore": [
+      {
+        "slug": "materials",
+        "count": 271,
+        "pct": 7.23
+      },
+      {
+        "slug": "energy",
+        "count": 164,
+        "pct": 4.38
+      },
+      {
+        "slug": "transport",
+        "count": 357,
+        "pct": 9.53
+      },
+      {
+        "slug": "space",
+        "count": 526,
+        "pct": 14.04
+      },
+      {
+        "slug": "weapons",
+        "count": 244,
+        "pct": 6.51
+      },
+      {
+        "slug": "robots",
+        "count": 402,
+        "pct": 10.73
+      },
+      {
+        "slug": "living",
+        "count": 291,
+        "pct": 7.77
+      },
+      {
+        "slug": "medicine",
+        "count": 224,
+        "pct": 5.98
+      },
+      {
+        "slug": "bio",
+        "count": 129,
+        "pct": 3.44
+      },
+      {
+        "slug": "mind",
+        "count": 253,
+        "pct": 6.75
+      },
+      {
+        "slug": "society",
+        "count": 74,
+        "pct": 1.98
+      },
+      {
+        "slug": "surveillance",
+        "count": 176,
+        "pct": 4.7
+      },
+      {
+        "slug": "comms",
+        "count": 372,
+        "pct": 9.93
+      },
+      {
+        "slug": "computing",
+        "count": 263,
+        "pct": 7.02
+      }
+    ],
+    "moves": [
+      {
+        "id": 13,
+        "year": 2020,
+        "device": "Bio-Implant (Compensator Chip)",
+        "subject": "neural implant",
+        "from": "medicine",
+        "to": "mind",
+        "rule": "tie(medicine/mind) -> earliest 2005 #219",
+        "votes": {
+          "medicine": 1,
+          "mind": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 671,
+        "year": 1933,
+        "device": "Osprey Space Armor",
+        "subject": "space suit",
+        "from": "living",
+        "to": "space",
+        "rule": "majority",
+        "votes": {
+          "space": 4,
+          "living": 1,
+          "materials": 1,
+          "transport": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 2615,
+        "year": 1942,
+        "device": "Dirigible Space Armor (Working Space Suits)",
+        "subject": "space suit",
+        "from": "materials",
+        "to": "space",
+        "rule": "majority",
+        "votes": {
+          "space": 4,
+          "living": 1,
+          "materials": 1,
+          "transport": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 2907,
+        "year": 1938,
+        "device": "Emergency Air-Suit",
+        "subject": "space suit",
+        "from": "transport",
+        "to": "space",
+        "rule": "majority",
+        "votes": {
+          "space": 4,
+          "living": 1,
+          "materials": 1,
+          "transport": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 1340,
+        "year": 1946,
+        "device": "Logics",
+        "subject": "video telephone",
+        "from": "computing",
+        "to": "comms",
+        "rule": "majority",
+        "votes": {
+          "comms": 13,
+          "computing": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 188,
+        "year": 2006,
+        "device": "Traffic Lane Discharger",
+        "subject": "traffic control",
+        "from": "transport",
+        "to": "surveillance",
+        "rule": "tie(surveillance/transport) -> earliest 1894 #71",
+        "votes": {
+          "surveillance": 1,
+          "transport": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 92,
+        "year": 2010,
+        "device": "Office Hand",
+        "subject": "robotic hand",
+        "from": "robots",
+        "to": "medicine",
+        "rule": "tie(medicine/robots) -> earliest 1964 #2176",
+        "votes": {
+          "medicine": 1,
+          "robots": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 100,
+        "year": 2010,
+        "device": "Millenniaire",
+        "subject": "time manipulation",
+        "from": "mind",
+        "to": "space",
+        "rule": "tie(mind/space) -> earliest 1983 #887",
+        "votes": {
+          "mind": 1,
+          "space": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 109,
+        "year": 1898,
+        "device": "Air-Tight Suit",
+        "subject": "vacuum suit",
+        "from": "living",
+        "to": "space",
+        "rule": "majority",
+        "votes": {
+          "space": 2,
+          "living": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2929,
+        "year": 1981,
+        "device": "Virtual world metaphor",
+        "subject": "virtual world",
+        "from": "computing",
+        "to": "mind",
+        "rule": "majority",
+        "votes": {
+          "mind": 2,
+          "computing": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 147,
+        "year": 2008,
+        "device": "Sky-Bike",
+        "subject": "lunar bike",
+        "from": "space",
+        "to": "transport",
+        "rule": "tie(space/transport) -> earliest 1952 #2244",
+        "votes": {
+          "space": 1,
+          "transport": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 3741,
+        "year": 2022,
+        "device": "Palimpscreen",
+        "subject": "digital paper",
+        "from": "materials",
+        "to": "computing",
+        "rule": "tie(computing/materials) -> earliest 2007 #169",
+        "votes": {
+          "computing": 1,
+          "materials": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 175,
+        "year": 2007,
+        "device": "Orphids",
+        "subject": "nanomachines",
+        "from": "materials",
+        "to": "robots",
+        "rule": "tie(materials/robots) -> earliest 1954 #2070",
+        "votes": {
+          "materials": 1,
+          "robots": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2178,
+        "year": 1953,
+        "device": "Claws (Attack Robot)",
+        "subject": "robot",
+        "from": "weapons",
+        "to": "robots",
+        "rule": "majority",
+        "votes": {
+          "robots": 7,
+          "weapons": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 854,
+        "year": 1937,
+        "device": "Artificial eye",
+        "subject": "artificial eye",
+        "from": "medicine",
+        "to": "computing",
+        "rule": "tie(computing/medicine) -> earliest 1926 #224",
+        "votes": {
+          "computing": 1,
+          "medicine": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 256,
+        "year": 2003,
+        "device": "Companion Implant",
+        "subject": "implant",
+        "from": "medicine",
+        "to": "bio",
+        "rule": "tie(bio/medicine/mind) -> earliest 1966 #1451",
+        "votes": {
+          "bio": 1,
+          "medicine": 1,
+          "mind": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 1201,
+        "year": 1972,
+        "device": "P-Terminal Implant",
+        "subject": "implant",
+        "from": "mind",
+        "to": "bio",
+        "rule": "tie(bio/medicine/mind) -> earliest 1966 #1451",
+        "votes": {
+          "bio": 1,
+          "medicine": 1,
+          "mind": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 313,
+        "year": 2002,
+        "device": "Mobile Persocom",
+        "subject": "personal computer",
+        "from": "robots",
+        "to": "computing",
+        "rule": "tie(computing/robots) -> earliest 1985 #3075",
+        "votes": {
+          "computing": 1,
+          "robots": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 331,
+        "year": 2000,
+        "device": "Floating Island",
+        "subject": "floating island",
+        "from": "materials",
+        "to": "space",
+        "rule": "tie(materials/society/space) -> earliest 1726 #3739",
+        "votes": {
+          "materials": 1,
+          "society": 1,
+          "space": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 762,
+        "year": 1985,
+        "device": "Freezone",
+        "subject": "floating island",
+        "from": "society",
+        "to": "space",
+        "rule": "tie(materials/society/space) -> earliest 1726 #3739",
+        "votes": {
+          "materials": 1,
+          "society": 1,
+          "space": 1
+        },
+        "confidence": "low"
+      },
+      {
+        "id": 2241,
+        "year": 1952,
+        "device": "Hypnoteleset",
+        "subject": "sleep aid",
+        "from": "medicine",
+        "to": "mind",
+        "rule": "majority",
+        "votes": {
+          "mind": 2,
+          "medicine": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 1135,
+        "year": 1974,
+        "device": "Eccentric Projection",
+        "subject": "remote control",
+        "from": "mind",
+        "to": "robots",
+        "rule": "tie(mind/robots) -> earliest 1929 #344",
+        "votes": {
+          "mind": 2,
+          "robots": 2
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2862,
+        "year": 1939,
+        "device": "Neuronic Control Apparatus",
+        "subject": "remote control",
+        "from": "mind",
+        "to": "robots",
+        "rule": "tie(mind/robots) -> earliest 1929 #344",
+        "votes": {
+          "mind": 2,
+          "robots": 2
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 349,
+        "year": 1929,
+        "device": "Teleview",
+        "subject": "telepresence",
+        "from": "comms",
+        "to": "robots",
+        "rule": "majority",
+        "votes": {
+          "robots": 2,
+          "comms": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2924,
+        "year": 1938,
+        "device": "Lightweight Vacuum Armor",
+        "subject": "vacuum armor",
+        "from": "living",
+        "to": "robots",
+        "rule": "tie(living/robots) -> earliest 1930 #375",
+        "votes": {
+          "living": 1,
+          "robots": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 847,
+        "year": 1984,
+        "device": "Nikon Eyes",
+        "subject": "artificial eyes",
+        "from": "medicine",
+        "to": "bio",
+        "rule": "tie(bio/medicine) -> earliest 1930 #379",
+        "votes": {
+          "bio": 1,
+          "medicine": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 393,
+        "year": 1999,
+        "device": "Medical Mantis",
+        "subject": "telefactoring device",
+        "from": "medicine",
+        "to": "robots",
+        "rule": "tie(medicine/robots) -> earliest 1976 #1067",
+        "votes": {
+          "medicine": 1,
+          "robots": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 1607,
+        "year": 1965,
+        "device": "Police Control-Override",
+        "subject": "vehicle control",
+        "from": "surveillance",
+        "to": "transport",
+        "rule": "tie(surveillance/transport) -> earliest 1931 #428",
+        "votes": {
+          "surveillance": 1,
+          "transport": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2697,
+        "year": 1941,
+        "device": "Magnetized Boots",
+        "subject": "magnetic boots",
+        "from": "materials",
+        "to": "space",
+        "rule": "tie(materials/space) -> earliest 1931 #439",
+        "votes": {
+          "materials": 1,
+          "space": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 440,
+        "year": 1997,
+        "device": "Moldies",
+        "subject": "artificial life",
+        "from": "robots",
+        "to": "bio",
+        "rule": "tie(bio/living/robots) -> earliest 1926 #3582",
+        "votes": {
+          "bio": 1,
+          "living": 1,
+          "robots": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2063,
+        "year": 1954,
+        "device": "Protoplast",
+        "subject": "artificial life",
+        "from": "living",
+        "to": "bio",
+        "rule": "tie(bio/living/robots) -> earliest 1926 #3582",
+        "votes": {
+          "bio": 1,
+          "living": 1,
+          "robots": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 447,
+        "year": 1931,
+        "device": "Positive Ray Propulsion (Ion Drive)",
+        "subject": "ion drive",
+        "from": "transport",
+        "to": "space",
+        "rule": "majority",
+        "votes": {
+          "space": 2,
+          "transport": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2064,
+        "year": 1954,
+        "device": "Jiffi-scuttler",
+        "subject": "instant travel",
+        "from": "transport",
+        "to": "space",
+        "rule": "majority",
+        "votes": {
+          "space": 2,
+          "transport": 1
+        },
+        "confidence": "low"
+      },
+      {
+        "id": 466,
+        "year": 1996,
+        "device": "Idoru",
+        "subject": "virtual entity",
+        "from": "computing",
+        "to": "bio",
+        "rule": "tie(bio/computing) -> earliest 1988 #691",
+        "votes": {
+          "bio": 1,
+          "computing": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2766,
+        "year": 1940,
+        "device": "Life-Ship",
+        "subject": "escape craft",
+        "from": "transport",
+        "to": "space",
+        "rule": "tie(space/transport) -> earliest 1931 #494",
+        "votes": {
+          "space": 1,
+          "transport": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 549,
+        "year": 1994,
+        "device": "Neotopological Metaeuclidean Adjacency",
+        "subject": "portal",
+        "from": "mind",
+        "to": "space",
+        "rule": "tie(mind/space) -> earliest 1933 #3191",
+        "votes": {
+          "mind": 1,
+          "space": 1
+        },
+        "confidence": "low"
+      },
+      {
+        "id": 578,
+        "year": 1993,
+        "device": "Hood Hologram",
+        "subject": "holographic display",
+        "from": "comms",
+        "to": "mind",
+        "rule": "tie(comms/mind) -> earliest 1977 #993",
+        "votes": {
+          "comms": 1,
+          "mind": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 581,
+        "year": 1932,
+        "device": "Rigid Metallic Clothing",
+        "subject": "exoskeleton",
+        "from": "living",
+        "to": "medicine",
+        "rule": "majority",
+        "votes": {
+          "medicine": 2,
+          "living": 1,
+          "materials": 1,
+          "weapons": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 3163,
+        "year": 1988,
+        "device": "Polycarbon Exo",
+        "subject": "exoskeleton",
+        "from": "materials",
+        "to": "medicine",
+        "rule": "majority",
+        "votes": {
+          "medicine": 2,
+          "living": 1,
+          "materials": 1,
+          "weapons": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 3444,
+        "year": 1999,
+        "device": "Exoskeleton",
+        "subject": "exoskeleton",
+        "from": "weapons",
+        "to": "medicine",
+        "rule": "majority",
+        "votes": {
+          "medicine": 2,
+          "living": 1,
+          "materials": 1,
+          "weapons": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 2230,
+        "year": 1965,
+        "device": "Carryall",
+        "subject": "flying wing",
+        "from": "transport",
+        "to": "space",
+        "rule": "tie(space/transport) -> earliest 1934 #715",
+        "votes": {
+          "space": 1,
+          "transport": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 724,
+        "year": 1986,
+        "device": "Effective Human Implant Technology (EHIT)",
+        "subject": "brain implant",
+        "from": "computing",
+        "to": "mind",
+        "rule": "majority",
+        "votes": {
+          "mind": 2,
+          "computing": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 734,
+        "year": 1985,
+        "device": "Big Push",
+        "subject": "mass driver",
+        "from": "energy",
+        "to": "transport",
+        "rule": "tie(energy/space/transport) -> earliest 1897 #3693",
+        "votes": {
+          "energy": 1,
+          "space": 1,
+          "transport": 1
+        },
+        "confidence": "low"
+      },
+      {
+        "id": 1441,
+        "year": 1966,
+        "device": "Mass-Driver Catapult",
+        "subject": "mass driver",
+        "from": "space",
+        "to": "transport",
+        "rule": "tie(energy/space/transport) -> earliest 1897 #3693",
+        "votes": {
+          "energy": 1,
+          "space": 1,
+          "transport": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 792,
+        "year": 1984,
+        "device": "Shere",
+        "subject": "memory erasure",
+        "from": "mind",
+        "to": "medicine",
+        "rule": "tie(medicine/mind) -> earliest 1948 #2473",
+        "votes": {
+          "medicine": 2,
+          "mind": 2
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 905,
+        "year": 1982,
+        "device": "Mindwipe",
+        "subject": "memory erasure",
+        "from": "mind",
+        "to": "medicine",
+        "rule": "tie(medicine/mind) -> earliest 1948 #2473",
+        "votes": {
+          "medicine": 2,
+          "mind": 2
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 811,
+        "year": 1984,
+        "device": "Agony Box",
+        "subject": "pain inducer",
+        "from": "medicine",
+        "to": "weapons",
+        "rule": "tie(medicine/weapons) -> earliest 1965 #1561",
+        "votes": {
+          "medicine": 1,
+          "weapons": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 825,
+        "year": 1984,
+        "device": "Life-shield Blanket",
+        "subject": "life shield",
+        "from": "surveillance",
+        "to": "bio",
+        "rule": "tie(bio/surveillance) -> earliest 1958 #1864",
+        "votes": {
+          "bio": 1,
+          "surveillance": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 882,
+        "year": 1937,
+        "device": "Electelscope",
+        "subject": "telescope",
+        "from": "mind",
+        "to": "comms",
+        "rule": "tie(comms/mind) -> earliest 1932 #3304",
+        "votes": {
+          "comms": 1,
+          "mind": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 907,
+        "year": 1982,
+        "device": "Trip-Box",
+        "subject": "teleportation",
+        "from": "space",
+        "to": "transport",
+        "rule": "majority",
+        "votes": {
+          "transport": 4,
+          "space": 3
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 1246,
+        "year": 1970,
+        "device": "Transmat",
+        "subject": "teleportation",
+        "from": "space",
+        "to": "transport",
+        "rule": "majority",
+        "votes": {
+          "transport": 4,
+          "space": 3
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2930,
+        "year": 1938,
+        "device": "Field-Projector",
+        "subject": "teleportation",
+        "from": "space",
+        "to": "transport",
+        "rule": "majority",
+        "votes": {
+          "transport": 4,
+          "space": 3
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 913,
+        "year": 1982,
+        "device": "Beanstalk",
+        "subject": "space elevator",
+        "from": "space",
+        "to": "transport",
+        "rule": "tie(space/transport) -> earliest 1978 #977",
+        "votes": {
+          "space": 1,
+          "transport": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2155,
+        "year": 1953,
+        "device": "Space Weakness",
+        "subject": "zero gravity",
+        "from": "medicine",
+        "to": "space",
+        "rule": "tie(medicine/space) -> earliest 1938 #924",
+        "votes": {
+          "medicine": 1,
+          "space": 1
+        },
+        "confidence": "low"
+      },
+      {
+        "id": 935,
+        "year": 1980,
+        "device": "Boosterspice",
+        "subject": "life extension",
+        "from": "bio",
+        "to": "medicine",
+        "rule": "tie(bio/medicine) -> earliest 1966 #1480",
+        "votes": {
+          "bio": 1,
+          "medicine": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 3335,
+        "year": 1931,
+        "device": "Beam-Powered Propulsion",
+        "subject": "propulsion",
+        "from": "energy",
+        "to": "space",
+        "rule": "majority",
+        "votes": {
+          "space": 4,
+          "energy": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 961,
+        "year": 1979,
+        "device": "Wire-Gun",
+        "subject": "wire gun",
+        "from": "transport",
+        "to": "weapons",
+        "rule": "tie(transport/weapons) -> earliest 1936 #3038",
+        "votes": {
+          "transport": 1,
+          "weapons": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 1000,
+        "year": 1977,
+        "device": "Uniflesh",
+        "subject": "artificial skin",
+        "from": "living",
+        "to": "medicine",
+        "rule": "tie(living/medicine) -> earliest 1960 #1814",
+        "votes": {
+          "living": 1,
+          "medicine": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 1021,
+        "year": 1977,
+        "device": "Substance D",
+        "subject": "drug",
+        "from": "mind",
+        "to": "medicine",
+        "rule": "tie(medicine/mind) -> earliest 1972 #1186",
+        "votes": {
+          "medicine": 1,
+          "mind": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 3611,
+        "year": 2006,
+        "device": "Navicloud Custom Debinder",
+        "subject": "scanner",
+        "from": "computing",
+        "to": "medicine",
+        "rule": "tie(computing/living/medicine) -> earliest 1977 #1028",
+        "votes": {
+          "computing": 1,
+          "living": 1,
+          "medicine": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 3614,
+        "year": 2006,
+        "device": "Clothing Size Scanner",
+        "subject": "scanner",
+        "from": "living",
+        "to": "medicine",
+        "rule": "tie(computing/living/medicine) -> earliest 1977 #1028",
+        "votes": {
+          "computing": 1,
+          "living": 1,
+          "medicine": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 1362,
+        "year": 1968,
+        "device": "Emergency Shelter",
+        "subject": "shelter",
+        "from": "space",
+        "to": "living",
+        "rule": "tie(living/space) -> earliest 1940 #1076",
+        "votes": {
+          "living": 1,
+          "space": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 1100,
+        "year": 1976,
+        "device": "Smother-Charge",
+        "subject": "explosive",
+        "from": "materials",
+        "to": "weapons",
+        "rule": "majority",
+        "votes": {
+          "weapons": 2,
+          "materials": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2368,
+        "year": 1951,
+        "device": "Half-Sphere Force Field",
+        "subject": "force field",
+        "from": "materials",
+        "to": "weapons",
+        "rule": "majority",
+        "votes": {
+          "weapons": 4,
+          "materials": 2,
+          "space": 1,
+          "surveillance": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2570,
+        "year": 1943,
+        "device": "Flame Barrier",
+        "subject": "force field",
+        "from": "materials",
+        "to": "weapons",
+        "rule": "majority",
+        "votes": {
+          "weapons": 4,
+          "materials": 2,
+          "space": 1,
+          "surveillance": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2789,
+        "year": 1940,
+        "device": "Barrier (Force Field)",
+        "subject": "force field",
+        "from": "surveillance",
+        "to": "weapons",
+        "rule": "majority",
+        "votes": {
+          "weapons": 4,
+          "materials": 2,
+          "space": 1,
+          "surveillance": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 3365,
+        "year": 1931,
+        "device": "Force-Field",
+        "subject": "force field",
+        "from": "space",
+        "to": "weapons",
+        "rule": "majority",
+        "votes": {
+          "weapons": 4,
+          "materials": 2,
+          "space": 1,
+          "surveillance": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 1138,
+        "year": 1974,
+        "device": "Powered Suit with Trauma Maintenance",
+        "subject": "powered armor",
+        "from": "robots",
+        "to": "weapons",
+        "rule": "tie(robots/weapons) -> earliest 1959 #1835",
+        "votes": {
+          "robots": 1,
+          "weapons": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 1148,
+        "year": 1974,
+        "device": "Harvesting Saturn's Rings",
+        "subject": "mining",
+        "from": "space",
+        "to": "living",
+        "rule": "tie(living/space) -> earliest 1930 #3479",
+        "votes": {
+          "living": 1,
+          "space": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 1160,
+        "year": 1974,
+        "device": "Acceleration Chair",
+        "subject": "acceleration chair",
+        "from": "space",
+        "to": "transport",
+        "rule": "majority",
+        "votes": {
+          "transport": 2,
+          "space": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 1157,
+        "year": 1974,
+        "device": "Gee Bath",
+        "subject": "waterbed",
+        "from": "transport",
+        "to": "living",
+        "rule": "tie(living/transport) -> earliest 1961 #2092",
+        "votes": {
+          "living": 1,
+          "transport": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 1222,
+        "year": 1970,
+        "device": "Great Ear",
+        "subject": "telepathy device",
+        "from": "surveillance",
+        "to": "mind",
+        "rule": "majority",
+        "votes": {
+          "mind": 2,
+          "surveillance": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 1229,
+        "year": 1970,
+        "device": "Slaver Stasis Field",
+        "subject": "stasis field",
+        "from": "materials",
+        "to": "energy",
+        "rule": "tie(energy/materials/medicine/space) -> earliest 1942 #2626",
+        "votes": {
+          "energy": 1,
+          "materials": 1,
+          "medicine": 1,
+          "space": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 1377,
+        "year": 1968,
+        "device": "Stasis Box",
+        "subject": "stasis field",
+        "from": "medicine",
+        "to": "energy",
+        "rule": "tie(energy/materials/medicine/space) -> earliest 1942 #2626",
+        "votes": {
+          "energy": 1,
+          "materials": 1,
+          "medicine": 1,
+          "space": 1
+        },
+        "confidence": "low"
+      },
+      {
+        "id": 2273,
+        "year": 1952,
+        "device": "Barytrine Field",
+        "subject": "stasis field",
+        "from": "space",
+        "to": "energy",
+        "rule": "tie(energy/materials/medicine/space) -> earliest 1942 #2626",
+        "votes": {
+          "energy": 1,
+          "materials": 1,
+          "medicine": 1,
+          "space": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 2888,
+        "year": 1939,
+        "device": "Electric Brain Stimulator",
+        "subject": "brain stimulator",
+        "from": "medicine",
+        "to": "mind",
+        "rule": "majority",
+        "votes": {
+          "mind": 2,
+          "medicine": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 1311,
+        "year": 1969,
+        "device": "Axolotl Tank",
+        "subject": "regeneration tank",
+        "from": "bio",
+        "to": "medicine",
+        "rule": "tie(bio/medicine) -> earliest 1950 #2430",
+        "votes": {
+          "bio": 1,
+          "medicine": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 1313,
+        "year": 1969,
+        "device": "Webfoam Cradle",
+        "subject": "landing cradle",
+        "from": "space",
+        "to": "transport",
+        "rule": "tie(space/transport) -> earliest 1932 #3317",
+        "votes": {
+          "space": 1,
+          "transport": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 1325,
+        "year": 1969,
+        "device": "Membrane Balloon Helmet",
+        "subject": "helmet",
+        "from": "medicine",
+        "to": "robots",
+        "rule": "tie(medicine/robots) -> earliest 1959 #1836",
+        "votes": {
+          "medicine": 1,
+          "robots": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 1329,
+        "year": 1969,
+        "device": "Book of the Kalends",
+        "subject": "book",
+        "from": "living",
+        "to": "comms",
+        "rule": "tie(comms/living) -> earliest 1909 #3636",
+        "votes": {
+          "comms": 1,
+          "living": 1
+        },
+        "confidence": "low"
+      },
+      {
+        "id": 1344,
+        "year": 1968,
+        "device": "Slow Glass (Scenedow)",
+        "subject": "slow glass",
+        "from": "materials",
+        "to": "comms",
+        "rule": "tie(comms/materials) -> earliest 1940 #2783",
+        "votes": {
+          "comms": 1,
+          "materials": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 1484,
+        "year": 1966,
+        "device": "Gravity Planer",
+        "subject": "gravity device",
+        "from": "energy",
+        "to": "space",
+        "rule": "tie(energy/space) -> earliest 1957 #1883",
+        "votes": {
+          "energy": 1,
+          "space": 1
+        },
+        "confidence": "low"
+      },
+      {
+        "id": 1505,
+        "year": 1966,
+        "device": "Sleeping Plates",
+        "subject": "gravity plates",
+        "from": "medicine",
+        "to": "materials",
+        "rule": "tie(materials/medicine) -> earliest 1932 #3315",
+        "votes": {
+          "materials": 1,
+          "medicine": 1
+        },
+        "confidence": "low"
+      },
+      {
+        "id": 1525,
+        "year": 1966,
+        "device": "Cloaking Device",
+        "subject": "cloaking device",
+        "from": "space",
+        "to": "surveillance",
+        "rule": "tie(space/surveillance) -> earliest 1934 #3096",
+        "votes": {
+          "space": 1,
+          "surveillance": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 3627,
+        "year": 1911,
+        "device": "Gravity Nullification (Gravity Screen)",
+        "subject": "gravity nullifier",
+        "from": "space",
+        "to": "energy",
+        "rule": "majority",
+        "votes": {
+          "energy": 2,
+          "space": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 1610,
+        "year": 1965,
+        "device": "Optical-Effect Suit",
+        "subject": "invisibility",
+        "from": "materials",
+        "to": "mind",
+        "rule": "tie(materials/mind) -> earliest 1897 #3687",
+        "votes": {
+          "materials": 1,
+          "mind": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 1683,
+        "year": 1964,
+        "device": "Uptime",
+        "subject": "time travel",
+        "from": "space",
+        "to": "mind",
+        "rule": "majority",
+        "votes": {
+          "mind": 4,
+          "space": 3,
+          "bio": 1
+        },
+        "confidence": "low"
+      },
+      {
+        "id": 1687,
+        "year": 1964,
+        "device": "Downtime",
+        "subject": "time travel",
+        "from": "space",
+        "to": "mind",
+        "rule": "majority",
+        "votes": {
+          "mind": 4,
+          "space": 3,
+          "bio": 1
+        },
+        "confidence": "low"
+      },
+      {
+        "id": 3165,
+        "year": 1933,
+        "device": "Vibratium Wall Time Machine",
+        "subject": "time travel",
+        "from": "bio",
+        "to": "mind",
+        "rule": "majority",
+        "votes": {
+          "mind": 4,
+          "space": 3,
+          "bio": 1
+        },
+        "confidence": "low"
+      },
+      {
+        "id": 3211,
+        "year": 1933,
+        "device": "Cosmo-Craft",
+        "subject": "time travel",
+        "from": "space",
+        "to": "mind",
+        "rule": "majority",
+        "votes": {
+          "mind": 4,
+          "space": 3,
+          "bio": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2154,
+        "year": 1963,
+        "device": "Solar Yacht Periscope",
+        "subject": "solar yacht",
+        "from": "transport",
+        "to": "space",
+        "rule": "tie(space/transport) -> earliest 1963 #1707",
+        "votes": {
+          "space": 1,
+          "transport": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 2555,
+        "year": 1969,
+        "device": "Window Wavelength",
+        "subject": "virtual view",
+        "from": "comms",
+        "to": "living",
+        "rule": "tie(comms/living) -> earliest 1955 #1777",
+        "votes": {
+          "comms": 1,
+          "living": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2909,
+        "year": 1979,
+        "device": "Gesture-Controlled Device",
+        "subject": "gesture control",
+        "from": "computing",
+        "to": "comms",
+        "rule": "tie(comms/computing) -> earliest 1955 #1809",
+        "votes": {
+          "comms": 1,
+          "computing": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2942,
+        "year": 1981,
+        "device": "Mattress Sleep Sensor",
+        "subject": "sleep sensor",
+        "from": "medicine",
+        "to": "surveillance",
+        "rule": "tie(medicine/surveillance) -> earliest 1956 #1863",
+        "votes": {
+          "medicine": 1,
+          "surveillance": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 1945,
+        "year": 1957,
+        "device": "Space Armor",
+        "subject": "space armor",
+        "from": "space",
+        "to": "medicine",
+        "rule": "tie(medicine/space) -> earliest 1932 #3239",
+        "votes": {
+          "medicine": 1,
+          "space": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 1994,
+        "year": 1956,
+        "device": "Bug",
+        "subject": "planetary vehicle",
+        "from": "space",
+        "to": "transport",
+        "rule": "tie(space/transport) -> earliest 1951 #2376",
+        "votes": {
+          "space": 1,
+          "transport": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 2069,
+        "year": 1954,
+        "device": "Control Helmet",
+        "subject": "control helmet",
+        "from": "robots",
+        "to": "mind",
+        "rule": "tie(mind/robots) -> earliest 1938 #2923",
+        "votes": {
+          "mind": 1,
+          "robots": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 3190,
+        "year": 1988,
+        "device": "Powered Print-Book",
+        "subject": "ebook",
+        "from": "computing",
+        "to": "comms",
+        "rule": "tie(comms/computing) -> earliest 1961 #2093",
+        "votes": {
+          "comms": 1,
+          "computing": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2128,
+        "year": 1954,
+        "device": "The Dip",
+        "subject": "memory device",
+        "from": "comms",
+        "to": "mind",
+        "rule": "tie(comms/mind) -> earliest 1937 #2992",
+        "votes": {
+          "comms": 1,
+          "mind": 1
+        },
+        "confidence": "low"
+      },
+      {
+        "id": 2185,
+        "year": 1953,
+        "device": "Prime Radiant",
+        "subject": "projector",
+        "from": "computing",
+        "to": "energy",
+        "rule": "tie(computing/energy) -> earliest 1934 #3106",
+        "votes": {
+          "computing": 1,
+          "energy": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2187,
+        "year": 1953,
+        "device": "Time Scoop",
+        "subject": "time scoop",
+        "from": "comms",
+        "to": "mind",
+        "rule": "tie(comms/mind) -> earliest 1942 #2638",
+        "votes": {
+          "comms": 1,
+          "mind": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 2403,
+        "year": 1966,
+        "device": "Ebony Teeth",
+        "subject": "artificial teeth",
+        "from": "living",
+        "to": "medicine",
+        "rule": "tie(living/medicine) -> earliest 1965 #2251",
+        "votes": {
+          "living": 1,
+          "medicine": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 2293,
+        "year": 1952,
+        "device": "Self-Repairing Robot",
+        "subject": "self repair",
+        "from": "robots",
+        "to": "computing",
+        "rule": "tie(computing/robots) -> earliest 1952 #2281",
+        "votes": {
+          "computing": 1,
+          "robots": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2674,
+        "year": 1972,
+        "device": "Ultraminiature Spy-Circuit",
+        "subject": "smart dust",
+        "from": "surveillance",
+        "to": "computing",
+        "rule": "tie(computing/surveillance) -> earliest 1965 #2292",
+        "votes": {
+          "computing": 1,
+          "surveillance": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 3031,
+        "year": 1936,
+        "device": "Lanson Screen",
+        "subject": "force shield",
+        "from": "materials",
+        "to": "weapons",
+        "rule": "majority",
+        "votes": {
+          "weapons": 3,
+          "materials": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 3629,
+        "year": 2007,
+        "device": "Driverless Drones",
+        "subject": "drone control",
+        "from": "robots",
+        "to": "surveillance",
+        "rule": "tie(robots/surveillance) -> earliest 1966 #2405",
+        "votes": {
+          "robots": 1,
+          "surveillance": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2482,
+        "year": 1947,
+        "device": "Prime Directive",
+        "subject": "prime directive",
+        "from": "society",
+        "to": "space",
+        "rule": "tie(society/space) -> earliest 1897 #3677",
+        "votes": {
+          "society": 1,
+          "space": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 2609,
+        "year": 1942,
+        "device": "Paragravity",
+        "subject": "artificial gravity",
+        "from": "transport",
+        "to": "space",
+        "rule": "majority",
+        "votes": {
+          "space": 3,
+          "transport": 1
+        },
+        "confidence": "low"
+      },
+      {
+        "id": 2630,
+        "year": 1942,
+        "device": "Radiation Garment",
+        "subject": "radiation protection",
+        "from": "living",
+        "to": "medicine",
+        "rule": "tie(living/medicine) -> earliest 1936 #3018",
+        "votes": {
+          "living": 1,
+          "medicine": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 3022,
+        "year": 1936,
+        "device": "Foam Station Sprayer",
+        "subject": "weather control",
+        "from": "space",
+        "to": "energy",
+        "rule": "majority",
+        "votes": {
+          "energy": 2,
+          "space": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 2701,
+        "year": 1941,
+        "device": "Time Line",
+        "subject": "time line",
+        "from": "mind",
+        "to": "comms",
+        "rule": "tie(comms/mind) -> earliest 1935 #3082",
+        "votes": {
+          "comms": 1,
+          "mind": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 2800,
+        "year": 1940,
+        "device": "Bifocal TV Screen Lenses",
+        "subject": "video glasses",
+        "from": "comms",
+        "to": "mind",
+        "rule": "majority",
+        "votes": {
+          "mind": 2,
+          "comms": 1,
+          "computing": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 3311,
+        "year": 1993,
+        "device": "Spex (Spexware)",
+        "subject": "video glasses",
+        "from": "computing",
+        "to": "mind",
+        "rule": "majority",
+        "votes": {
+          "mind": 2,
+          "comms": 1,
+          "computing": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2811,
+        "year": 1976,
+        "device": "Robot Surgeon",
+        "subject": "robot surgeon",
+        "from": "medicine",
+        "to": "robots",
+        "rule": "tie(medicine/robots) -> earliest 1934 #3160",
+        "votes": {
+          "medicine": 1,
+          "robots": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2847,
+        "year": 1939,
+        "device": "Chart Cabinet",
+        "subject": "navigation chart",
+        "from": "computing",
+        "to": "comms",
+        "rule": "tie(comms/computing) -> earliest 1928 #3572",
+        "votes": {
+          "comms": 1,
+          "computing": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 3184,
+        "year": 1988,
+        "device": "Didge-Ital",
+        "subject": "digital music",
+        "from": "comms",
+        "to": "computing",
+        "rule": "tie(comms/computing) -> earliest 1979 #2910",
+        "votes": {
+          "comms": 1,
+          "computing": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 2982,
+        "year": 1937,
+        "device": "Light Traps (Dyson Sphere)",
+        "subject": "dyson sphere",
+        "from": "energy",
+        "to": "space",
+        "rule": "tie(energy/space) -> earliest 1934 #3135",
+        "votes": {
+          "energy": 1,
+          "space": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 3027,
+        "year": 1936,
+        "device": "Indoor Weighted Belt",
+        "subject": "gravity belt",
+        "from": "transport",
+        "to": "space",
+        "rule": "tie(space/transport) -> earliest 1931 #3374",
+        "votes": {
+          "space": 1,
+          "transport": 1
+        },
+        "confidence": "medium"
+      },
+      {
+        "id": 3278,
+        "year": 1932,
+        "device": "Antigravity",
+        "subject": "antigravity",
+        "from": "energy",
+        "to": "space",
+        "rule": "majority",
+        "votes": {
+          "space": 2,
+          "energy": 1,
+          "materials": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 3653,
+        "year": 1901,
+        "device": "Cavorite",
+        "subject": "antigravity",
+        "from": "materials",
+        "to": "space",
+        "rule": "majority",
+        "votes": {
+          "space": 2,
+          "energy": 1,
+          "materials": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 3372,
+        "year": 1931,
+        "device": "Space-Liner",
+        "subject": "space liner",
+        "from": "space",
+        "to": "transport",
+        "rule": "tie(space/transport) -> earliest 1931 #3362",
+        "votes": {
+          "space": 1,
+          "transport": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 3466,
+        "year": 1930,
+        "device": "The Cosmic Express",
+        "subject": "matter transmission",
+        "from": "transport",
+        "to": "comms",
+        "rule": "tie(comms/transport) -> earliest 1877 #3713",
+        "votes": {
+          "comms": 1,
+          "transport": 1
+        },
+        "confidence": "high"
+      },
+      {
+        "id": 3548,
+        "year": 1928,
+        "device": "Mother World",
+        "subject": "home planet",
+        "from": "space",
+        "to": "bio",
+        "rule": "tie(bio/space) -> earliest 1897 #3686",
+        "votes": {
+          "bio": 1,
+          "space": 1
+        },
+        "confidence": "low"
+      }
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>THE SCI-FI IDEA BANK — Four Centuries of Tomorrow</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='13' fill='%23C8552B'/></svg>" />
+</head>
+<body>
+
+<div id="canvas-wrap">
+  <canvas id="scene"></canvas>
+  <div id="labels"></div>
+  <div id="grain"></div>
+  <div id="vignette"></div>
+</div>
+
+<header id="masthead">
+  <div class="mast-left">
+    <h1>THE SCI-FI IDEA BANK</h1>
+    <p class="subtitle">Four Centuries of Tomorrow</p>
+  </div>
+  <div class="mast-right">
+    <button id="btn-random" class="pulp-btn">RANDOM JUMP</button>
+    <button id="btn-unbuilt" class="pulp-btn toggle">UNBUILT ONLY</button>
+    <div class="search-wrap">
+      <input id="search" type="text" autocomplete="off" autocorrect="off" spellcheck="false"
+             placeholder="SEARCH TITLE · AUTHOR · DEVICE" aria-label="Search novels, authors, devices and descriptions" />
+      <button id="search-clear" class="search-clear" aria-label="Clear search" title="Clear (Esc)">&times;</button>
+      <span id="search-count" class="search-count" hidden></span>
+    </div>
+    <button id="btn-reset" class="pulp-btn ghost" title="Return to the river: face forward and come back to the centre line (V)">RESET VIEW</button>
+    <button id="btn-help" class="pulp-btn ghost" title="How to navigate">?</button>
+  </div>
+</header>
+
+<div id="hud">
+  <div class="hud-plate">
+    <div class="hud-label">YEAR PREDICTED</div>
+    <div id="hud-year">2023</div>
+    <div id="hud-era" class="hud-era">THE PRESENT</div>
+  </div>
+  <div id="hud-bar"><div id="hud-bar-fill"></div></div>
+  <div class="hud-legend">
+    <span><i class="dot built"></i> IT'S REAL</span>
+    <span><i class="dot unbuilt"></i> STILL FICTION</span>
+  </div>
+</div>
+
+<div id="scroll-hint">DRAG TO LOOK &nbsp;·&nbsp; SCROLL TO FLY THAT WAY &nbsp;·&nbsp; ARROW KEYS TO SCRUB THROUGH TIME</div>
+
+<div id="tooltip"></div>
+
+<aside id="card" aria-hidden="true">
+  <button id="card-close" aria-label="Close">&times;</button>
+  <div id="card-body"></div>
+</aside>
+
+<div id="help" hidden>
+  <div class="help-inner">
+    <h2>HOW TO NAVIGATE</h2>
+    <ul>
+      <li><b>SCROLL</b> — fly along the way you are <em>looking</em>. Turn to face an island and push the wheel and you travel toward it; face straight ahead and it is the old glide down the river of time.</li>
+      <li><b>DRAG</b> — hold and drag to look around: a full 360&deg; turn, and up to 80&deg; up or down. Turn right round to watch the years you have passed recede, or tip up and down to find the islands above and below you.</li>
+      <li><b>ARROWS</b>, <b>PAGE UP</b> / <b>PAGE DOWN</b>, <b>HOME</b> / <b>END</b> — pure time travel: these <em>only</em> ever move along the time axis, whichever way you are facing. Scroll to explore, arrow keys to scrub through history. Hold <b>SHIFT</b> for a bigger step. The YEAR plate reads off the camera's real position, so it never lies either way.</li>
+      <li><b>YOU CANNOT GET LOST</b> — fly past the edge of the data and it pulls you gently back; there is no blank paper to strand yourself in.</li>
+      <li><b>V</b> or <b>RESET VIEW</b> — return to the river: face forward <em>and</em> slide back to the centre line, at whatever year you had reached. It lights up whenever you have strayed.</li>
+      <li><b>SEARCH</b> (top right, or press <b>/</b>) — matches novel title, author, device name and description. Accents don't matter: <i>Stanislaw</i> finds <i>Stanisław</i>. Non-matches wash out to paper and stop responding; the counter tells you how many survived. It <em>combines</em> with UNBUILT ONLY rather than replacing it — both on means unbuilt <em>and</em> matching. <b>ENTER</b> on a narrow result flies you to the first hit.</li>
+      <li><b>ESC</b> — closes the help, then the dossier, then clears the search, in that order. One press, one thing.</li>
+      <li><b>R</b> — random jump to some corner of the four centuries.</li>
+      <li><b>HOVER</b> — read a device name, and see the book it came out of where we have the cover.</li>
+      <li><b>CLICK</b> — open the dossier. Realized ideas fly you down their thread to the year they became real.</li>
+      <li><b>DEEP INTO THE SCREEN</b> — <b>time</b>. Everything you fly through is the four centuries; the YEAR plate reads your own position in them.</li>
+      <li><b>SIDEWAYS, UP AND DOWN</b> — <b>subject</b>. The face of the river is a constellation of <b>fourteen islands</b>, one per domain, with open sky between them. It sweeps from <b>raw matter</b> (materials, energy, transport, space, on the left and over the top) through the made things that acquire a will of their own (weapons, robots, in the middle) and the body (food, medicine, genetics, low on the right) to <b>pure information</b> (mind, society, surveillance, communication, computing, up the right-hand side). An island is as big as it is crowded, and each runs the whole length of time — so a domain is a <em>bundle of streams</em> you can fly down. Ideas about the same thing knot together inside their island.</li>
+      <li><b>THE FAINT ROPES</b> — bridges between neighbouring islands that keep turning up in the <em>same novel</em>. The nine strongest are drawn.</li>
+      <li><b>COLOUR</b> — warm rust and orange means it <b>came true</b>. Cool teal and ink means <b>still fiction</b> — and those ones will not keep still: they drift and breathe where the realized ideas have settled. Height no longer means built or unbuilt; the colour and the threads say it instead, so the islands can have the whole cross-section to themselves.</li>
+      <li><b>THE FLOATING SIGN</b> — names the island you are facing, hanging just above it. Turn your head and the next one lights up; the ones it is roped to ghost in beside it.</li>
+    </ul>
+    <button id="help-close" class="pulp-btn">GOT IT</button>
+  </div>
+</div>
+
+<div id="loading">
+  <div class="load-inner">
+    <div class="load-title">THE SCI-FI IDEA BANK</div>
+    <div class="load-sub" id="load-sub">CHARTING THE RIVER OF TIME…</div>
+  </div>
+</div>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>

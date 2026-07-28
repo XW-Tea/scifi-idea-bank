@@ -1,0 +1,15 @@
+# Third-party cover artwork. `covers.json` keeps the Open Library cover ids,
+# and main.js hotlinks their covers API on any non-localhost host, so the
+# published site still shows covers without this repo redistributing publisher
+# artwork. Regenerate a local offline set with `node build-covers.js`.
+covers/photo/
+
+# Build caches — machine-local, thousands of tiny files. Deleting them only
+# costs a re-run. (domains/.cache is kept: it is one 0.5 MB file and sparing
+# a fork ~40 min of GPU classification is worth it.)
+covers/.cache/
+
+# Run logs
+*.log
+
+node_modules/
