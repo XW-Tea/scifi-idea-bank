@@ -629,12 +629,12 @@ function colorForItem(item) {
     const t = THREE.MathUtils.clamp((item.year - 1850) / 170, 0, 1);
     return _c.setHex(PALETTE.rust).lerp(new THREE.Color(PALETTE.orange), t);
   }
-  // still fiction: cool side, with mustard sprinkled through by hash
-  const useMustard = hashUnit('c' + item.id) > 0.78;
+  // still fiction: cool side, older predictions sitting deeper toward ink.
+  // Every colour on screen has to mean something — an earlier version threw a
+  // random 22% of these to mustard purely for visual texture, which just made
+  // viewers hunt for a third status that does not exist.
   const t = THREE.MathUtils.clamp((item.year - 1850) / 170, 0, 1);
-  return useMustard
-    ? _c.setHex(PALETTE.mustard)
-    : _c.setHex(PALETTE.ink).lerp(new THREE.Color(PALETTE.teal), 0.35 + 0.65 * t);
+  return _c.setHex(PALETTE.ink).lerp(new THREE.Color(PALETTE.teal), 0.35 + 0.65 * t);
 }
 
 function buildNodes(items) {
