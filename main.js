@@ -1230,22 +1230,52 @@ function initRail() {
   addEventListener('pointercancel', () => { S.dragging = false; });
   canvas.addEventListener('pointerleave', () => { S.pointerNDC.set(9, 9); });
 
-  // touch: vertical swipe travels through time, horizontal swipe looks around
-  let touchX = null, touchY = null;
+  /* Touch. One finger has only two axes and three jobs, so pitch gets the
+     second finger:
+       1 finger, vertical    — fly along the way you are looking (the wheel)
+       1 finger, horizontal  — yaw
+       2 fingers, vertical   — pitch, matching the mouse-drag convention
+     Everything tracks the midpoint of the touches, so adding or lifting a
+     finger re-anchors instead of snapping the view. */
+  let touchX = null, touchY = null, touchN = 0;
+  const touchMid = (t) => (t.length > 1
+    ? { x: (t[0].clientX + t[1].clientX) / 2, y: (t[0].clientY + t[1].clientY) / 2 }
+    : { x: t[0].clientX, y: t[0].clientY });
+
   canvas.addEventListener('touchstart', (e) => {
-    touchX = e.touches[0].clientX; touchY = e.touches[0].clientY;
+    const m = touchMid(e.touches);
+    touchX = m.x; touchY = m.y; touchN = e.touches.length;
     S.yawVel = 0; S.pitchVel = 0;
   }, { passive: true });
-  canvas.addEventListener('touchend', () => { touchX = touchY = null; }, { passive: true });
+
+  canvas.addEventListener('touchend', (e) => {
+    if (e.touches.length) {
+      const m = touchMid(e.touches);
+      touchX = m.x; touchY = m.y; touchN = e.touches.length;
+    } else {
+      touchX = touchY = null; touchN = 0;
+    }
+  }, { passive: true });
+
   canvas.addEventListener('touchmove', (e) => {
     if (touchY == null) return;
-    const dy = touchY - e.touches[0].clientY;
-    const dx = e.touches[0].clientX - touchX;
-    touchX = e.touches[0].clientX; touchY = e.touches[0].clientY;
-    if (Math.abs(dx) > Math.abs(dy)) {
-      lookBy(dx * CFG.lookSensX, 0);
+    const m = touchMid(e.touches);
+    // the midpoint jumps when the finger count changes — re-anchor, don't act
+    if (e.touches.length !== touchN) {
+      touchX = m.x; touchY = m.y; touchN = e.touches.length;
+      return;
+    }
+    const dxRight = m.x - touchX;     // + when the touch moves right
+    const dyDown = m.y - touchY;      // + when the touch moves down
+    touchX = m.x; touchY = m.y;
+
+    if (e.touches.length > 1) {
+      // same grab-the-world sign as a mouse drag: pull down, the view tips up
+      lookBy(0, dyDown * CFG.lookSensY * (CFG.invertY ? -1 : 1));
+    } else if (Math.abs(dxRight) > Math.abs(dyDown)) {
+      lookBy(dxRight * CFG.lookSensX, 0);
     } else {
-      flyBy(dy * 4.2);   // same rule as the wheel: fly where you are looking
+      flyBy(-dyDown * 4.2);  // swipe up to go forward, same rule as the wheel
     }
     hideHint();
   }, { passive: true });
