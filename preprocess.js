@@ -208,7 +208,13 @@ function loadExtra() {
   const dir = path.join(__dirname, 'extra');
   if (!fs.existsSync(dir)) return [];
   const out = [];
-  for (const f of fs.readdirSync(dir).filter((n) => n.endsWith('.json')).sort()) {
+  // Dotfiles in here are caches belonging to the classify-* scripts, not data.
+  // Without this they get loaded as sources; harmless today only because they
+  // happen to have no `items` key.
+  const files = fs.readdirSync(dir)
+    .filter((n) => n.endsWith('.json') && !n.startsWith('.'))
+    .sort();
+  for (const f of files) {
     const payload = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
     const rows = Array.isArray(payload) ? payload : payload.items || [];
     for (const r of rows) {

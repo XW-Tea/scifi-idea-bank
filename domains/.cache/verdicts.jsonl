@@ -4076,3 +4076,96 @@
 {"k":"2f91b6f83666fd6f","v":{"domain":"space","confidence":"high","vaultDomain":"planet","subject":"universe","fallback":false}}
 {"k":"08ed38f9d78e9162","v":{"domain":"space","confidence":"medium","vaultDomain":"planet","subject":"fragment","fallback":false}}
 {"k":"68c228b3a3725939","v":{"domain":"transport","confidence":"high","vaultDomain":"culture","subject":"escape","fallback":false}}
+{"k":"f946c3f8c200563a","v":{"domain":"mind","confidence":"high","vaultDomain":"intelligence","subject":"emulated consciousness","fallback":false}}
+{"k":"04d1ea3b52e35e0d","v":{"domain":"bio","confidence":"medium","vaultDomain":"health","subject":"biosynthetic organs","fallback":false}}
+{"k":"92eb3aeb6b16e485","v":{"domain":"surveillance","confidence":"high","vaultDomain":"governance","subject":"locating device","fallback":false}}
+{"k":"e71292122462c16d","v":{"domain":"mind","confidence":"medium","vaultDomain":"intelligence","subject":"neural implant","fallback":false}}
+{"k":"77f579378f55e3f3","v":{"domain":"mind","confidence":"high","vaultDomain":"governance","subject":"remote control","fallback":false}}
+{"k":"e96d4f371187c2b5","v":{"domain":"computing","confidence":"high","vaultDomain":"machines","subject":"starship ai","fallback":false}}
+{"k":"9fc9f24047173a21","v":{"domain":"space","confidence":"high","vaultDomain":"planet","subject":"generation ship","fallback":false}}
+{"k":"cad08cc6f5b5a589","v":{"domain":"computing","confidence":"medium","vaultDomain":"intelligence","subject":"cyberspace hacking","fallback":false}}
+{"k":"b328695d7fb838d8","v":{"domain":"mind","confidence":"high","vaultDomain":"machines","subject":"cyberspace interface","fallback":false}}
+{"k":"ab8edf98080ec94e","v":{"domain":"bio","confidence":"low","vaultDomain":"society","subject":"consciousness emulation","fallback":false}}
+{"k":"da06891e4de36eaa","v":{"domain":"computing","confidence":"high","vaultDomain":"intelligence","subject":"wearable computer","fallback":false}}
+{"k":"a2837b1e838bd076","v":{"domain":"materials","confidence":"high","vaultDomain":"society","subject":"fallout shelter","fallback":false}}
+{"k":"7ba227a783d86fb2","v":{"domain":"computing","confidence":"medium","vaultDomain":"health","subject":"water recycling","fallback":false}}
+{"k":"c6b6643fd525624d","v":{"domain":"medicine","confidence":"high","vaultDomain":"work","subject":"exoskeleton suit","fallback":false}}
+{"k":"14b3303f070f5669","v":{"domain":"bio","confidence":"high","vaultDomain":"geopolitics","subject":"dna rewriter","fallback":false}}
+{"k":"83c781041e0192b8","v":{"domain":"robots","confidence":"high","vaultDomain":"machines","subject":"combat robot","fallback":false}}
+{"k":"aff9c758ca82cab5","v":{"domain":"medicine","confidence":"high","vaultDomain":"health","subject":"radiation shield","fallback":false}}
+{"k":"6a461a72f55270e8","v":{"domain":"medicine","confidence":"high","vaultDomain":"health","subject":"radiation cure","fallback":false}}
+{"k":"fecc039b83d2f51c","v":{"domain":"weapons","confidence":"high","vaultDomain":"geopolitics","subject":"energy weapon","fallback":false}}
+{"k":"e5a9f3fed1a9ca83","v":{"domain":"weapons","confidence":"high","vaultDomain":"governance","subject":"ray gun","fallback":false}}
+{"k":"d62404103fe3fd47","v":{"domain":"mind","confidence":"medium","vaultDomain":"intelligence","subject":"android rebellion","fallback":false}}
+{"k":"b4e07d3b3b59a626","v":{"domain":"robots","confidence":"high","vaultDomain":"machines","subject":"android factory","fallback":false}}
+{"k":"b425565394cf3103","v":{"domain":"robots","confidence":"medium","vaultDomain":"intelligence","subject":"status light","fallback":false}}
+{"k":"bcefdf059af4672c","v":{"domain":"living","confidence":"high","vaultDomain":"health","subject":"synthetic organs","fallback":false}}
+{"k":"c288ac90f0def665","v":{"domain":"materials","confidence":"medium","vaultDomain":"machines","subject":"android fluid","fallback":false}}
+{"k":"7ec1e69b383443e4","v":{"domain":"computing","confidence":"high","vaultDomain":"governance","subject":"investigation software","fallback":false}}
+{"k":"0b4902369f9f1f50","v":{"domain":"computing","confidence":"medium","vaultDomain":"intelligence","subject":"future prediction","fallback":false}}
+{"k":"acb0a666aa424f1b","v":{"domain":"robots","confidence":"high","vaultDomain":"machines","subject":"data exchange","fallback":false}}
+{"k":"2eea75f9776896e2","v":{"domain":"comms","confidence":"high","vaultDomain":"culture","subject":"virtual world","fallback":false}}
+{"k":"8a28bcf31732eea9","v":{"domain":"surveillance","confidence":"high","vaultDomain":"society","subject":"invisibility device","fallback":false}}
+{"k":"3ad4f8676ca8013a","v":{"domain":"computing","confidence":"high","vaultDomain":"governance","subject":"virtual integration","fallback":false}}
+{"k":"6a46f399af4a0821","v":{"domain":"mind","confidence":"medium","vaultDomain":"culture","subject":"digital persona","fallback":false}}
+{"k":"06fcd3b275e23b53","v":{"domain":"computing","confidence":"high","vaultDomain":"intelligence","subject":"rogue ai","fallback":false}}
+{"k":"e4e9a95f6b9248b2","v":{"domain":"computing","confidence":"high","vaultDomain":"work","subject":"supercomputer cluster","fallback":false}}
+{"k":"3e72eaef050e0fdb","v":{"domain":"surveillance","confidence":"medium","vaultDomain":"geopolitics","subject":"satellite control","fallback":false}}
+{"k":"5e0e4bc80989613a","v":{"domain":"space","confidence":"high","vaultDomain":"planet","subject":"orbital probe","fallback":false}}
+{"k":"340abd73b43bded7","v":{"domain":"computing","confidence":"medium","vaultDomain":"intelligence","subject":"ai guardian","fallback":false}}
+{"k":"ab2fbb1a822b7b4f","v":{"domain":"comms","confidence":"high","vaultDomain":"culture","subject":"ar glasses","fallback":false}}
+{"k":"eb05a2c5cdfca8f2","v":{"domain":"mind","confidence":"medium","vaultDomain":"society","subject":"virtual layer","fallback":false}}
+{"k":"0bae349011db4099","v":{"domain":"mind","confidence":"low","vaultDomain":"intelligence","subject":"thought reflection","fallback":false}}
+{"k":"6935a360df52ebc1","v":{"domain":"computing","confidence":"high","vaultDomain":"intelligence","subject":"digital material","fallback":false}}
+{"k":"37bb933b72e3778d","v":{"domain":"computing","confidence":"high","vaultDomain":"intelligence","subject":"digital material","fallback":false}}
+{"k":"c154bc4b4637eda3","v":{"domain":"computing","confidence":"high","vaultDomain":"intelligence","subject":"talisman program","fallback":false}}
+{"k":"5fd5d77acc37ebd7","v":{"domain":"robots","confidence":"medium","vaultDomain":"machines","subject":"antivirus bot","fallback":false}}
+{"k":"04c8a7f60e439d86","v":{"domain":"computing","confidence":"high","vaultDomain":"intelligence","subject":"hacking technique","fallback":false}}
+{"k":"ab844236f3929a3b","v":{"domain":"computing","confidence":"high","vaultDomain":"intelligence","subject":"computer virus","fallback":false}}
+{"k":"b7008db8d20c0938","v":{"domain":"robots","confidence":"medium","vaultDomain":"machines","subject":"digital pet","fallback":false}}
+{"k":"11dc5157b359d42b","v":{"domain":"computing","confidence":"high","vaultDomain":"intelligence","subject":"navigation system","fallback":false}}
+{"k":"fe0476697a1141d8","v":{"domain":"computing","confidence":"high","vaultDomain":"intelligence","subject":"virtual space","fallback":false}}
+{"k":"20b1686c23c5e130","v":{"domain":"computing","confidence":"high","vaultDomain":"intelligence","subject":"digital lifeform","fallback":false}}
+{"k":"2e06f56d78b70e8b","v":{"domain":"mind","confidence":"high","vaultDomain":"intelligence","subject":"consciousness capture","fallback":false}}
+{"k":"9590291c669a9e6b","v":{"domain":"mind","confidence":"high","vaultDomain":"learning","subject":"direct brain learning","fallback":false}}
+{"k":"9cbd1bb7576d369f","v":{"domain":"surveillance","confidence":"medium","vaultDomain":"governance","subject":"remote pet control","fallback":false}}
+{"k":"447dc362cba5fd08","v":{"domain":"mind","confidence":"high","vaultDomain":"culture","subject":"galactic communication","fallback":false}}
+{"k":"7195595d6d32af22","v":{"domain":"space","confidence":"high","vaultDomain":"planet","subject":"orbital habitat","fallback":false}}
+{"k":"5bef2f86d067222f","v":{"domain":"comms","confidence":"medium","vaultDomain":"culture","subject":"stadium broadcast","fallback":false}}
+{"k":"bf3a3f397bf20b46","v":{"domain":"weapons","confidence":"high","vaultDomain":"machines","subject":"living weapon","fallback":false}}
+{"k":"836d2ab5b6248917","v":{"domain":"mind","confidence":"high","vaultDomain":"intelligence","subject":"memory recorder","fallback":false}}
+{"k":"b5d53fbb2e0abeb5","v":{"domain":"computing","confidence":"high","vaultDomain":"machines","subject":"replica ai","fallback":false}}
+{"k":"1b06bcd3d5292809","v":{"domain":"surveillance","confidence":"medium","vaultDomain":"culture","subject":"broadcast signal","fallback":false}}
+{"k":"2f1ca31af5817ab8","v":{"domain":"mind","confidence":"high","vaultDomain":"culture","subject":"animated bear","fallback":false}}
+{"k":"13eebbf8b8b012a2","v":{"domain":"mind","confidence":"high","vaultDomain":"intelligence","subject":"consciousness clone","fallback":false}}
+{"k":"574fb3e8867758eb","v":{"domain":"surveillance","confidence":"high","vaultDomain":"governance","subject":"eye implant","fallback":false}}
+{"k":"f23ea9821891c475","v":{"domain":"society","confidence":"high","vaultDomain":"governance","subject":"rating system","fallback":false}}
+{"k":"2f07d4b60191f275","v":{"domain":"mind","confidence":"high","vaultDomain":"culture","subject":"neural implant","fallback":false}}
+{"k":"b827761dc16951e3","v":{"domain":"comms","confidence":"high","vaultDomain":"intelligence","subject":"malware","fallback":false}}
+{"k":"835d0e42c0e222fb","v":{"domain":"mind","confidence":"high","vaultDomain":"culture","subject":"virtual town","fallback":false}}
+{"k":"98ae831209331eb9","v":{"domain":"mind","confidence":"high","vaultDomain":"governance","subject":"neural implant","fallback":false}}
+{"k":"04223c94e3edafed","v":{"domain":"robots","confidence":"high","vaultDomain":"machines","subject":"pollinator drone","fallback":false}}
+{"k":"679ec0f3827e1d1c","v":{"domain":"bio","confidence":"high","vaultDomain":"intelligence","subject":"digital clone","fallback":false}}
+{"k":"4b37e45b974c7d1d","v":{"domain":"surveillance","confidence":"high","vaultDomain":"governance","subject":"parental monitoring","fallback":false}}
+{"k":"fa1405153973940c","v":{"domain":"mind","confidence":"high","vaultDomain":"intelligence","subject":"memory recall","fallback":false}}
+{"k":"12760c5d39690835","v":{"domain":"society","confidence":"high","vaultDomain":"learning","subject":"matchmaking algorithm","fallback":false}}
+{"k":"12914129ce495598","v":{"domain":"robots","confidence":"high","vaultDomain":"machines","subject":"autonomous killer robot","fallback":false}}
+{"k":"23ede222bd54a304","v":{"domain":"mind","confidence":"high","vaultDomain":"health","subject":"empathy implant","fallback":false}}
+{"k":"35981f0248ccf7ab","v":{"domain":"comms","confidence":"high","vaultDomain":"culture","subject":"vr fighting game","fallback":false}}
+{"k":"51e2e27263b3c8f7","v":{"domain":"robots","confidence":"high","vaultDomain":"machines","subject":"ai companion doll","fallback":false}}
+{"k":"ff8acf0ec87a9166","v":{"domain":"comms","confidence":"high","vaultDomain":"culture","subject":"tv show generator","fallback":false}}
+{"k":"8c031c3257d954cc","v":{"domain":"medicine","confidence":"high","vaultDomain":"health","subject":"consciousness transfer","fallback":false}}
+{"k":"3371656db743ad4a","v":{"domain":"bio","confidence":"high","vaultDomain":"health","subject":"synthetic brain tissue","fallback":false}}
+{"k":"97393261d0342839","v":{"domain":"mind","confidence":"high","vaultDomain":"culture","subject":"virtual film","fallback":false}}
+{"k":"673370c0dec54a88","v":{"domain":"mind","confidence":"high","vaultDomain":"health","subject":"digital afterlife","fallback":false}}
+{"k":"12e22d1bd45cd43a","v":{"domain":"mind","confidence":"high","vaultDomain":"health","subject":"upload device","fallback":false}}
+{"k":"519c55540eff0e53","v":{"domain":"society","confidence":"medium","vaultDomain":"wealth","subject":"data allowance","fallback":false}}
+{"k":"7675202db440e829","v":{"domain":"mind","confidence":"high","vaultDomain":"culture","subject":"vr bodysuit","fallback":false}}
+{"k":"7d59437d2b57ba5a","v":{"domain":"society","confidence":"medium","vaultDomain":"geopolitics","subject":"digital afterlife","fallback":false}}
+{"k":"c49401694a97ffa9","v":{"domain":"surveillance","confidence":"high","vaultDomain":"governance","subject":"mind frisk","fallback":false}}
+{"k":"b9e7de2a8c4ab666","v":{"domain":"bio","confidence":"high","vaultDomain":"health","subject":"clone body","fallback":false}}
+{"k":"ce63108251e67552","v":{"domain":"comms","confidence":"high","vaultDomain":"culture","subject":"virtual world","fallback":false}}
+{"k":"032c4a7ae7a4830a","v":{"domain":"computing","confidence":"high","vaultDomain":"intelligence","subject":"ai administrator","fallback":false}}
+{"k":"6109a59b12ff86d6","v":{"domain":"mind","confidence":"high","vaultDomain":"intelligence","subject":"consciousness upload","fallback":false}}
+{"k":"c5778a7747dd233e","v":{"domain":"robots","confidence":"high","vaultDomain":"machines","subject":"android body","fallback":false}}
+{"k":"ee0bf246fea34f19","v":{"domain":"mind","confidence":"medium","vaultDomain":"culture","subject":"virtual pet","fallback":false}}

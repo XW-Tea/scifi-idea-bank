@@ -212,20 +212,65 @@ function jpegSize(buf) {
   return null;
 }
 
-async function downloadImage(url, destFile) {
-  if (fs.existsSync(destFile) && fs.statSync(destFile).size > 1000) {
-    const buf = fs.readFileSync(destFile);
-    return { bytes: buf.length, size: jpegSize(buf), cached: true };
+/** PNG stores its size in the IHDR chunk at a fixed offset. */
+function pngSize(buf) {
+  if (buf.length < 24) return null;
+  return { w: buf.readUInt32BE(16), h: buf.readUInt32BE(20) };
+}
+
+/** WebP: the three stream flavours each encode the size differently. */
+function webpSize(buf) {
+  if (buf.length < 30) return null;
+  const fourcc = buf.toString('ascii', 12, 16);
+  if (fourcc === 'VP8 ') return { w: buf.readUInt16LE(26) & 0x3fff, h: buf.readUInt16LE(28) & 0x3fff };
+  if (fourcc === 'VP8L') {
+    const b = buf.readUInt32LE(21);
+    return { w: (b & 0x3fff) + 1, h: ((b >> 14) & 0x3fff) + 1 };
+  }
+  if (fourcc === 'VP8X') {
+    const rd24 = (o) => buf[o] | (buf[o + 1] << 8) | (buf[o + 2] << 16);
+    return { w: rd24(24) + 1, h: rd24(27) + 1 };
+  }
+  return null;
+}
+
+/**
+ * Identify by magic bytes, not by the URL's extension. AniList serves some
+ * covers as PNG from paths that look like images generally — a JPEG-only check
+ * here silently threw away a correct, verified match for Dennou Coil. Whatever
+ * the bytes turn out to be decides the extension we write, because
+ * `covers.json.file` is the path the page actually loads.
+ */
+function sniffImage(buf) {
+  if (buf[0] === 0xff && buf[1] === 0xd8) return { ext: 'jpg', size: jpegSize(buf) };
+  if (buf.readUInt32BE(0) === 0x89504e47) return { ext: 'png', size: pngSize(buf) };
+  if (buf.toString('ascii', 0, 4) === 'RIFF' && buf.toString('ascii', 8, 12) === 'WEBP') {
+    return { ext: 'webp', size: webpSize(buf) };
+  }
+  return null;
+}
+
+/** Takes a path WITHOUT extension; returns the path it actually wrote. */
+async function downloadImage(url, destBase) {
+  for (const ext of ['jpg', 'png', 'webp']) {
+    const p = `${destBase}.${ext}`;
+    if (fs.existsSync(p) && fs.statSync(p).size > 1000) {
+      const buf = fs.readFileSync(p);
+      const s = sniffImage(buf);
+      return { bytes: buf.length, size: s && s.size, ext, file: p, cached: true };
+    }
   }
   const r = await fetchWithRetry(url, { limiter: limiters.img, binary: true });
   if (r.notFound) throw new Error('image 404');
   const buf = r.buffer;
   if (!buf || buf.length < 1000) throw new Error(`image too small (${buf ? buf.length : 0} bytes)`);
-  if (!(buf[0] === 0xff && buf[1] === 0xd8)) throw new Error('not a JPEG');
-  const size = jpegSize(buf);
+  const sniffed = sniffImage(buf);
+  if (!sniffed) throw new Error('not a recognised image (jpg/png/webp)');
+  const { ext, size } = sniffed;
   if (!size || size.w < 80 || size.h < 80) throw new Error(`dimensions too small (${size ? size.w + 'x' + size.h : 'unparseable'})`);
+  const destFile = `${destBase}.${ext}`;
   fs.writeFileSync(destFile, buf);
-  return { bytes: buf.length, size, cached: false };
+  return { bytes: buf.length, size, ext, file: destFile, cached: false };
 }
 
 // ------------------------------------------------------------- work loading
@@ -479,12 +524,12 @@ async function processWork(work, total) {
       buildEntry = async (cand) => {
         const imgUrl = (cand.coverImage && (cand.coverImage.extraLarge || cand.coverImage.large)) || null;
         if (!imgUrl) throw new Error('candidate has no cover image');
-        const dest = path.join(PHOTO_DIR, `${work.key}.jpg`);
+        const dest = path.join(PHOTO_DIR, work.key);  // extension decided by the bytes
         const dl = await downloadImage(imgUrl, dest);
         return {
           entry: {
             type: 'photo',
-            file: `covers/photo/${work.key}.jpg`,
+            file: `covers/photo/${work.key}.${dl.ext}`,
             title: work.novel,
             author: work.author,
             width: dl.size ? dl.size.w : null,
@@ -508,7 +553,7 @@ async function processWork(work, total) {
       labels = candidates.map(steamLabel);
       buildEntry = async (cand) => {
         const tallUrl = `https://cdn.cloudflare.steamstatic.com/steam/apps/${cand.id}/library_600x900.jpg`;
-        const dest = path.join(PHOTO_DIR, `${work.key}.jpg`);
+        const dest = path.join(PHOTO_DIR, work.key);  // extension decided by the bytes
         let dl, remoteUrl;
         try {
           dl = await downloadImage(tallUrl, dest);
@@ -521,7 +566,7 @@ async function processWork(work, total) {
         return {
           entry: {
             type: 'photo',
-            file: `covers/photo/${work.key}.jpg`,
+            file: `covers/photo/${work.key}.${dl.ext}`,
             title: work.novel,
             author: work.author,
             width: dl.size ? dl.size.w : null,
@@ -544,13 +589,13 @@ async function processWork(work, total) {
       candidates = search.candidates;
       labels = candidates.map(olLabel);
       buildEntry = async (cand) => {
-        const dest = path.join(PHOTO_DIR, `${work.key}.jpg`);
+        const dest = path.join(PHOTO_DIR, work.key);  // extension decided by the bytes
         const imgUrl = `https://covers.openlibrary.org/b/id/${cand.cover_i}-M.jpg?default=false`;
         const dl = await downloadImage(imgUrl, dest);
         return {
           entry: {
             type: 'photo',
-            file: `covers/photo/${work.key}.jpg`,
+            file: `covers/photo/${work.key}.${dl.ext}`,
             title: work.novel,
             author: work.author,
             width: dl.size ? dl.size.w : null,
