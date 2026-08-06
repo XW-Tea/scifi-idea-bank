@@ -49,6 +49,12 @@ const SEARCH_CACHE = path.join(CACHE_DIR, 'media-search');
 const VERIFY_CACHE = path.join(CACHE_DIR, 'media-verify');
 const COVERS_JSON = path.join(ROOT, 'covers.json');
 const REPORT_JSON = path.join(ROOT, 'covers-media-report.json');
+const MANUAL_JSON = path.join(ROOT, 'covers-manual.json');
+
+/** Works whose cover a human chose by hand; see covers-manual.js. */
+const MANUAL_KEYS = new Set(Object.keys(
+  (() => { try { return JSON.parse(fs.readFileSync(MANUAL_JSON, 'utf8')); } catch { return {}; } })()
+));
 
 const OLLAMA_URL = process.env.OLLAMA_URL || 'http://localhost:11434';
 const DEFAULT_MODEL = 'qwen2.5:14b';
@@ -756,19 +762,30 @@ async function main() {
   let bytes = 0;
   for (const r of RESULTS) {
     if (r.status !== 'photo') continue;
+    // A hand-picked cover outranks anything found here. Someone chose it
+    // deliberately, usually because this pipeline got it wrong or had no
+    // route at all — silently replacing it would undo their work.
+    if (MANUAL_KEYS.has(r.key)) continue;
     merged[r.key] = r.entry;
     bytes += r.bytes || 0;
   }
   writeJSON(COVERS_JSON, merged);
 
   // Scoped orphan cleanup: only for keys THIS run targeted, never touch the
-  // pre-existing 573 book entries or their image files.
+  // pre-existing 573 book entries or their image files — and never a
+  // hand-added one, whose whole point is that this pipeline could not get it.
+  // (It deleted the manual Fallout art once: the manifest entry survived but
+  // the file went, so local mode showed nothing while the published site was
+  // fine off remoteUrl — the most annoying kind of half-broken.)
   let orphans = 0;
   for (const w of works) {
+    if (MANUAL_KEYS.has(w.key)) continue;
     const rec = RESULTS.find((r) => r.key === w.key);
     if (rec && rec.status === 'photo') continue;
-    const f = path.join(PHOTO_DIR, `${w.key}.jpg`);
-    if (fs.existsSync(f)) { fs.unlinkSync(f); orphans++; }
+    for (const ext of ['jpg', 'png', 'webp']) {
+      const f = path.join(PHOTO_DIR, `${w.key}.${ext}`);
+      if (fs.existsSync(f)) { fs.unlinkSync(f); orphans++; }
+    }
   }
 
   const counts = {

@@ -53,8 +53,14 @@ Leave `kind` out; `classify-kind.js` fills it.
 node preprocess.js --all      # CSV + extra/ -> data.json
 node classify-kind.js         # Bits/Atoms for the new rows
 node classify-domains.js      # domain, subject, vaultDomain
+node preprocess.js --all      # again: classify-kind writes back into extra/
 node build-media-covers.js    # AniList / Steam / Open Library covers
+node covers-manual.js         # report what still has no cover
 ```
+
+The second `preprocess.js` matters: `classify-kind.js` writes its answers back
+into `extra/*.json`, and without a re-merge the Bits/Atoms axis never reaches
+`data.json` and every new node renders as matte atoms.
 
 All four are cached and resumable — a re-run touches only what changed and
 makes zero LLM calls for anything already done. They need
@@ -121,6 +127,33 @@ Open Library indexes translated novels under their original title and author
 (三体 / 刘慈欣), so the script searches `titleNative` too, and lets an exact
 native-title match bypass the author-token guard. Without that, *The
 Three-Body Problem* is correctly-but-unhelpfully rejected.
+
+**`film` and `tv` have no route.** Two keyless alternatives were measured and
+rejected: the iTunes Search API returns individual episodes (*Nosedive* rather
+than *Black Mirror*) or unrelated shows entirely (*House Hunters* for
+*Upload*), and Wikidata had no P18 image for any of six works tested, because
+posters are copyrighted and so cannot live on Commons. TMDB would work but
+needs an account.
+
+## Adding a cover by hand
+
+Some works will never resolve automatically, and some are rejected correctly —
+*Fallout*'s Steam listing carries the 2013 re-release publisher and year, so
+the verifier declines it, which is the behaviour you want in general. When you
+know the answer, supply it:
+
+```bash
+node covers-manual.js                       # what has no cover, most ideas first
+node covers-manual.js --add "Black Mirror" <image-url> --credit "source, rights"
+```
+
+Prefer a URL over a local path. `covers/photo/` is gitignored, so a URL is what
+survives a fresh clone, and the page prefers `remoteUrl` anywhere but
+localhost. A local file works but you will be warned.
+
+Manual entries live in `covers-manual.json`, which **is** committed. The
+automated builders skip those keys entirely — they will not overwrite the
+entry and will not sweep away the image.
 
 ## Verify, then publish
 

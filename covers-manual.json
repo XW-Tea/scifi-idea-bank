@@ -1,0 +1,17 @@
+{
+  "fallout--interplay-entertainment-black-isle-studios": {
+    "type": "photo",
+    "file": "covers/photo/fallout--interplay-entertainment-black-isle-studios.jpg",
+    "title": "Fallout",
+    "author": "Interplay Entertainment / Black Isle Studios",
+    "width": 300,
+    "height": 450,
+    "matchedTitle": "Fallout",
+    "matchedAuthor": "Interplay Entertainment / Black Isle Studios",
+    "matchedYear": 1997,
+    "source": "manual",
+    "remoteUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/38400/library_600x900.jpg",
+    "attribution": "Cover art via Steam (app 38400). Third-party artwork; rights held by the publisher.",
+    "addedBy": "covers-manual.js"
+  }
+}

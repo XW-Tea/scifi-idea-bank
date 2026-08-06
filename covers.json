@@ -8788,5 +8788,20 @@
     "sourceUrl": "https://anilist.co/anime/2164",
     "remoteUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2164-4tUI4MJCZQO3.png",
     "attribution": "Cover image via AniList (media id 2164). Third-party artwork; rights held by the original publisher/studio."
+  },
+  "fallout--interplay-entertainment-black-isle-studios": {
+    "type": "photo",
+    "file": "covers/photo/fallout--interplay-entertainment-black-isle-studios.jpg",
+    "title": "Fallout",
+    "author": "Interplay Entertainment / Black Isle Studios",
+    "width": 300,
+    "height": 450,
+    "matchedTitle": "Fallout",
+    "matchedAuthor": "Interplay Entertainment / Black Isle Studios",
+    "matchedYear": 1997,
+    "source": "manual",
+    "remoteUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/38400/library_600x900.jpg",
+    "attribution": "Cover art via Steam (app 38400). Third-party artwork; rights held by the publisher.",
+    "addedBy": "covers-manual.js"
   }
 }

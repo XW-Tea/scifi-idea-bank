@@ -1,24 +1,24 @@
 {
-  "generated": "2026-08-06T04:24:29.490Z",
+  "generated": "2026-08-06T04:34:43.279Z",
   "source": "data.json (medium field)",
   "model": "qwen2.5:14b",
   "joinKey": "slug(novel) + \"--\" + slug(author) — identical to build-covers.js",
   "counts": {
-    "worksProcessed": 1,
-    "photoCovers": 1,
-    "rejectedNone": 0,
+    "worksProcessed": 16,
+    "photoCovers": 12,
+    "rejectedNone": 1,
     "rejectedLowConfidence": 0,
     "rejectedByGuard": 0,
     "noCandidate": 0,
     "downloadFailed": 0,
     "pipelineFailed": 0,
-    "unsupportedMedium": 0
+    "unsupportedMedium": 3
   },
-  "coveragePct": 100,
-  "existingCoversBeforeMerge": 584,
-  "coversAfterMerge": 585,
-  "totalCoverBytes": 481333,
-  "wallClockMs": 117,
+  "coveragePct": 75,
+  "existingCoversBeforeMerge": 586,
+  "coversAfterMerge": 586,
+  "totalCoverBytes": 1491019,
+  "wallClockMs": 5,
   "llm": {
     "calls": 0,
     "ms": 0,
@@ -28,6 +28,94 @@
   },
   "failures": [],
   "works": [
+    {
+      "key": "fantastic-planet--rene-laloux",
+      "novel": "Fantastic Planet",
+      "author": "René Laloux",
+      "medium": "film",
+      "status": "unsupported-medium",
+      "candidates": 0,
+      "verdict": null,
+      "guard": null,
+      "match": null,
+      "error": null
+    },
+    {
+      "key": "doraemon--fujiko-f-fujio",
+      "novel": "Doraemon",
+      "author": "Fujiko F. Fujio",
+      "medium": "manga",
+      "status": "photo",
+      "candidates": 10,
+      "verdict": {
+        "choice": 1,
+        "confidence": "high",
+        "reason": "Original manga match, same year."
+      },
+      "guard": null,
+      "match": {
+        "source": "anilist",
+        "matchedTitle": "Doraemon",
+        "matchedYear": 1969
+      },
+      "error": null
+    },
+    {
+      "key": "akira--katsuhiro-otomo",
+      "novel": "AKIRA",
+      "author": "Katsuhiro Otomo",
+      "medium": "manga",
+      "status": "photo",
+      "candidates": 8,
+      "verdict": {
+        "choice": 1,
+        "confidence": "high",
+        "reason": "Correct title, year, and format."
+      },
+      "guard": null,
+      "match": {
+        "source": "anilist",
+        "matchedTitle": "AKIRA",
+        "matchedYear": 1982
+      },
+      "error": null
+    },
+    {
+      "key": "fallout--interplay-entertainment-black-isle-studios",
+      "novel": "Fallout",
+      "author": "Interplay Entertainment / Black Isle Studios",
+      "medium": "game",
+      "status": "rejected-none",
+      "candidates": 6,
+      "verdict": {
+        "choice": 0,
+        "confidence": "high",
+        "reason": "Different developer and release year."
+      },
+      "guard": null,
+      "match": null,
+      "error": null
+    },
+    {
+      "key": "ghost-in-the-shell--masamune-shirow-manga-mamoru-oshii-1995-film",
+      "novel": "Ghost in the Shell",
+      "author": "Masamune Shirow (manga); Mamoru Oshii (1995 film)",
+      "medium": "manga",
+      "status": "photo",
+      "candidates": 9,
+      "verdict": {
+        "choice": 1,
+        "confidence": "high",
+        "reason": "Original manga match, same year and title."
+      },
+      "guard": null,
+      "match": {
+        "source": "anilist",
+        "matchedTitle": "Koukaku Kidoutai",
+        "matchedYear": 1989
+      },
+      "error": null
+    },
     {
       "key": "dennou-coil--mitsuo-iso",
       "novel": "Dennou Coil",
@@ -45,6 +133,190 @@
         "source": "anilist",
         "matchedTitle": "Dennou Coil",
         "matchedYear": 2007
+      },
+      "error": null
+    },
+    {
+      "key": "the-three-body-problem--liu-cixin",
+      "novel": "The Three-Body Problem",
+      "author": "Liu Cixin",
+      "medium": "novel",
+      "status": "photo",
+      "candidates": 3,
+      "verdict": {
+        "choice": 1,
+        "confidence": "high",
+        "reason": "Matches title and original author."
+      },
+      "guard": null,
+      "match": {
+        "source": "openlibrary",
+        "matchedTitle": "三体",
+        "matchedYear": 2008
+      },
+      "error": null
+    },
+    {
+      "key": "the-dark-forest--liu-cixin",
+      "novel": "The Dark Forest",
+      "author": "Liu Cixin",
+      "medium": "novel",
+      "status": "photo",
+      "candidates": 2,
+      "verdict": {
+        "choice": 1,
+        "confidence": "high",
+        "reason": "Same author, correct title and publication year."
+      },
+      "guard": null,
+      "match": {
+        "source": "openlibrary",
+        "matchedTitle": "The Dark Forest (The Three-Body Problem Series Book 2)",
+        "matchedYear": 2008
+      },
+      "error": null
+    },
+    {
+      "key": "summer-wars--mamoru-hosoda",
+      "novel": "Summer Wars",
+      "author": "Mamoru Hosoda",
+      "medium": "anime",
+      "status": "photo",
+      "candidates": 2,
+      "verdict": {
+        "choice": 1,
+        "confidence": "high",
+        "reason": "Matches title, native title, year, and medium exactly."
+      },
+      "guard": null,
+      "match": {
+        "source": "anilist",
+        "matchedTitle": "Summer Wars",
+        "matchedYear": 2009
+      },
+      "error": null
+    },
+    {
+      "key": "black-mirror--charlie-brooker",
+      "novel": "Black Mirror",
+      "author": "Charlie Brooker",
+      "medium": "tv",
+      "status": "unsupported-medium",
+      "candidates": 0,
+      "verdict": null,
+      "guard": null,
+      "match": null,
+      "error": null
+    },
+    {
+      "key": "death-s-end--liu-cixin",
+      "novel": "Death's End",
+      "author": "Liu Cixin",
+      "medium": "novel",
+      "status": "photo",
+      "candidates": 2,
+      "verdict": {
+        "choice": 1,
+        "confidence": "high",
+        "reason": "Same author, correct title match."
+      },
+      "guard": null,
+      "match": {
+        "source": "openlibrary",
+        "matchedTitle": "Death's End (The Three-Body Problem Series Book 3)",
+        "matchedYear": 2010
+      },
+      "error": null
+    },
+    {
+      "key": "upload--greg-daniels",
+      "novel": "Upload",
+      "author": "Greg Daniels",
+      "medium": "tv",
+      "status": "unsupported-medium",
+      "candidates": 0,
+      "verdict": null,
+      "guard": null,
+      "match": null,
+      "error": null
+    },
+    {
+      "key": "detroit-become-human--quantic-dream-david-cage",
+      "novel": "Detroit: Become Human",
+      "author": "Quantic Dream (David Cage)",
+      "medium": "game",
+      "status": "photo",
+      "candidates": 2,
+      "verdict": {
+        "choice": 1,
+        "confidence": "high",
+        "reason": "Matches title, developer, and release year closely."
+      },
+      "guard": null,
+      "match": {
+        "source": "steam",
+        "matchedTitle": "Detroit: Become Human",
+        "matchedYear": 2020
+      },
+      "error": null
+    },
+    {
+      "key": "cyberpunk-2077--cd-projekt-red",
+      "novel": "Cyberpunk 2077",
+      "author": "CD Projekt Red",
+      "medium": "game",
+      "status": "photo",
+      "candidates": 5,
+      "verdict": {
+        "choice": 1,
+        "confidence": "high",
+        "reason": "Primary game by original developer in correct year."
+      },
+      "guard": null,
+      "match": {
+        "source": "steam",
+        "matchedTitle": "Cyberpunk 2077",
+        "matchedYear": 2020
+      },
+      "error": null
+    },
+    {
+      "key": "citizen-sleeper--jump-over-the-age-gareth-damien-martin",
+      "novel": "Citizen Sleeper",
+      "author": "Jump Over the Age (Gareth Damien Martin)",
+      "medium": "game",
+      "status": "photo",
+      "candidates": 6,
+      "verdict": {
+        "choice": 1,
+        "confidence": "high",
+        "reason": "Matches title, developer, and release year exactly."
+      },
+      "guard": null,
+      "match": {
+        "source": "steam",
+        "matchedTitle": "Citizen Sleeper",
+        "matchedYear": 2022
+      },
+      "error": null
+    },
+    {
+      "key": "cosmic-princess-kaguya--studio-colorido-shingo-yamashita-studio-chromato",
+      "novel": "Cosmic Princess Kaguya!",
+      "author": "Studio Colorido / Shingo Yamashita (Studio Chromato)",
+      "medium": "anime",
+      "status": "photo",
+      "candidates": 2,
+      "verdict": {
+        "choice": 1,
+        "confidence": "high",
+        "reason": "Same title and native title match."
+      },
+      "guard": null,
+      "match": {
+        "source": "anilist",
+        "matchedTitle": "Chou Kaguya-hime!",
+        "matchedYear": 2026
       },
       "error": null
     }
