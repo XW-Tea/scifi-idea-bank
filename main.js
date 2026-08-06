@@ -1528,10 +1528,17 @@ function coverSource() {
   return local ? 'local' : 'openlibrary';
 }
 
-/** URL for a manifest entry under the active source. */
+/** URL for a manifest entry under the active source.
+ * Local-first on localhost (bundled covers/photo/*.jpg, fully offline).
+ * Elsewhere, prefer entry.remoteUrl — the AniList/Steam/Open Library CDN URL
+ * recorded per entry — since covers/photo/ is gitignored and entry.file
+ * would 404 on a published host. Older entries predate remoteUrl, so fall
+ * back to reconstructing the Open Library URL from olCoverId, then finally
+ * to entry.file (better than nothing if neither is present). */
 function coverURL(entry) {
-  if (coverSource() === 'openlibrary' && entry.olCoverId)
-    return `https://covers.openlibrary.org/b/id/${entry.olCoverId}-M.jpg`;
+  if (coverSource() === 'local') return entry.file;
+  if (entry.remoteUrl) return entry.remoteUrl;
+  if (entry.olCoverId) return `https://covers.openlibrary.org/b/id/${entry.olCoverId}-M.jpg`;
   return entry.file;
 }
 

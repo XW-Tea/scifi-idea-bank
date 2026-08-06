@@ -200,6 +200,49 @@ function stratifiedSample(items, target, seed = 1634) {
 }
 
 // ---------------------------------------------------------------------- main
+/**
+ * Load the hand-curated non-CSV works from extra/*.json.
+ * Missing directory is not an error — the CSV alone is a valid dataset.
+ */
+function loadExtra() {
+  const dir = path.join(__dirname, 'extra');
+  if (!fs.existsSync(dir)) return [];
+  const out = [];
+  for (const f of fs.readdirSync(dir).filter((n) => n.endsWith('.json')).sort()) {
+    const payload = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
+    const rows = Array.isArray(payload) ? payload : payload.items || [];
+    for (const r of rows) {
+      if (!r.device || !Number.isFinite(r.year)) {
+        throw new Error(`extra/${f}: item missing device or year: ${JSON.stringify(r).slice(0, 120)}`);
+      }
+      out.push({
+        id: -1,                       // renumbered by the caller
+        year: r.year,
+        device: r.device,
+        novel: r.novel,
+        author: r.author || 'Unknown',
+        desc: r.desc || '',
+        built: !!r.built,
+        byWhom: r.byWhom || '',
+        product: r.product || '',
+        realYear: r.built ? (Number.isFinite(r.realYear) ? r.realYear : null) : null,
+        realYearRaw: r.realYearRaw || '',
+        realYearFuzzy: !!(r.built && r.realYearFuzzy),
+        details: r.details || '',
+        kind: r.kind || 'unknown',
+        companies: r.companies || '',
+        // --- fields the CSV has no column for ---
+        medium: r.medium || 'novel',
+        titleNative: r.titleNative || '',
+        deviceNative: r.deviceNative || '',
+        sourceUrl: r.sourceUrl || '',
+      });
+    }
+    console.log(`  extra/${f}: ${rows.length} items`);
+  }
+  return out;
+}
+
 function main() {
   const argv = process.argv.slice(2);
   const arg = (name, dflt) => {
@@ -217,7 +260,19 @@ function main() {
   }
 
   const { items, stats } = loadRows(inPath);
-  const sample = wantAll ? items.map((it, i) => ({ ...it, id: i })) : stratifiedSample(items, sampleN);
+  const base = wantAll ? items.map((it, i) => ({ ...it, id: i })) : stratifiedSample(items, sampleN);
+
+  /* Hand-curated works that are not in the Technovelgy CSV — anime, manga,
+     games, non-anglophone novels. Each file under extra/ holds { items: [...] }
+     already in the shape loadRows() produces, plus the extra fields:
+       medium       manga | anime | film | game | novel
+       titleNative  原題 in its own script; `novel` stays the English title
+                    because covers.json joins on slug(novel)--slug(author)
+       sourceUrl    where the depiction is documented
+     They are appended after the CSV rows and the whole set is renumbered, so
+     ids stay dense and the sampling path above is untouched. */
+  const extra = loadExtra();
+  const sample = base.concat(extra).map((it, i) => ({ ...it, id: i }));
 
   const years = sample.map((d) => d.year);
   const builtCount = sample.filter((d) => d.built).length;

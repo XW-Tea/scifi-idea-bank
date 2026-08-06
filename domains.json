@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-27T16:36:21.966Z",
+  "generated": "2026-08-06T02:42:40.704Z",
   "model": "qwen2.5:14b",
   "promptVersion": "v2",
   "laneOrder": [
@@ -34,8 +34,8 @@
     "comms": "Communication & Media",
     "computing": "Computing & Intelligence"
   },
-  "ideas": 3746,
-  "classified": 3746,
+  "ideas": 3870,
+  "classified": 3870,
   "byId": {
     "0": {
       "domain": "space",
@@ -137,7 +137,7 @@
       "subjectPass": {
         "from": "medicine",
         "to": "mind",
-        "rule": "tie(medicine/mind) -> earliest 2005 #219"
+        "rule": "tie(bio/medicine/mind) -> earliest 2005 #219"
       }
     },
     "14": {
@@ -23564,11 +23564,16 @@
       "fallback": false
     },
     "3282": {
-      "domain": "robots",
+      "domain": "materials",
       "confidence": "high",
-      "vaultDomain": "intelligence",
+      "vaultDomain": "machines",
       "subject": "nanobot",
-      "fallback": false
+      "fallback": false,
+      "subjectPass": {
+        "from": "robots",
+        "to": "materials",
+        "rule": "tie(materials/robots) -> earliest 1989 #3761"
+      }
     },
     "3283": {
       "domain": "weapons",
@@ -26874,6 +26879,904 @@
       "confidence": "high",
       "vaultDomain": "culture",
       "subject": "migratory birds",
+      "fallback": false
+    },
+    "3746": {
+      "domain": "mind",
+      "confidence": "high",
+      "vaultDomain": "intelligence",
+      "subject": "cybernetic brain",
+      "fallback": false
+    },
+    "3747": {
+      "domain": "medicine",
+      "confidence": "high",
+      "vaultDomain": "health",
+      "subject": "cyber augmentation",
+      "fallback": false
+    },
+    "3748": {
+      "domain": "medicine",
+      "confidence": "high",
+      "vaultDomain": "health",
+      "subject": "full cyborg",
+      "fallback": false
+    },
+    "3749": {
+      "domain": "surveillance",
+      "confidence": "medium",
+      "vaultDomain": "machines",
+      "subject": "active camo",
+      "fallback": false
+    },
+    "3750": {
+      "domain": "mind",
+      "confidence": "high",
+      "vaultDomain": "intelligence",
+      "subject": "consciousness",
+      "fallback": false
+    },
+    "3751": {
+      "domain": "computing",
+      "confidence": "high",
+      "vaultDomain": "governance",
+      "subject": "cyber hacking",
+      "fallback": false
+    },
+    "3752": {
+      "domain": "mind",
+      "confidence": "high",
+      "vaultDomain": "intelligence",
+      "subject": "memory manipulation",
+      "fallback": false
+    },
+    "3753": {
+      "domain": "computing",
+      "confidence": "high",
+      "vaultDomain": "governance",
+      "subject": "cyber attack",
+      "fallback": false
+    },
+    "3754": {
+      "domain": "computing",
+      "confidence": "high",
+      "vaultDomain": "intelligence",
+      "subject": "cyber defense",
+      "fallback": false
+    },
+    "3755": {
+      "domain": "mind",
+      "confidence": "high",
+      "vaultDomain": "health",
+      "subject": "external storage",
+      "fallback": false
+    },
+    "3756": {
+      "domain": "robots",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "robot soldier",
+      "fallback": false
+    },
+    "3757": {
+      "domain": "computing",
+      "confidence": "high",
+      "vaultDomain": "intelligence",
+      "subject": "ai program",
+      "fallback": false
+    },
+    "3758": {
+      "domain": "robots",
+      "confidence": "medium",
+      "vaultDomain": "machines",
+      "subject": "robot body",
+      "fallback": false
+    },
+    "3759": {
+      "domain": "mind",
+      "confidence": "high",
+      "vaultDomain": "intelligence",
+      "subject": "brain implant",
+      "fallback": false,
+      "subjectPass": {
+        "from": "medicine",
+        "to": "mind",
+        "rule": "majority"
+      }
+    },
+    "3760": {
+      "domain": "living",
+      "confidence": "medium",
+      "vaultDomain": "work",
+      "subject": "protein bar",
+      "fallback": false
+    },
+    "3761": {
+      "domain": "materials",
+      "confidence": "high",
+      "vaultDomain": "planet",
+      "subject": "nanobot",
+      "fallback": false
+    },
+    "3762": {
+      "domain": "mind",
+      "confidence": "high",
+      "vaultDomain": "culture",
+      "subject": "telekinesis",
+      "fallback": false
+    },
+    "3763": {
+      "domain": "mind",
+      "confidence": "high",
+      "vaultDomain": "society",
+      "subject": "telepathy",
+      "fallback": false
+    },
+    "3764": {
+      "domain": "transport",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "teleportation",
+      "fallback": false,
+      "subjectPass": {
+        "from": "mind",
+        "to": "transport",
+        "rule": "majority"
+      }
+    },
+    "3765": {
+      "domain": "mind",
+      "confidence": "high",
+      "vaultDomain": "society",
+      "subject": "precognition",
+      "fallback": false
+    },
+    "3766": {
+      "domain": "mind",
+      "confidence": "high",
+      "vaultDomain": "intelligence",
+      "subject": "psychic channel",
+      "fallback": false
+    },
+    "3767": {
+      "domain": "mind",
+      "confidence": "high",
+      "vaultDomain": "intelligence",
+      "subject": "hallucination attack",
+      "fallback": false
+    },
+    "3768": {
+      "domain": "space",
+      "confidence": "high",
+      "vaultDomain": "geopolitics",
+      "subject": "orbital laser",
+      "fallback": false
+    },
+    "3769": {
+      "domain": "weapons",
+      "confidence": "high",
+      "vaultDomain": "governance",
+      "subject": "laser designator",
+      "fallback": false
+    },
+    "3770": {
+      "domain": "space",
+      "confidence": "high",
+      "vaultDomain": "geopolitics",
+      "subject": "orbital laser",
+      "fallback": false
+    },
+    "3771": {
+      "domain": "transport",
+      "confidence": "high",
+      "vaultDomain": "work",
+      "subject": "flying platform",
+      "fallback": false
+    },
+    "3772": {
+      "domain": "robots",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "security robot",
+      "fallback": false
+    },
+    "3773": {
+      "domain": "medicine",
+      "confidence": "medium",
+      "vaultDomain": "health",
+      "subject": "psychic suppressant",
+      "fallback": false
+    },
+    "3774": {
+      "domain": "living",
+      "confidence": "high",
+      "vaultDomain": "planet",
+      "subject": "cryo storage",
+      "fallback": false
+    },
+    "3775": {
+      "domain": "medicine",
+      "confidence": "high",
+      "vaultDomain": "health",
+      "subject": "mechanical arm",
+      "fallback": false
+    },
+    "3776": {
+      "domain": "materials",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "superconducting motor",
+      "fallback": false
+    },
+    "3777": {
+      "domain": "transport",
+      "confidence": "high",
+      "vaultDomain": "health",
+      "subject": "mobility pod",
+      "fallback": false
+    },
+    "3778": {
+      "domain": "space",
+      "confidence": "high",
+      "vaultDomain": "culture",
+      "subject": "anywhere door",
+      "fallback": false
+    },
+    "3779": {
+      "domain": "transport",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "flying headgear",
+      "fallback": false
+    },
+    "3780": {
+      "domain": "mind",
+      "confidence": "high",
+      "vaultDomain": "intelligence",
+      "subject": "time machine",
+      "fallback": false,
+      "subjectPass": {
+        "from": "space",
+        "to": "mind",
+        "rule": "majority"
+      }
+    },
+    "3781": {
+      "domain": "living",
+      "confidence": "medium",
+      "vaultDomain": "culture",
+      "subject": "time furoshiki",
+      "fallback": false
+    },
+    "3782": {
+      "domain": "comms",
+      "confidence": "high",
+      "vaultDomain": "intelligence",
+      "subject": "translation konnyaku",
+      "fallback": false
+    },
+    "3783": {
+      "domain": "living",
+      "confidence": "medium",
+      "vaultDomain": "culture",
+      "subject": "dress-up camera",
+      "fallback": false
+    },
+    "3784": {
+      "domain": "medicine",
+      "confidence": "high",
+      "vaultDomain": "health",
+      "subject": "uso 800",
+      "fallback": false
+    },
+    "3785": {
+      "domain": "medicine",
+      "confidence": "high",
+      "vaultDomain": "health",
+      "subject": "sono uso honto",
+      "fallback": false
+    },
+    "3786": {
+      "domain": "materials",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "shrink light",
+      "fallback": false
+    },
+    "3787": {
+      "domain": "materials",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "enlarge light",
+      "fallback": false
+    },
+    "3788": {
+      "domain": "materials",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "shrink tunnel",
+      "fallback": false
+    },
+    "3789": {
+      "domain": "mind",
+      "confidence": "medium",
+      "vaultDomain": "learning",
+      "subject": "psychological invisibility",
+      "fallback": false
+    },
+    "3790": {
+      "domain": "bio",
+      "confidence": "high",
+      "vaultDomain": "health",
+      "subject": "invisible cloak",
+      "fallback": false,
+      "subjectPass": {
+        "from": "surveillance",
+        "to": "bio",
+        "rule": "tie(bio/surveillance) -> earliest 1929 #3518"
+      }
+    },
+    "3791": {
+      "domain": "comms",
+      "confidence": "high",
+      "vaultDomain": "culture",
+      "subject": "teleport window",
+      "fallback": false
+    },
+    "3792": {
+      "domain": "materials",
+      "confidence": "low",
+      "vaultDomain": "machines",
+      "subject": "weight meter",
+      "fallback": false
+    },
+    "3793": {
+      "domain": "materials",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "dimension pocket",
+      "fallback": false
+    },
+    "3794": {
+      "domain": "mind",
+      "confidence": "medium",
+      "vaultDomain": "learning",
+      "subject": "memory bread",
+      "fallback": false
+    },
+    "3795": {
+      "domain": "weapons",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "air cannon",
+      "fallback": false
+    },
+    "3796": {
+      "domain": "mind",
+      "confidence": "high",
+      "vaultDomain": "culture",
+      "subject": "hypothetical reality",
+      "fallback": false
+    },
+    "3797": {
+      "domain": "materials",
+      "confidence": "medium",
+      "vaultDomain": "machines",
+      "subject": "atom vibration",
+      "fallback": false
+    },
+    "3798": {
+      "domain": "comms",
+      "confidence": "high",
+      "vaultDomain": "culture",
+      "subject": "teleportation bag",
+      "fallback": false
+    },
+    "3799": {
+      "domain": "weapons",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "melee blades",
+      "fallback": false
+    },
+    "3800": {
+      "domain": "medicine",
+      "confidence": "medium",
+      "vaultDomain": "work",
+      "subject": "arm replacement",
+      "fallback": false
+    },
+    "3801": {
+      "domain": "weapons",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "wire whip",
+      "fallback": false
+    },
+    "3802": {
+      "domain": "bio",
+      "confidence": "low",
+      "vaultDomain": "intelligence",
+      "subject": "combat time dilation",
+      "fallback": false
+    },
+    "3803": {
+      "domain": "bio",
+      "confidence": "medium",
+      "vaultDomain": "machines",
+      "subject": "reflex booster",
+      "fallback": false
+    },
+    "3804": {
+      "domain": "medicine",
+      "confidence": "high",
+      "vaultDomain": "intelligence",
+      "subject": "cybernetic vision",
+      "fallback": false
+    },
+    "3805": {
+      "domain": "bio",
+      "confidence": "medium",
+      "vaultDomain": "machines",
+      "subject": "jump boost",
+      "fallback": false
+    },
+    "3806": {
+      "domain": "weapons",
+      "confidence": "high",
+      "vaultDomain": "geopolitics",
+      "subject": "smart weapon",
+      "fallback": false
+    },
+    "3807": {
+      "domain": "weapons",
+      "confidence": "high",
+      "vaultDomain": "intelligence",
+      "subject": "ai pistol",
+      "fallback": false
+    },
+    "3808": {
+      "domain": "medicine",
+      "confidence": "high",
+      "vaultDomain": "health",
+      "subject": "backup heart",
+      "fallback": false
+    },
+    "3809": {
+      "domain": "medicine",
+      "confidence": "high",
+      "vaultDomain": "health",
+      "subject": "pain dampener",
+      "fallback": false
+    },
+    "3810": {
+      "domain": "bio",
+      "confidence": "medium",
+      "vaultDomain": "work",
+      "subject": "cyberware surgery",
+      "fallback": false
+    },
+    "3811": {
+      "domain": "mind",
+      "confidence": "high",
+      "vaultDomain": "culture",
+      "subject": "brain recording",
+      "fallback": false
+    },
+    "3812": {
+      "domain": "computing",
+      "confidence": "high",
+      "vaultDomain": "intelligence",
+      "subject": "quick hacking",
+      "fallback": false
+    },
+    "3813": {
+      "domain": "computing",
+      "confidence": "high",
+      "vaultDomain": "intelligence",
+      "subject": "network breach",
+      "fallback": false
+    },
+    "3814": {
+      "domain": "computing",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "hacking rig",
+      "fallback": false
+    },
+    "3815": {
+      "domain": "medicine",
+      "confidence": "medium",
+      "vaultDomain": "society",
+      "subject": "emergency service",
+      "fallback": false
+    },
+    "3816": {
+      "domain": "transport",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "autonomous taxi",
+      "fallback": false
+    },
+    "3817": {
+      "domain": "mind",
+      "confidence": "high",
+      "vaultDomain": "intelligence",
+      "subject": "digital mind",
+      "fallback": false
+    },
+    "3818": {
+      "domain": "mind",
+      "confidence": "medium",
+      "vaultDomain": "intelligence",
+      "subject": "neural implant",
+      "fallback": false,
+      "subjectPass": {
+        "from": "bio",
+        "to": "mind",
+        "rule": "tie(bio/medicine/mind) -> earliest 2005 #219"
+      }
+    },
+    "3819": {
+      "domain": "mind",
+      "confidence": "high",
+      "vaultDomain": "intelligence",
+      "subject": "digital transfer",
+      "fallback": false
+    },
+    "3820": {
+      "domain": "computing",
+      "confidence": "medium",
+      "vaultDomain": "society",
+      "subject": "digital archive",
+      "fallback": false
+    },
+    "3821": {
+      "domain": "weapons",
+      "confidence": "high",
+      "vaultDomain": "work",
+      "subject": "hovertank",
+      "fallback": false
+    },
+    "3822": {
+      "domain": "computing",
+      "confidence": "low",
+      "vaultDomain": "intelligence",
+      "subject": "supercomputer",
+      "fallback": false
+    },
+    "3823": {
+      "domain": "comms",
+      "confidence": "high",
+      "vaultDomain": "culture",
+      "subject": "instant comm",
+      "fallback": false
+    },
+    "3824": {
+      "domain": "computing",
+      "confidence": "medium",
+      "vaultDomain": "geopolitics",
+      "subject": "jammer",
+      "fallback": false
+    },
+    "3825": {
+      "domain": "surveillance",
+      "confidence": "high",
+      "vaultDomain": "governance",
+      "subject": "total surveil",
+      "fallback": false
+    },
+    "3826": {
+      "domain": "computing",
+      "confidence": "high",
+      "vaultDomain": "intelligence",
+      "subject": "real time",
+      "fallback": false
+    },
+    "3827": {
+      "domain": "mind",
+      "confidence": "medium",
+      "vaultDomain": "culture",
+      "subject": "deception",
+      "fallback": false
+    },
+    "3828": {
+      "domain": "comms",
+      "confidence": "high",
+      "vaultDomain": "planet",
+      "subject": "amplification",
+      "fallback": false
+    },
+    "3829": {
+      "domain": "computing",
+      "confidence": "medium",
+      "vaultDomain": "governance",
+      "subject": "transmitter",
+      "fallback": false
+    },
+    "3830": {
+      "domain": "mind",
+      "confidence": "high",
+      "vaultDomain": "culture",
+      "subject": "vr game",
+      "fallback": false
+    },
+    "3831": {
+      "domain": "mind",
+      "confidence": "medium",
+      "vaultDomain": "health",
+      "subject": "v suit",
+      "fallback": false
+    },
+    "3832": {
+      "domain": "computing",
+      "confidence": "high",
+      "vaultDomain": "intelligence",
+      "subject": "human formation",
+      "fallback": false
+    },
+    "3833": {
+      "domain": "bio",
+      "confidence": "medium",
+      "vaultDomain": "health",
+      "subject": "dehydration",
+      "fallback": false
+    },
+    "3834": {
+      "domain": "computing",
+      "confidence": "high",
+      "vaultDomain": "intelligence",
+      "subject": "storage",
+      "fallback": false,
+      "subjectPass": {
+        "from": "living",
+        "to": "computing",
+        "rule": "tie(computing/living) -> earliest 1954 #2101"
+      }
+    },
+    "3835": {
+      "domain": "energy",
+      "confidence": "medium",
+      "vaultDomain": "planet",
+      "subject": "climate",
+      "fallback": false
+    },
+    "3836": {
+      "domain": "space",
+      "confidence": "high",
+      "vaultDomain": "planet",
+      "subject": "invasion fleet",
+      "fallback": false
+    },
+    "3837": {
+      "domain": "materials",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "nanofiber material",
+      "fallback": false
+    },
+    "3838": {
+      "domain": "weapons",
+      "confidence": "high",
+      "vaultDomain": "governance",
+      "subject": "nanofilament trap",
+      "fallback": false
+    },
+    "3839": {
+      "domain": "society",
+      "confidence": "medium",
+      "vaultDomain": "geopolitics",
+      "subject": "wallfacers",
+      "fallback": false
+    },
+    "3840": {
+      "domain": "surveillance",
+      "confidence": "high",
+      "vaultDomain": "governance",
+      "subject": "wallbreaker",
+      "fallback": false
+    },
+    "3841": {
+      "domain": "space",
+      "confidence": "low",
+      "vaultDomain": "planet",
+      "subject": "ghost fleet",
+      "fallback": false
+    },
+    "3842": {
+      "domain": "weapons",
+      "confidence": "high",
+      "vaultDomain": "geopolitics",
+      "subject": "deflection weapon",
+      "fallback": false
+    },
+    "3843": {
+      "domain": "mind",
+      "confidence": "high",
+      "vaultDomain": "health",
+      "subject": "mental seal",
+      "fallback": false
+    },
+    "3844": {
+      "domain": "society",
+      "confidence": "medium",
+      "vaultDomain": "learning",
+      "subject": "cosmic sociology",
+      "fallback": false
+    },
+    "3845": {
+      "domain": "mind",
+      "confidence": "high",
+      "vaultDomain": "geopolitics",
+      "subject": "dark forest",
+      "fallback": false
+    },
+    "3846": {
+      "domain": "energy",
+      "confidence": "high",
+      "vaultDomain": "planet",
+      "subject": "solar broadcast",
+      "fallback": false
+    },
+    "3847": {
+      "domain": "weapons",
+      "confidence": "high",
+      "vaultDomain": "governance",
+      "subject": "deterrence device",
+      "fallback": false
+    },
+    "3848": {
+      "domain": "materials",
+      "confidence": "medium",
+      "vaultDomain": "machines",
+      "subject": "droplet probe",
+      "fallback": false
+    },
+    "3849": {
+      "domain": "weapons",
+      "confidence": "high",
+      "vaultDomain": "geopolitics",
+      "subject": "kinetic impact",
+      "fallback": false
+    },
+    "3850": {
+      "domain": "medicine",
+      "confidence": "high",
+      "vaultDomain": "health",
+      "subject": "hibernation",
+      "fallback": false
+    },
+    "3851": {
+      "domain": "space",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "fusion warship",
+      "fallback": false
+    },
+    "3852": {
+      "domain": "weapons",
+      "confidence": "high",
+      "vaultDomain": "geopolitics",
+      "subject": "weaponized engine",
+      "fallback": false
+    },
+    "3853": {
+      "domain": "energy",
+      "confidence": "medium",
+      "vaultDomain": "machines",
+      "subject": "fusion engine",
+      "fallback": false
+    },
+    "3854": {
+      "domain": "weapons",
+      "confidence": "high",
+      "vaultDomain": "geopolitics",
+      "subject": "laser cannon",
+      "fallback": false
+    },
+    "3855": {
+      "domain": "comms",
+      "confidence": "high",
+      "vaultDomain": "culture",
+      "subject": "broadcast jamming",
+      "fallback": false
+    },
+    "3856": {
+      "domain": "medicine",
+      "confidence": "high",
+      "vaultDomain": "health",
+      "subject": "suspended animation",
+      "fallback": false
+    },
+    "3857": {
+      "domain": "space",
+      "confidence": "high",
+      "vaultDomain": "planet",
+      "subject": "lightspeed propulsion",
+      "fallback": false
+    },
+    "3858": {
+      "domain": "space",
+      "confidence": "high",
+      "vaultDomain": "planet",
+      "subject": "starship",
+      "fallback": false
+    },
+    "3859": {
+      "domain": "space",
+      "confidence": "high",
+      "vaultDomain": "planet",
+      "subject": "propulsion wake",
+      "fallback": false
+    },
+    "3860": {
+      "domain": "weapons",
+      "confidence": "high",
+      "vaultDomain": "geopolitics",
+      "subject": "dimensional weapon",
+      "fallback": false
+    },
+    "3861": {
+      "domain": "space",
+      "confidence": "high",
+      "vaultDomain": "planet",
+      "subject": "defensive zone",
+      "fallback": false
+    },
+    "3862": {
+      "domain": "space",
+      "confidence": "high",
+      "vaultDomain": "society",
+      "subject": "bunker",
+      "fallback": false
+    },
+    "3863": {
+      "domain": "weapons",
+      "confidence": "high",
+      "vaultDomain": "geopolitics",
+      "subject": "stellar weapon",
+      "fallback": false
+    },
+    "3864": {
+      "domain": "surveillance",
+      "confidence": "high",
+      "vaultDomain": "governance",
+      "subject": "deterrence system",
+      "fallback": false
+    },
+    "3865": {
+      "domain": "comms",
+      "confidence": "high",
+      "vaultDomain": "culture",
+      "subject": "gravitational wave",
+      "fallback": false
+    },
+    "3866": {
+      "domain": "comms",
+      "confidence": "high",
+      "vaultDomain": "governance",
+      "subject": "broadcast",
+      "fallback": false
+    },
+    "3867": {
+      "domain": "space",
+      "confidence": "high",
+      "vaultDomain": "planet",
+      "subject": "universe",
+      "fallback": false
+    },
+    "3868": {
+      "domain": "space",
+      "confidence": "medium",
+      "vaultDomain": "planet",
+      "subject": "fragment",
+      "fallback": false
+    },
+    "3869": {
+      "domain": "transport",
+      "confidence": "high",
+      "vaultDomain": "culture",
+      "subject": "escape",
       "fallback": false
     }
   }

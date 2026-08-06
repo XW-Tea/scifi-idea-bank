@@ -13,3 +13,6 @@ covers/.cache/
 *.log
 
 node_modules/
+
+# Local dev-server config for the preview tool, not part of the site
+.claude/

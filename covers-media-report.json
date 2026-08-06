@@ -1,0 +1,172 @@
+{
+  "generated": "2026-08-06T02:52:38.965Z",
+  "source": "data.json (medium field)",
+  "model": "qwen2.5:14b",
+  "joinKey": "slug(novel) + \"--\" + slug(author) — identical to build-covers.js",
+  "counts": {
+    "worksProcessed": 7,
+    "photoCovers": 7,
+    "rejectedNone": 0,
+    "rejectedLowConfidence": 0,
+    "rejectedByGuard": 0,
+    "noCandidate": 0,
+    "downloadFailed": 0,
+    "pipelineFailed": 0,
+    "unsupportedMedium": 0
+  },
+  "coveragePct": 100,
+  "existingCoversBeforeMerge": 580,
+  "coversAfterMerge": 580,
+  "totalCoverBytes": 540472,
+  "wallClockMs": 4,
+  "llm": {
+    "calls": 0,
+    "ms": 0,
+    "errors": 0,
+    "fallbacks": 0,
+    "avgCallMs": 0
+  },
+  "failures": [],
+  "works": [
+    {
+      "key": "doraemon--fujiko-f-fujio",
+      "novel": "Doraemon",
+      "author": "Fujiko F. Fujio",
+      "medium": "manga",
+      "status": "photo",
+      "candidates": 10,
+      "verdict": {
+        "choice": 1,
+        "confidence": "high",
+        "reason": "Original manga match, same year."
+      },
+      "guard": null,
+      "match": {
+        "source": "anilist",
+        "matchedTitle": "Doraemon",
+        "matchedYear": 1969
+      },
+      "error": null
+    },
+    {
+      "key": "akira--katsuhiro-otomo",
+      "novel": "AKIRA",
+      "author": "Katsuhiro Otomo",
+      "medium": "manga",
+      "status": "photo",
+      "candidates": 8,
+      "verdict": {
+        "choice": 1,
+        "confidence": "high",
+        "reason": "Correct title, year, and format."
+      },
+      "guard": null,
+      "match": {
+        "source": "anilist",
+        "matchedTitle": "AKIRA",
+        "matchedYear": 1982
+      },
+      "error": null
+    },
+    {
+      "key": "ghost-in-the-shell--masamune-shirow-manga-mamoru-oshii-1995-film",
+      "novel": "Ghost in the Shell",
+      "author": "Masamune Shirow (manga); Mamoru Oshii (1995 film)",
+      "medium": "manga",
+      "status": "photo",
+      "candidates": 9,
+      "verdict": {
+        "choice": 1,
+        "confidence": "high",
+        "reason": "Original manga match, same year and title."
+      },
+      "guard": null,
+      "match": {
+        "source": "anilist",
+        "matchedTitle": "Koukaku Kidoutai",
+        "matchedYear": 1989
+      },
+      "error": null
+    },
+    {
+      "key": "the-three-body-problem--liu-cixin",
+      "novel": "The Three-Body Problem",
+      "author": "Liu Cixin",
+      "medium": "novel",
+      "status": "photo",
+      "candidates": 3,
+      "verdict": {
+        "choice": 1,
+        "confidence": "high",
+        "reason": "Matches title and original author."
+      },
+      "guard": null,
+      "match": {
+        "source": "openlibrary",
+        "matchedTitle": "三体",
+        "matchedYear": 2008
+      },
+      "error": null
+    },
+    {
+      "key": "the-dark-forest--liu-cixin",
+      "novel": "The Dark Forest",
+      "author": "Liu Cixin",
+      "medium": "novel",
+      "status": "photo",
+      "candidates": 2,
+      "verdict": {
+        "choice": 1,
+        "confidence": "high",
+        "reason": "Same author, correct title and publication year."
+      },
+      "guard": null,
+      "match": {
+        "source": "openlibrary",
+        "matchedTitle": "The Dark Forest (The Three-Body Problem Series Book 2)",
+        "matchedYear": 2008
+      },
+      "error": null
+    },
+    {
+      "key": "death-s-end--liu-cixin",
+      "novel": "Death's End",
+      "author": "Liu Cixin",
+      "medium": "novel",
+      "status": "photo",
+      "candidates": 2,
+      "verdict": {
+        "choice": 1,
+        "confidence": "high",
+        "reason": "Same author, correct title match."
+      },
+      "guard": null,
+      "match": {
+        "source": "openlibrary",
+        "matchedTitle": "Death's End (The Three-Body Problem Series Book 3)",
+        "matchedYear": 2010
+      },
+      "error": null
+    },
+    {
+      "key": "cyberpunk-2077--cd-projekt-red",
+      "novel": "Cyberpunk 2077",
+      "author": "CD Projekt Red",
+      "medium": "game",
+      "status": "photo",
+      "candidates": 5,
+      "verdict": {
+        "choice": 1,
+        "confidence": "high",
+        "reason": "Primary game by original developer in correct year."
+      },
+      "guard": null,
+      "match": {
+        "source": "steam",
+        "matchedTitle": "Cyberpunk 2077",
+        "matchedYear": 2020
+      },
+      "error": null
+    }
+  ]
+}

@@ -3952,3 +3952,127 @@
 {"k":"32344ea968b6960c","v":{"domain":"computing","confidence":"medium","vaultDomain":"machines","subject":"folding computer","fallback":false}}
 {"k":"214f148518451da7","v":{"domain":"space","confidence":"low","vaultDomain":"planet","subject":"moon machine","fallback":false}}
 {"k":"ba1c8dd8c82d604c","v":{"domain":"living","confidence":"high","vaultDomain":"culture","subject":"migratory birds","fallback":false}}
+{"k":"7c97424f8c01860f","v":{"domain":"mind","confidence":"high","vaultDomain":"intelligence","subject":"cybernetic brain","fallback":false}}
+{"k":"7d73ce956eae5cab","v":{"domain":"medicine","confidence":"high","vaultDomain":"health","subject":"cyber augmentation","fallback":false}}
+{"k":"e7fb0a21bde14b2f","v":{"domain":"medicine","confidence":"high","vaultDomain":"health","subject":"full cyborg","fallback":false}}
+{"k":"ddbad215bd9866de","v":{"domain":"surveillance","confidence":"medium","vaultDomain":"machines","subject":"active camo","fallback":false}}
+{"k":"f640513a242776db","v":{"domain":"mind","confidence":"high","vaultDomain":"intelligence","subject":"consciousness","fallback":false}}
+{"k":"cc5fd40135ba5a27","v":{"domain":"computing","confidence":"high","vaultDomain":"governance","subject":"cyber hacking","fallback":false}}
+{"k":"741471b4526a00f2","v":{"domain":"mind","confidence":"high","vaultDomain":"intelligence","subject":"memory manipulation","fallback":false}}
+{"k":"79044527cc7fdda1","v":{"domain":"computing","confidence":"high","vaultDomain":"governance","subject":"cyber attack","fallback":false}}
+{"k":"1b20021051e41724","v":{"domain":"computing","confidence":"high","vaultDomain":"intelligence","subject":"cyber defense","fallback":false}}
+{"k":"09cab026297c950a","v":{"domain":"mind","confidence":"high","vaultDomain":"health","subject":"external storage","fallback":false}}
+{"k":"d59e5d2603182939","v":{"domain":"robots","confidence":"high","vaultDomain":"machines","subject":"robot soldier","fallback":false}}
+{"k":"750b4b04c914a816","v":{"domain":"computing","confidence":"high","vaultDomain":"intelligence","subject":"ai program","fallback":false}}
+{"k":"0e1f84c7f370182a","v":{"domain":"robots","confidence":"medium","vaultDomain":"machines","subject":"robot body","fallback":false}}
+{"k":"42ae601a222dfffd","v":{"domain":"medicine","confidence":"high","vaultDomain":"health","subject":"brain implant","fallback":false}}
+{"k":"3451241130bfe517","v":{"domain":"living","confidence":"medium","vaultDomain":"work","subject":"protein bar","fallback":false}}
+{"k":"82cab0aec98fb17c","v":{"domain":"materials","confidence":"high","vaultDomain":"planet","subject":"nanobot","fallback":false}}
+{"k":"ec9f57950777cd03","v":{"domain":"mind","confidence":"high","vaultDomain":"culture","subject":"telekinesis","fallback":false}}
+{"k":"f905e22d1e4fcaff","v":{"domain":"mind","confidence":"high","vaultDomain":"society","subject":"telepathy","fallback":false}}
+{"k":"63bd1726d73a3e46","v":{"domain":"mind","confidence":"high","vaultDomain":"culture","subject":"teleportation","fallback":false}}
+{"k":"1086d1f053a4f437","v":{"domain":"mind","confidence":"high","vaultDomain":"society","subject":"precognition","fallback":false}}
+{"k":"0e9387bd64ac3e67","v":{"domain":"mind","confidence":"high","vaultDomain":"intelligence","subject":"psychic channel","fallback":false}}
+{"k":"1395b59cdcaaf82a","v":{"domain":"mind","confidence":"high","vaultDomain":"intelligence","subject":"hallucination attack","fallback":false}}
+{"k":"ec61e79479edd60c","v":{"domain":"space","confidence":"high","vaultDomain":"geopolitics","subject":"orbital laser","fallback":false}}
+{"k":"87f09e13842eebbd","v":{"domain":"weapons","confidence":"high","vaultDomain":"governance","subject":"laser designator","fallback":false}}
+{"k":"c7a6660312ee71c9","v":{"domain":"space","confidence":"high","vaultDomain":"geopolitics","subject":"orbital laser","fallback":false}}
+{"k":"519ba10271475212","v":{"domain":"transport","confidence":"high","vaultDomain":"work","subject":"flying platform","fallback":false}}
+{"k":"477c867a0f203eb1","v":{"domain":"robots","confidence":"high","vaultDomain":"machines","subject":"security robot","fallback":false}}
+{"k":"63bbf460dfed3c4a","v":{"domain":"medicine","confidence":"medium","vaultDomain":"health","subject":"psychic suppressant","fallback":false}}
+{"k":"2583cc9fd78f779d","v":{"domain":"living","confidence":"high","vaultDomain":"planet","subject":"cryo storage","fallback":false}}
+{"k":"1f4342e3c3856560","v":{"domain":"medicine","confidence":"high","vaultDomain":"health","subject":"mechanical arm","fallback":false}}
+{"k":"23c230735390759c","v":{"domain":"materials","confidence":"high","vaultDomain":"machines","subject":"superconducting motor","fallback":false}}
+{"k":"56c00e862e4b6679","v":{"domain":"transport","confidence":"high","vaultDomain":"health","subject":"mobility pod","fallback":false}}
+{"k":"1f69be43c55ddba0","v":{"domain":"space","confidence":"high","vaultDomain":"culture","subject":"anywhere door","fallback":false}}
+{"k":"40a56ba0dd758fa3","v":{"domain":"transport","confidence":"high","vaultDomain":"machines","subject":"flying headgear","fallback":false}}
+{"k":"f0588a76b169fab9","v":{"domain":"space","confidence":"high","vaultDomain":"society","subject":"time machine","fallback":false}}
+{"k":"6814e72c1d3ffc43","v":{"domain":"living","confidence":"medium","vaultDomain":"culture","subject":"time furoshiki","fallback":false}}
+{"k":"ee0eeb3ce6cad9f6","v":{"domain":"comms","confidence":"high","vaultDomain":"intelligence","subject":"translation konnyaku","fallback":false}}
+{"k":"d52fdabd5a113f2b","v":{"domain":"living","confidence":"medium","vaultDomain":"culture","subject":"dress-up camera","fallback":false}}
+{"k":"16adff917b970d99","v":{"domain":"medicine","confidence":"high","vaultDomain":"health","subject":"uso 800","fallback":false}}
+{"k":"95beeeed1b460947","v":{"domain":"medicine","confidence":"high","vaultDomain":"health","subject":"sono uso honto","fallback":false}}
+{"k":"f38fb26c23666550","v":{"domain":"materials","confidence":"high","vaultDomain":"machines","subject":"shrink light","fallback":false}}
+{"k":"24e9766b6299d5ce","v":{"domain":"materials","confidence":"high","vaultDomain":"machines","subject":"enlarge light","fallback":false}}
+{"k":"47aad96c5108011e","v":{"domain":"materials","confidence":"high","vaultDomain":"machines","subject":"shrink tunnel","fallback":false}}
+{"k":"f2189b0a6cbd7c32","v":{"domain":"mind","confidence":"medium","vaultDomain":"learning","subject":"psychological invisibility","fallback":false}}
+{"k":"5097881a8a09feae","v":{"domain":"surveillance","confidence":"high","vaultDomain":"machines","subject":"invisible cloak","fallback":false}}
+{"k":"39ad7cbfb97578ac","v":{"domain":"comms","confidence":"high","vaultDomain":"culture","subject":"teleport window","fallback":false}}
+{"k":"7bf36e2c317ac413","v":{"domain":"materials","confidence":"low","vaultDomain":"machines","subject":"weight meter","fallback":false}}
+{"k":"a002547db512e4fe","v":{"domain":"materials","confidence":"high","vaultDomain":"machines","subject":"dimension pocket","fallback":false}}
+{"k":"c5143c264d3e3a84","v":{"domain":"mind","confidence":"medium","vaultDomain":"learning","subject":"memory bread","fallback":false}}
+{"k":"022d3ac62d670dca","v":{"domain":"weapons","confidence":"high","vaultDomain":"machines","subject":"air cannon","fallback":false}}
+{"k":"7b5b2d530a491170","v":{"domain":"mind","confidence":"high","vaultDomain":"culture","subject":"hypothetical reality","fallback":false}}
+{"k":"57d0d7dd461822cf","v":{"domain":"materials","confidence":"medium","vaultDomain":"machines","subject":"atom vibration","fallback":false}}
+{"k":"7d652c2b870109c7","v":{"domain":"comms","confidence":"high","vaultDomain":"culture","subject":"teleportation bag","fallback":false}}
+{"k":"0b77b3f1750e4cd9","v":{"domain":"weapons","confidence":"high","vaultDomain":"machines","subject":"melee blades","fallback":false}}
+{"k":"48e3d241fd7e86dd","v":{"domain":"medicine","confidence":"medium","vaultDomain":"work","subject":"arm replacement","fallback":false}}
+{"k":"8b62b57ba8586dd4","v":{"domain":"weapons","confidence":"high","vaultDomain":"machines","subject":"wire whip","fallback":false}}
+{"k":"66558b9109b0a5a5","v":{"domain":"bio","confidence":"low","vaultDomain":"intelligence","subject":"combat time dilation","fallback":false}}
+{"k":"afb72990a4c337e8","v":{"domain":"bio","confidence":"medium","vaultDomain":"machines","subject":"reflex booster","fallback":false}}
+{"k":"2d2c29954992d03e","v":{"domain":"medicine","confidence":"high","vaultDomain":"intelligence","subject":"cybernetic vision","fallback":false}}
+{"k":"f39c80f989877341","v":{"domain":"bio","confidence":"medium","vaultDomain":"machines","subject":"jump boost","fallback":false}}
+{"k":"604e9e1b6716ee23","v":{"domain":"weapons","confidence":"high","vaultDomain":"geopolitics","subject":"smart weapon","fallback":false}}
+{"k":"adf2650f1afe0066","v":{"domain":"weapons","confidence":"high","vaultDomain":"intelligence","subject":"ai pistol","fallback":false}}
+{"k":"b069c1c59e52a899","v":{"domain":"medicine","confidence":"high","vaultDomain":"health","subject":"backup heart","fallback":false}}
+{"k":"5ac6aaf0ebd921ea","v":{"domain":"medicine","confidence":"high","vaultDomain":"health","subject":"pain dampener","fallback":false}}
+{"k":"a97201d3659b45fd","v":{"domain":"bio","confidence":"medium","vaultDomain":"work","subject":"cyberware surgery","fallback":false}}
+{"k":"4eba9eceaee01585","v":{"domain":"mind","confidence":"high","vaultDomain":"culture","subject":"brain recording","fallback":false}}
+{"k":"96ce44322f346384","v":{"domain":"computing","confidence":"high","vaultDomain":"intelligence","subject":"quick hacking","fallback":false}}
+{"k":"bf8081bb3d3252d4","v":{"domain":"computing","confidence":"high","vaultDomain":"intelligence","subject":"network breach","fallback":false}}
+{"k":"bc66ac26c92796bd","v":{"domain":"computing","confidence":"high","vaultDomain":"machines","subject":"hacking rig","fallback":false}}
+{"k":"4b158fdcd5984f1e","v":{"domain":"medicine","confidence":"medium","vaultDomain":"society","subject":"emergency service","fallback":false}}
+{"k":"56fcbd270ca6cb37","v":{"domain":"transport","confidence":"high","vaultDomain":"machines","subject":"autonomous taxi","fallback":false}}
+{"k":"cd4322db6c00c885","v":{"domain":"mind","confidence":"high","vaultDomain":"intelligence","subject":"digital mind","fallback":false}}
+{"k":"8e3ee1adc9321c0e","v":{"domain":"bio","confidence":"medium","vaultDomain":"health","subject":"neural implant","fallback":false}}
+{"k":"a88b3374dfd95d6d","v":{"domain":"mind","confidence":"high","vaultDomain":"intelligence","subject":"digital transfer","fallback":false}}
+{"k":"f2cffd5256310a16","v":{"domain":"computing","confidence":"medium","vaultDomain":"society","subject":"digital archive","fallback":false}}
+{"k":"95a908b946498799","v":{"domain":"weapons","confidence":"high","vaultDomain":"work","subject":"hovertank","fallback":false}}
+{"k":"b3034199fbab912a","v":{"domain":"computing","confidence":"low","vaultDomain":"intelligence","subject":"supercomputer","fallback":false}}
+{"k":"b628af656ad4509f","v":{"domain":"comms","confidence":"high","vaultDomain":"culture","subject":"instant comm","fallback":false}}
+{"k":"f8e4f9876577fca9","v":{"domain":"computing","confidence":"medium","vaultDomain":"geopolitics","subject":"jammer","fallback":false}}
+{"k":"597438201e513b67","v":{"domain":"surveillance","confidence":"high","vaultDomain":"governance","subject":"total surveil","fallback":false}}
+{"k":"f2f8e41ec0c5460b","v":{"domain":"computing","confidence":"high","vaultDomain":"intelligence","subject":"real time","fallback":false}}
+{"k":"3c61c4e20c2bbd11","v":{"domain":"mind","confidence":"medium","vaultDomain":"culture","subject":"deception","fallback":false}}
+{"k":"aff3ffbd565d13c4","v":{"domain":"comms","confidence":"high","vaultDomain":"planet","subject":"amplification","fallback":false}}
+{"k":"eb6c8c055bde66fa","v":{"domain":"computing","confidence":"medium","vaultDomain":"governance","subject":"transmitter","fallback":false}}
+{"k":"c23455340a303e64","v":{"domain":"mind","confidence":"high","vaultDomain":"culture","subject":"vr game","fallback":false}}
+{"k":"668dbe2f3d5fa14b","v":{"domain":"mind","confidence":"medium","vaultDomain":"health","subject":"v suit","fallback":false}}
+{"k":"82b17412c00be927","v":{"domain":"computing","confidence":"high","vaultDomain":"intelligence","subject":"human formation","fallback":false}}
+{"k":"ca3a2666fda9570c","v":{"domain":"bio","confidence":"medium","vaultDomain":"health","subject":"dehydration","fallback":false}}
+{"k":"f1d184b47f331ee4","v":{"domain":"living","confidence":"high","vaultDomain":"machines","subject":"storage","fallback":false}}
+{"k":"be0c18e7f76ab916","v":{"domain":"energy","confidence":"medium","vaultDomain":"planet","subject":"climate","fallback":false}}
+{"k":"255ff8a86df06359","v":{"domain":"space","confidence":"high","vaultDomain":"planet","subject":"invasion fleet","fallback":false}}
+{"k":"0280559a1328394e","v":{"domain":"materials","confidence":"high","vaultDomain":"machines","subject":"nanofiber material","fallback":false}}
+{"k":"30a1d18460635a30","v":{"domain":"weapons","confidence":"high","vaultDomain":"governance","subject":"nanofilament trap","fallback":false}}
+{"k":"64131d199f561586","v":{"domain":"society","confidence":"medium","vaultDomain":"geopolitics","subject":"wallfacers","fallback":false}}
+{"k":"916d8d975c4eeac8","v":{"domain":"surveillance","confidence":"high","vaultDomain":"governance","subject":"wallbreaker","fallback":false}}
+{"k":"3777d25bb53d369c","v":{"domain":"space","confidence":"low","vaultDomain":"planet","subject":"ghost fleet","fallback":false}}
+{"k":"b60bdca7998f1f0f","v":{"domain":"weapons","confidence":"high","vaultDomain":"geopolitics","subject":"deflection weapon","fallback":false}}
+{"k":"e8936a4fb596318a","v":{"domain":"mind","confidence":"high","vaultDomain":"health","subject":"mental seal","fallback":false}}
+{"k":"aa9f79afe90a1f9a","v":{"domain":"society","confidence":"medium","vaultDomain":"learning","subject":"cosmic sociology","fallback":false}}
+{"k":"0ad7018e500d33d4","v":{"domain":"mind","confidence":"high","vaultDomain":"geopolitics","subject":"dark forest","fallback":false}}
+{"k":"0efb25ff8223cc57","v":{"domain":"energy","confidence":"high","vaultDomain":"planet","subject":"solar broadcast","fallback":false}}
+{"k":"e875e35138109860","v":{"domain":"weapons","confidence":"high","vaultDomain":"governance","subject":"deterrence device","fallback":false}}
+{"k":"8f323d3a4e5c9a90","v":{"domain":"materials","confidence":"medium","vaultDomain":"machines","subject":"droplet probe","fallback":false}}
+{"k":"f62b88adfecd6e17","v":{"domain":"weapons","confidence":"high","vaultDomain":"geopolitics","subject":"kinetic impact","fallback":false}}
+{"k":"5890245ed8934bd0","v":{"domain":"medicine","confidence":"high","vaultDomain":"health","subject":"hibernation","fallback":false}}
+{"k":"c16c40ee73704665","v":{"domain":"space","confidence":"high","vaultDomain":"machines","subject":"fusion warship","fallback":false}}
+{"k":"7a818d893b777f03","v":{"domain":"weapons","confidence":"high","vaultDomain":"geopolitics","subject":"weaponized engine","fallback":false}}
+{"k":"f673197a6f3b754b","v":{"domain":"energy","confidence":"medium","vaultDomain":"machines","subject":"fusion engine","fallback":false}}
+{"k":"042e9afa5d105076","v":{"domain":"weapons","confidence":"high","vaultDomain":"geopolitics","subject":"laser cannon","fallback":false}}
+{"k":"a5f45d6ec25a3a81","v":{"domain":"comms","confidence":"high","vaultDomain":"culture","subject":"broadcast jamming","fallback":false}}
+{"k":"d105fce111683688","v":{"domain":"medicine","confidence":"high","vaultDomain":"health","subject":"suspended animation","fallback":false}}
+{"k":"b449282cad007821","v":{"domain":"space","confidence":"high","vaultDomain":"planet","subject":"lightspeed propulsion","fallback":false}}
+{"k":"77e383e284e11778","v":{"domain":"space","confidence":"high","vaultDomain":"planet","subject":"starship","fallback":false}}
+{"k":"281c7ba3e105c72b","v":{"domain":"space","confidence":"high","vaultDomain":"planet","subject":"propulsion wake","fallback":false}}
+{"k":"82bb59d920411827","v":{"domain":"weapons","confidence":"high","vaultDomain":"geopolitics","subject":"dimensional weapon","fallback":false}}
+{"k":"82ad7cbc4c761fa1","v":{"domain":"space","confidence":"high","vaultDomain":"planet","subject":"defensive zone","fallback":false}}
+{"k":"771b5558145a7a16","v":{"domain":"space","confidence":"high","vaultDomain":"society","subject":"bunker","fallback":false}}
+{"k":"576fc0c9091b30ed","v":{"domain":"weapons","confidence":"high","vaultDomain":"geopolitics","subject":"stellar weapon","fallback":false}}
+{"k":"77f82268f1201196","v":{"domain":"surveillance","confidence":"high","vaultDomain":"governance","subject":"deterrence system","fallback":false}}
+{"k":"b8c489000c238be5","v":{"domain":"comms","confidence":"high","vaultDomain":"culture","subject":"gravitational wave","fallback":false}}
+{"k":"1d6d4021219e871e","v":{"domain":"comms","confidence":"high","vaultDomain":"governance","subject":"broadcast","fallback":false}}
+{"k":"2f91b6f83666fd6f","v":{"domain":"space","confidence":"high","vaultDomain":"planet","subject":"universe","fallback":false}}
+{"k":"08ed38f9d78e9162","v":{"domain":"space","confidence":"medium","vaultDomain":"planet","subject":"fragment","fallback":false}}
+{"k":"68c228b3a3725939","v":{"domain":"transport","confidence":"high","vaultDomain":"culture","subject":"escape","fallback":false}}
