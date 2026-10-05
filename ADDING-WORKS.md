@@ -111,6 +111,29 @@ medical conditions (*cyberbrain sclerosis*), sub-components of an idea already
 present, and cross-volume duplicates. Record why in the batch's commit message
 so the cut is auditable rather than silent.
 
+## Where the evidence comes from
+
+Every extracted idea carries a `sourceUrl` and a short quote. That rule exists
+to catch entries written from memory — but on its own it does not, and it has
+already been satisfied without being met.
+
+Two failure modes to watch for, both seen on the *Project Hail Mary* batch:
+
+- **Quotes lifted from a fetch tool's page summary rather than the page.** The
+  summary is model-written, so quoting it proves nothing: it is model output
+  vouching for model output. Require quotes from the page text itself.
+- **Every citation pointing at one secondary wiki.** 25 of that batch's 27
+  ideas cited a single site that looks AI-generated. The letter of the rule
+  held; the chain of evidence did not.
+
+So ask the extractor to report the distribution of source domains, and when a
+work's evidence concentrates on one site, verify independently before
+accepting. Pick the claim that would be most surprising if true and easiest to
+invent — for that batch, "astrophage stores energy as neutrino mass" — and go
+looking for it elsewhere. It held up (the author discusses it in interviews),
+so the batch was kept, with the circumstances recorded in `meta.provenance`.
+Had it not, the whole batch would have gone back.
+
 ## Covers
 
 `build-media-covers.js` picks its source from `medium`: AniList for
