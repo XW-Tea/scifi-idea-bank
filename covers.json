@@ -8803,5 +8803,22 @@
     "remoteUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/38400/library_600x900.jpg",
     "attribution": "Cover art via Steam (app 38400). Third-party artwork; rights held by the publisher.",
     "addedBy": "covers-manual.js"
+  },
+  "project-hail-mary--andy-weir": {
+    "type": "photo",
+    "file": "covers/photo/project-hail-mary--andy-weir.jpg",
+    "title": "Project Hail Mary",
+    "author": "Andy Weir",
+    "width": 180,
+    "height": 276,
+    "matchedTitle": "Project Hail Mary",
+    "matchedAuthor": "Andy Weir",
+    "matchedYear": 2021,
+    "source": "openlibrary",
+    "olWork": "/works/OL21745884W",
+    "olCoverId": 11200092,
+    "sourceUrl": "https://openlibrary.org/works/OL21745884W",
+    "remoteUrl": "https://covers.openlibrary.org/b/id/11200092-M.jpg",
+    "attribution": "Cover image via Open Library (cover id 11200092, /works/OL21745884W). Third-party artwork; rights held by the original publisher."
   }
 }

@@ -1,9 +1,9 @@
 {
-  "generated": "2026-08-06T04:21:33.811Z",
+  "generated": "2026-10-05T15:51:14.836Z",
   "model": "qwen2.5:14b",
   "promptVersion": "v2",
-  "ideas": 3963,
-  "classified": 3963,
+  "ideas": 3989,
+  "classified": 3989,
   "laneOrder": [
     "materials",
     "energy",
@@ -24,97 +24,97 @@
     {
       "slug": "materials",
       "label": "Materials & Manufacturing",
-      "count": 271,
-      "pct": 6.84
+      "count": 276,
+      "pct": 6.92
     },
     {
       "slug": "energy",
       "label": "Energy & Environment",
-      "count": 168,
+      "count": 169,
       "pct": 4.24
     },
     {
       "slug": "transport",
       "label": "Transport & Vehicles",
       "count": 363,
-      "pct": 9.16
+      "pct": 9.1
     },
     {
       "slug": "space",
       "label": "Space & Flight",
-      "count": 543,
-      "pct": 13.7
+      "count": 550,
+      "pct": 13.79
     },
     {
       "slug": "weapons",
       "label": "Weapons & Warfare",
       "count": 269,
-      "pct": 6.79
+      "pct": 6.74
     },
     {
       "slug": "robots",
       "label": "Robots & Automata",
       "count": 411,
-      "pct": 10.37
+      "pct": 10.3
     },
     {
       "slug": "living",
       "label": "Food & Daily Life",
       "count": 290,
-      "pct": 7.32
+      "pct": 7.27
     },
     {
       "slug": "medicine",
       "label": "Medicine & the Body",
-      "count": 242,
-      "pct": 6.11
+      "count": 243,
+      "pct": 6.09
     },
     {
       "slug": "bio",
       "label": "Genetics & Life Engineering",
-      "count": 146,
-      "pct": 3.68
+      "count": 153,
+      "pct": 3.84
     },
     {
       "slug": "mind",
       "label": "Mind & Perception",
-      "count": 315,
-      "pct": 7.95
+      "count": 316,
+      "pct": 7.92
     },
     {
       "slug": "society",
       "label": "Society & Economy",
       "count": 77,
-      "pct": 1.94
+      "pct": 1.93
     },
     {
       "slug": "surveillance",
       "label": "Surveillance & Identity",
       "count": 186,
-      "pct": 4.69
+      "pct": 4.66
     },
     {
       "slug": "comms",
       "label": "Communication & Media",
-      "count": 387,
-      "pct": 9.77
+      "count": 391,
+      "pct": 9.8
     },
     {
       "slug": "computing",
       "label": "Computing & Intelligence",
       "count": 295,
-      "pct": 7.44
+      "pct": 7.4
     }
   ],
   "gates": [],
   "gatesTripped": 0,
   "confidence": {
-    "high": 2585,
+    "high": 2611,
     "medium": 1023,
     "low": 355,
-    "lowPct": 8.96,
-    "mediumPct": 25.81,
-    "highPct": 65.23
+    "lowPct": 8.9,
+    "mediumPct": 25.65,
+    "highPct": 65.46
   },
   "fallback": {
     "count": 2,
@@ -123,61 +123,61 @@
   "vaultDomains": [
     {
       "slug": "machines",
-      "count": 899,
-      "pct": 22.68
+      "count": 906,
+      "pct": 22.71
     },
     {
       "slug": "planet",
-      "count": 661,
-      "pct": 16.68
+      "count": 670,
+      "pct": 16.8
     },
     {
       "slug": "culture",
-      "count": 548,
-      "pct": 13.83
+      "count": 550,
+      "pct": 13.79
     },
     {
       "slug": "intelligence",
-      "count": 485,
-      "pct": 12.24
+      "count": 487,
+      "pct": 12.21
     },
     {
       "slug": "health",
-      "count": 421,
-      "pct": 10.62
+      "count": 427,
+      "pct": 10.7
     },
     {
       "slug": "governance",
       "count": 290,
-      "pct": 7.32
+      "pct": 7.27
     },
     {
       "slug": "work",
       "count": 234,
-      "pct": 5.9
+      "pct": 5.87
     },
     {
       "slug": "geopolitics",
       "count": 167,
-      "pct": 4.21
+      "pct": 4.19
     },
     {
       "slug": "wealth",
       "count": 102,
-      "pct": 2.57
+      "pct": 2.56
     },
     {
       "slug": "society",
       "count": 94,
-      "pct": 2.37
+      "pct": 2.36
     },
     {
       "slug": "learning",
       "count": 62,
-      "pct": 1.56
+      "pct": 1.55
     }
   ],
-  "distinctSubjects": 3540,
+  "distinctSubjects": 3558,
   "topSubjects": [
     {
       "subject": "ray gun",
@@ -221,7 +221,11 @@
     },
     {
       "subject": "spaceship",
-      "count": 5
+      "count": 6
+    },
+    {
+      "subject": "propulsion",
+      "count": 6
     },
     {
       "subject": "virtual world",
@@ -240,11 +244,15 @@
       "count": 5
     },
     {
-      "subject": "propulsion",
+      "subject": "artificial gravity",
       "count": 5
     },
     {
       "subject": "airlock",
+      "count": 4
+    },
+    {
+      "subject": "habitat",
       "count": 4
     },
     {
@@ -297,10 +305,6 @@
     },
     {
       "subject": "force shield",
-      "count": 4
-    },
-    {
-      "subject": "artificial gravity",
       "count": 4
     },
     {
@@ -368,10 +372,6 @@
       "count": 3
     },
     {
-      "subject": "habitat",
-      "count": 3
-    },
-    {
       "subject": "spacecraft",
       "count": 3
     },
@@ -385,6 +385,10 @@
     },
     {
       "subject": "habitable planet search",
+      "count": 3
+    },
+    {
+      "subject": "telescope",
       "count": 3
     },
     {
@@ -413,10 +417,6 @@
     },
     {
       "subject": "telepathy device",
-      "count": 3
-    },
-    {
-      "subject": "brain stimulator",
       "count": 3
     }
   ],
@@ -606,547 +606,536 @@
   ],
   "sample40": [
     {
-      "id": 2491,
-      "year": 1947,
-      "device": "Gyrocab",
-      "domain": "transport",
+      "id": 3576,
+      "year": 1928,
+      "device": "Disintegrator Ray (Dis Ray)",
+      "domain": "weapons",
       "confidence": "high",
-      "subject": "flying taxi",
-      "vaultDomain": "machines",
+      "subject": "disintegration ray",
+      "vaultDomain": "geopolitics",
       "fallback": false,
-      "line": "Gyrocab (1947) -> transport (high)"
+      "line": "Disintegrator Ray (Dis Ray) (1928) -> weapons (high)"
     },
     {
-      "id": 1225,
-      "year": 1970,
-      "device": "Trumps",
-      "domain": "comms",
-      "confidence": "low",
-      "subject": "magical tarot cards",
-      "vaultDomain": "culture",
-      "fallback": false,
-      "line": "Trumps (1970) -> comms (low)"
-    },
-    {
-      "id": 1922,
-      "year": 1957,
-      "device": "The Machine (M)",
+      "id": 3655,
+      "year": 1899,
+      "device": "Automatic Valet",
       "domain": "robots",
       "confidence": "high",
-      "subject": "shape shifting robot",
+      "subject": "robot valet",
       "vaultDomain": "machines",
       "fallback": false,
-      "line": "The Machine (M) (1957) -> robots (high)"
+      "line": "Automatic Valet (1899) -> robots (high)"
     },
     {
-      "id": 2092,
-      "year": 1961,
-      "device": "Waterbed (Hydraulic Bed)",
-      "domain": "living",
-      "confidence": "high",
-      "subject": "waterbed",
-      "vaultDomain": "culture",
-      "fallback": false,
-      "line": "Waterbed (Hydraulic Bed) (1961) -> living (high)"
-    },
-    {
-      "id": 2570,
-      "year": 1943,
-      "device": "Flame Barrier",
-      "domain": "weapons",
-      "confidence": "high",
-      "subject": "force field",
-      "vaultDomain": "geopolitics",
-      "fallback": false,
-      "line": "Flame Barrier (1943) -> weapons (high)"
-    },
-    {
-      "id": 1010,
-      "year": 1939,
-      "device": "Radio-Facsimile Receiver",
-      "domain": "comms",
-      "confidence": "high",
-      "subject": "video telephone",
-      "vaultDomain": "culture",
-      "fallback": false,
-      "line": "Radio-Facsimile Receiver (1939) -> comms (high)"
-    },
-    {
-      "id": 2155,
-      "year": 1953,
-      "device": "Space Weakness",
-      "domain": "space",
-      "confidence": "low",
-      "subject": "zero gravity",
-      "vaultDomain": "machines",
-      "fallback": false,
-      "line": "Space Weakness (1953) -> space (low)"
-    },
-    {
-      "id": 2389,
-      "year": 1951,
-      "device": "Force-Field Penknife",
-      "domain": "weapons",
-      "confidence": "high",
-      "subject": "force-field knife",
-      "vaultDomain": "machines",
-      "fallback": false,
-      "line": "Force-Field Penknife (1951) -> weapons (high)"
-    },
-    {
-      "id": 2817,
-      "year": 1940,
-      "device": "Vacuum Wall Compartments",
-      "domain": "materials",
-      "confidence": "medium",
-      "subject": "vacuum walls",
-      "vaultDomain": "planet",
-      "fallback": false,
-      "line": "Vacuum Wall Compartments (1940) -> materials (medium)"
-    },
-    {
-      "id": 1535,
-      "year": 1965,
-      "device": "Remote-Cast Snooper",
-      "domain": "surveillance",
-      "confidence": "medium",
-      "subject": "poison snooper",
-      "vaultDomain": "governance",
-      "fallback": false,
-      "line": "Remote-Cast Snooper (1965) -> surveillance (medium)"
-    },
-    {
-      "id": 2365,
-      "year": 1951,
-      "device": "Vibratory Mass Penetrator",
-      "domain": "materials",
-      "confidence": "medium",
-      "subject": "mass penetrator",
-      "vaultDomain": "machines",
-      "fallback": false,
-      "line": "Vibratory Mass Penetrator (1951) -> materials (medium)"
-    },
-    {
-      "id": 2256,
-      "year": 1952,
-      "device": "Space Beacon",
-      "domain": "space",
-      "confidence": "high",
-      "subject": "beacon star",
-      "vaultDomain": "geopolitics",
-      "fallback": false,
-      "line": "Space Beacon (1952) -> space (high)"
-    },
-    {
-      "id": 3447,
-      "year": 1930,
-      "device": "Shield",
-      "domain": "weapons",
-      "confidence": "medium",
-      "subject": "force shield",
-      "vaultDomain": "governance",
-      "fallback": false,
-      "line": "Shield (1930) -> weapons (medium)"
-    },
-    {
-      "id": 2536,
-      "year": 1944,
-      "device": "Gravitics",
+      "id": 2632,
+      "year": 1942,
+      "device": "Radiant Power Receptor (DeKalbs)",
       "domain": "energy",
-      "confidence": "medium",
-      "subject": "gravity tech",
-      "vaultDomain": "planet",
-      "fallback": false,
-      "line": "Gravitics (1944) -> energy (medium)"
-    },
-    {
-      "id": 2451,
-      "year": 1949,
-      "device": "Fresher",
-      "domain": "living",
-      "confidence": "medium",
-      "subject": "refreshing",
-      "vaultDomain": "culture",
-      "fallback": false,
-      "line": "Fresher (1949) -> living (medium)"
-    },
-    {
-      "id": 142,
-      "year": 2008,
-      "device": "Spine-Clamp",
-      "domain": "surveillance",
       "confidence": "high",
-      "subject": "movement constraint",
-      "vaultDomain": "governance",
+      "subject": "power receptor",
+      "vaultDomain": "machines",
       "fallback": false,
-      "line": "Spine-Clamp (2008) -> surveillance (high)"
+      "line": "Radiant Power Receptor (DeKalbs) (1942) -> energy (high)"
     },
     {
-      "id": 1771,
-      "year": 1961,
-      "device": "Taper",
-      "domain": "surveillance",
+      "id": 3508,
+      "year": 1929,
+      "device": "Shovel-Handed Digging Machines",
+      "domain": "robots",
+      "confidence": "high",
+      "subject": "digging machines",
+      "vaultDomain": "work",
+      "fallback": false,
+      "line": "Shovel-Handed Digging Machines (1929) -> robots (high)"
+    },
+    {
+      "id": 3725,
+      "year": 1867,
+      "device": "Launching Facility",
+      "domain": "transport",
       "confidence": "medium",
-      "subject": "planet log",
-      "vaultDomain": "governance",
+      "subject": "launch facility",
+      "vaultDomain": "machines",
       "fallback": false,
-      "line": "Taper (1961) -> surveillance (medium)"
+      "line": "Launching Facility (1867) -> transport (medium)"
     },
     {
-      "id": 3253,
+      "id": 510,
+      "year": 1995,
+      "device": "Chevaline",
+      "domain": "robots",
+      "confidence": "high",
+      "subject": "robotic vehicle",
+      "vaultDomain": "machines",
+      "fallback": false,
+      "line": "Chevaline (1995) -> robots (high)"
+    },
+    {
+      "id": 259,
+      "year": 1928,
+      "device": "Rocket Gun",
+      "domain": "weapons",
+      "confidence": "high",
+      "subject": "rocket gun",
+      "vaultDomain": "machines",
+      "fallback": false,
+      "line": "Rocket Gun (1928) -> weapons (high)"
+    },
+    {
+      "id": 3281,
       "year": 1932,
-      "device": "Gravity Beam",
-      "domain": "weapons",
-      "confidence": "high",
-      "subject": "gravity ray",
-      "vaultDomain": "machines",
-      "fallback": false,
-      "line": "Gravity Beam (1932) -> weapons (high)"
-    },
-    {
-      "id": 1542,
-      "year": 1965,
-      "device": "Voice",
-      "domain": "mind",
-      "confidence": "medium",
-      "subject": "voice control",
-      "vaultDomain": "governance",
-      "fallback": false,
-      "line": "Voice (1965) -> mind (medium)"
-    },
-    {
-      "id": 2723,
-      "year": 1941,
-      "device": "Pseudogravity",
-      "domain": "materials",
-      "confidence": "high",
-      "subject": "pseudogravity",
-      "vaultDomain": "planet",
-      "fallback": false,
-      "line": "Pseudogravity (1941) -> materials (high)"
-    },
-    {
-      "id": 659,
-      "year": 1989,
-      "device": "Farcaster",
-      "domain": "space",
-      "confidence": "low",
-      "subject": "farcaster",
-      "vaultDomain": "culture",
-      "fallback": false,
-      "line": "Farcaster (1989) -> space (low)"
-    },
-    {
-      "id": 1674,
-      "year": 1953,
-      "device": "Garbage Screen",
-      "domain": "space",
-      "confidence": "medium",
-      "subject": "radar jammer",
-      "vaultDomain": "planet",
-      "fallback": false,
-      "line": "Garbage Screen (1953) -> space (medium)"
-    },
-    {
-      "id": 1192,
-      "year": 1972,
-      "device": "The Krang",
-      "domain": "weapons",
-      "confidence": "high",
-      "subject": "musical weapon",
-      "vaultDomain": "machines",
-      "fallback": false,
-      "line": "The Krang (1972) -> weapons (high)"
-    },
-    {
-      "id": 555,
-      "year": 1931,
-      "device": "Adoption of Television",
-      "domain": "comms",
-      "confidence": "medium",
-      "subject": "television prediction",
-      "vaultDomain": "culture",
-      "fallback": false,
-      "line": "Adoption of Television (1931) -> comms (medium)"
-    },
-    {
-      "id": 619,
-      "year": 1990,
-      "device": "Leaf Screens",
-      "domain": "comms",
-      "confidence": "medium",
-      "subject": "leaf screens",
-      "vaultDomain": "learning",
-      "fallback": false,
-      "line": "Leaf Screens (1990) -> comms (medium)"
-    },
-    {
-      "id": 551,
-      "year": 1994,
-      "device": "Tannin-Secretion Pills",
-      "domain": "bio",
-      "confidence": "medium",
-      "subject": "skin protection",
-      "vaultDomain": "health",
-      "fallback": false,
-      "line": "Tannin-Secretion Pills (1994) -> bio (medium)"
-    },
-    {
-      "id": 3415,
-      "year": 1931,
-      "device": "Blue Beam",
-      "domain": "weapons",
-      "confidence": "medium",
-      "subject": "blue beam",
-      "vaultDomain": "geopolitics",
-      "fallback": false,
-      "line": "Blue Beam (1931) -> weapons (medium)"
-    },
-    {
-      "id": 3663,
-      "year": 1898,
-      "device": "Disintegrator",
-      "domain": "weapons",
-      "confidence": "high",
-      "subject": "disintegrator gun",
-      "vaultDomain": "geopolitics",
-      "fallback": false,
-      "line": "Disintegrator (1898) -> weapons (high)"
-    },
-    {
-      "id": 1293,
-      "year": 1969,
-      "device": "Drop-Capsule",
-      "domain": "space",
-      "confidence": "high",
-      "subject": "minimal spaceship",
-      "vaultDomain": "planet",
-      "fallback": false,
-      "line": "Drop-Capsule (1969) -> space (high)"
-    },
-    {
-      "id": 722,
-      "year": 1986,
-      "device": "Slamhound",
+      "device": "Electro-Bullet",
       "domain": "weapons",
       "confidence": "high",
       "subject": "ray gun",
       "vaultDomain": "machines",
       "fallback": false,
-      "line": "Slamhound (1986) -> weapons (high)"
+      "line": "Electro-Bullet (1932) -> weapons (high)"
     },
     {
-      "id": 2101,
-      "year": 1954,
-      "device": "Synapsis-Coils",
-      "domain": "computing",
+      "id": 241,
+      "year": 2004,
+      "device": "Emissarial Projection",
+      "domain": "comms",
       "confidence": "high",
-      "subject": "storage",
+      "subject": "expert system",
+      "vaultDomain": "culture",
+      "fallback": false,
+      "line": "Emissarial Projection (2004) -> comms (high)"
+    },
+    {
+      "id": 772,
+      "year": 1985,
+      "device": "Car Dashboard Drone Controller",
+      "domain": "computing",
+      "confidence": "low",
+      "subject": "drone controller",
       "vaultDomain": "intelligence",
       "fallback": false,
-      "line": "Synapsis-Coils (1954) -> computing (high)"
+      "line": "Car Dashboard Drone Controller (1985) -> computing (low)"
     },
     {
-      "id": 2369,
-      "year": 1951,
-      "device": "Zag House",
-      "domain": "mind",
-      "confidence": "high",
-      "subject": "zag house",
-      "vaultDomain": "learning",
-      "fallback": false,
-      "line": "Zag House (1951) -> mind (high)"
-    },
-    {
-      "id": 3041,
-      "year": 1936,
-      "device": "Electronized Gravity Plate",
+      "id": 3205,
+      "year": 1933,
+      "device": "Space-Sailor",
       "domain": "space",
       "confidence": "high",
-      "subject": "gravity plate",
+      "subject": "space sailor",
       "vaultDomain": "planet",
       "fallback": false,
-      "line": "Electronized Gravity Plate (1936) -> space (high)"
+      "line": "Space-Sailor (1933) -> space (high)"
     },
     {
-      "id": 1575,
-      "year": 1965,
-      "device": "Dispensing Tooth",
-      "domain": "medicine",
-      "confidence": "medium",
-      "subject": "dispensing tooth",
-      "vaultDomain": "health",
+      "id": 2143,
+      "year": 1963,
+      "device": "Unicephalon 40-D",
+      "domain": "computing",
+      "confidence": "high",
+      "subject": "supercomputer",
+      "vaultDomain": "intelligence",
       "fallback": false,
-      "line": "Dispensing Tooth (1965) -> medicine (medium)"
+      "line": "Unicephalon 40-D (1963) -> computing (high)"
     },
     {
-      "id": 1863,
-      "year": 1956,
-      "device": "Vehicle Sleep Sensor",
+      "id": 1146,
+      "year": 1941,
+      "device": "Roboticist",
+      "domain": "robots",
+      "confidence": "high",
+      "subject": "robotics",
+      "vaultDomain": "machines",
+      "fallback": false,
+      "line": "Roboticist (1941) -> robots (high)"
+    },
+    {
+      "id": 2476,
+      "year": 1968,
+      "device": "Auto-Seal",
+      "domain": "materials",
+      "confidence": "medium",
+      "subject": "outlet cover",
+      "vaultDomain": "society",
+      "fallback": false,
+      "line": "Auto-Seal (1968) -> materials (medium)"
+    },
+    {
+      "id": 218,
+      "year": 2005,
+      "device": "Lobster AI",
+      "domain": "computing",
+      "confidence": "medium",
+      "subject": "lobster brain",
+      "vaultDomain": "intelligence",
+      "fallback": false,
+      "line": "Lobster AI (2005) -> computing (medium)"
+    },
+    {
+      "id": 1286,
+      "year": 1969,
+      "device": "Rubber Hoof",
+      "domain": "robots",
+      "confidence": "high",
+      "subject": "silent running",
+      "vaultDomain": "machines",
+      "fallback": false,
+      "line": "Rubber Hoof (1969) -> robots (high)"
+    },
+    {
+      "id": 2405,
+      "year": 1966,
+      "device": "Auto-Scan",
       "domain": "surveillance",
       "confidence": "high",
-      "subject": "sleep sensor",
+      "subject": "drone control",
       "vaultDomain": "governance",
       "fallback": false,
-      "line": "Vehicle Sleep Sensor (1956) -> surveillance (high)"
+      "line": "Auto-Scan (1966) -> surveillance (high)"
     },
     {
-      "id": 972,
-      "year": 1979,
-      "device": "Infinite Improbability Drive",
-      "domain": "space",
+      "id": 2157,
+      "year": 1964,
+      "device": "Stick-Tight",
+      "domain": "surveillance",
       "confidence": "high",
-      "subject": "improbability drive",
-      "vaultDomain": "planet",
+      "subject": "surveillance device",
+      "vaultDomain": "governance",
       "fallback": false,
-      "line": "Infinite Improbability Drive (1979) -> space (high)"
+      "line": "Stick-Tight (1964) -> surveillance (high)"
     },
     {
-      "id": 2689,
-      "year": 1973,
-      "device": "Light-Sculpture",
-      "domain": "living",
+      "id": 947,
+      "year": 1980,
+      "device": "Fuligin",
+      "domain": "materials",
+      "confidence": "high",
+      "subject": "black material",
+      "vaultDomain": "machines",
+      "fallback": false,
+      "line": "Fuligin (1980) -> materials (high)"
+    },
+    {
+      "id": 1833,
+      "year": 1959,
+      "device": "Saddle",
+      "domain": "transport",
       "confidence": "low",
-      "subject": "light sculpture",
-      "vaultDomain": "culture",
+      "subject": "saddle",
+      "vaultDomain": "machines",
       "fallback": false,
-      "line": "Light-Sculpture (1973) -> living (low)"
+      "line": "Saddle (1959) -> transport (low)"
     },
     {
-      "id": 3197,
-      "year": 1933,
-      "device": "Tubular Space-Gangway",
-      "domain": "space",
+      "id": 205,
+      "year": 2006,
+      "device": "Microwave Pistol",
+      "domain": "weapons",
       "confidence": "high",
-      "subject": "gangway",
-      "vaultDomain": "planet",
+      "subject": "microwave weapon",
+      "vaultDomain": "governance",
       "fallback": false,
-      "line": "Tubular Space-Gangway (1933) -> space (high)"
+      "line": "Microwave Pistol (2006) -> weapons (high)"
     },
     {
-      "id": 833,
-      "year": 1984,
-      "device": "Image-Amps",
-      "domain": "comms",
-      "confidence": "medium",
-      "subject": "vision boosters",
-      "vaultDomain": "culture",
-      "fallback": false,
-      "line": "Image-Amps (1984) -> comms (medium)"
-    },
-    {
-      "id": 1416,
-      "year": 1950,
-      "device": "Shipboard Medical Treatment",
+      "id": 2045,
+      "year": 1960,
+      "device": "Transdermal Drug Capsule",
       "domain": "medicine",
       "confidence": "high",
-      "subject": "infection",
+      "subject": "drug capsule",
       "vaultDomain": "health",
       "fallback": false,
-      "line": "Shipboard Medical Treatment (1950) -> medicine (high)"
+      "line": "Transdermal Drug Capsule (1960) -> medicine (high)"
+    },
+    {
+      "id": 1831,
+      "year": 1955,
+      "device": "Automatized Factory",
+      "domain": "computing",
+      "confidence": "high",
+      "subject": "factory",
+      "vaultDomain": "work",
+      "fallback": false,
+      "line": "Automatized Factory (1955) -> computing (high)"
+    },
+    {
+      "id": 3021,
+      "year": 1984,
+      "device": "Computer-Created Dub",
+      "domain": "computing",
+      "confidence": "high",
+      "subject": "music creation",
+      "vaultDomain": "culture",
+      "fallback": false,
+      "line": "Computer-Created Dub (1984) -> computing (high)"
+    },
+    {
+      "id": 3607,
+      "year": 1915,
+      "device": "Food Tablet",
+      "domain": "living",
+      "confidence": "low",
+      "subject": "food tablet",
+      "vaultDomain": "health",
+      "fallback": false,
+      "line": "Food Tablet (1915) -> living (low)"
+    },
+    {
+      "id": 1689,
+      "year": 1964,
+      "device": "Nipple-Assist",
+      "domain": "living",
+      "confidence": "low",
+      "subject": "nipple assist",
+      "vaultDomain": "machines",
+      "fallback": false,
+      "line": "Nipple-Assist (1964) -> living (low)"
+    },
+    {
+      "id": 1161,
+      "year": 1974,
+      "device": "Numbitol",
+      "domain": "medicine",
+      "confidence": "high",
+      "subject": "anesthetic",
+      "vaultDomain": "health",
+      "fallback": false,
+      "line": "Numbitol (1974) -> medicine (high)"
+    },
+    {
+      "id": 794,
+      "year": 1984,
+      "device": "Ixian Probe",
+      "domain": "mind",
+      "confidence": "medium",
+      "subject": "brain scanner",
+      "vaultDomain": "intelligence",
+      "fallback": false,
+      "line": "Ixian Probe (1984) -> mind (medium)"
+    },
+    {
+      "id": 380,
+      "year": 1999,
+      "device": "Punishment Sphere",
+      "domain": "surveillance",
+      "confidence": "high",
+      "subject": "punishment sphere",
+      "vaultDomain": "governance",
+      "fallback": false,
+      "line": "Punishment Sphere (1999) -> surveillance (high)"
+    },
+    {
+      "id": 3743,
+      "year": 2022,
+      "device": "Folding Terminal",
+      "domain": "computing",
+      "confidence": "medium",
+      "subject": "folding computer",
+      "vaultDomain": "machines",
+      "fallback": false,
+      "line": "Folding Terminal (2022) -> computing (medium)"
+    },
+    {
+      "id": 3549,
+      "year": 1928,
+      "device": "De-atomizing Ray",
+      "domain": "weapons",
+      "confidence": "high",
+      "subject": "disintegration ray",
+      "vaultDomain": "machines",
+      "fallback": false,
+      "line": "De-atomizing Ray (1928) -> weapons (high)"
+    },
+    {
+      "id": 1339,
+      "year": 1946,
+      "device": "Logics Service",
+      "domain": "comms",
+      "confidence": "high",
+      "subject": "network service",
+      "vaultDomain": "governance",
+      "fallback": false,
+      "line": "Logics Service (1946) -> comms (high)"
+    },
+    {
+      "id": 3325,
+      "year": 1931,
+      "device": "Sodaluminum",
+      "domain": "materials",
+      "confidence": "high",
+      "subject": "sodaluminum",
+      "vaultDomain": "machines",
+      "fallback": false,
+      "line": "Sodaluminum (1931) -> materials (high)"
+    },
+    {
+      "id": 1680,
+      "year": 1964,
+      "device": "Empathy Box",
+      "domain": "mind",
+      "confidence": "high",
+      "subject": "empathy box",
+      "vaultDomain": "culture",
+      "fallback": false,
+      "line": "Empathy Box (1964) -> mind (high)"
+    },
+    {
+      "id": 2827,
+      "year": 1940,
+      "device": "Solid Power",
+      "domain": "energy",
+      "confidence": "high",
+      "subject": "solid power",
+      "vaultDomain": "wealth",
+      "fallback": false,
+      "line": "Solid Power (1940) -> energy (high)"
+    },
+    {
+      "id": 2014,
+      "year": 1956,
+      "device": "Refurbished Nervous System",
+      "domain": "medicine",
+      "confidence": "high",
+      "subject": "nervous system",
+      "vaultDomain": "health",
+      "fallback": false,
+      "line": "Refurbished Nervous System (1956) -> medicine (high)"
+    },
+    {
+      "id": 1194,
+      "year": 1972,
+      "device": "Implanted Tranceiver",
+      "domain": "comms",
+      "confidence": "high",
+      "subject": "implant comm",
+      "vaultDomain": "intelligence",
+      "fallback": false,
+      "line": "Implanted Tranceiver (1972) -> comms (high)"
+    },
+    {
+      "id": 3504,
+      "year": 1929,
+      "device": "Sunparlor",
+      "domain": "living",
+      "confidence": "medium",
+      "subject": "sun parlor",
+      "vaultDomain": "culture",
+      "fallback": false,
+      "line": "Sunparlor (1929) -> living (medium)"
+    },
+    {
+      "id": 2999,
+      "year": 1937,
+      "device": "Nose Tubes",
+      "domain": "space",
+      "confidence": "high",
+      "subject": "nose tubes",
+      "vaultDomain": "planet",
+      "fallback": false,
+      "line": "Nose Tubes (1937) -> space (high)"
+    },
+    {
+      "id": 2392,
+      "year": 1951,
+      "device": "Ultra-Light",
+      "domain": "materials",
+      "confidence": "medium",
+      "subject": "ultra-light",
+      "vaultDomain": "planet",
+      "fallback": false,
+      "line": "Ultra-Light (1951) -> materials (medium)"
     }
   ],
   "timing": {
-    "wallClockMs": 66916,
-    "newlyClassified": 93,
-    "msPerIdea": 720,
-    "soloRetries": 1,
-    "batchesWithTrouble": 1
+    "wallClockMs": 21052,
+    "newlyClassified": 26,
+    "msPerIdea": 810,
+    "soloRetries": 0,
+    "batchesWithTrouble": 0
   },
   "llm": {
-    "calls": 11,
-    "ms": 131596,
+    "calls": 3,
+    "ms": 38149,
     "errors": 0,
     "fallbacks": 0,
-    "promptChars": 70373,
-    "avgCallMs": 11963
+    "promptChars": 20128,
+    "avgCallMs": 12716
   },
-  "trouble": [
-    {
-      "batch": 1,
-      "size": 10,
-      "badIds": [
-        3762
-      ],
-      "reasons": [
-        "id 3762: bad vaultDomain \"surveillance\""
-      ]
-    }
-  ],
+  "trouble": [],
   "subjectPass": {
-    "multiIdeaSubjects": 254,
+    "multiIdeaSubjects": 257,
     "splitSubjects": 107,
-    "movedIdeas": 135,
+    "movedIdeas": 138,
     "laneBefore": [
       {
         "slug": "materials",
-        "count": 283,
-        "pct": 7.14
+        "count": 288,
+        "pct": 7.22
       },
       {
         "slug": "energy",
-        "count": 167,
+        "count": 168,
         "pct": 4.21
       },
       {
         "slug": "transport",
-        "count": 362,
+        "count": 364,
         "pct": 9.13
       },
       {
         "slug": "space",
-        "count": 543,
-        "pct": 13.7
+        "count": 549,
+        "pct": 13.76
       },
       {
         "slug": "weapons",
         "count": 262,
-        "pct": 6.61
+        "pct": 6.57
       },
       {
         "slug": "robots",
         "count": 415,
-        "pct": 10.47
+        "pct": 10.4
       },
       {
         "slug": "living",
         "count": 297,
-        "pct": 7.49
+        "pct": 7.45
       },
       {
         "slug": "medicine",
-        "count": 242,
-        "pct": 6.11
+        "count": 243,
+        "pct": 6.09
       },
       {
         "slug": "bio",
-        "count": 141,
-        "pct": 3.56
+        "count": 148,
+        "pct": 3.71
       },
       {
         "slug": "mind",
-        "count": 299,
-        "pct": 7.54
+        "count": 300,
+        "pct": 7.52
       },
       {
         "slug": "society",
         "count": 80,
-        "pct": 2.02
+        "pct": 2.01
       },
       {
         "slug": "surveillance",
         "count": 189,
-        "pct": 4.77
+        "pct": 4.74
       },
       {
         "slug": "comms",
-        "count": 387,
-        "pct": 9.77
+        "count": 390,
+        "pct": 9.78
       },
       {
         "slug": "computing",
         "count": 296,
-        "pct": 7.47
+        "pct": 7.42
       }
     ],
     "moves": [
@@ -1940,12 +1929,28 @@
         "subject": "telescope",
         "from": "mind",
         "to": "comms",
-        "rule": "tie(comms/mind) -> earliest 1932 #3304",
+        "rule": "tie(comms/mind/space) -> earliest 1932 #3304",
         "votes": {
           "comms": 1,
-          "mind": 1
+          "mind": 1,
+          "space": 1
         },
         "confidence": "medium"
+      },
+      {
+        "id": 3975,
+        "year": 2021,
+        "device": "Petrovascope",
+        "subject": "telescope",
+        "from": "space",
+        "to": "comms",
+        "rule": "tie(comms/mind/space) -> earliest 1932 #3304",
+        "votes": {
+          "comms": 1,
+          "mind": 1,
+          "space": 1
+        },
+        "confidence": "high"
       },
       {
         "id": 907,
@@ -2059,9 +2064,25 @@
         "rule": "majority",
         "votes": {
           "space": 4,
-          "energy": 1
+          "energy": 1,
+          "transport": 1
         },
         "confidence": "medium"
+      },
+      {
+        "id": 3968,
+        "year": 2021,
+        "device": "Spin drive",
+        "subject": "propulsion",
+        "from": "transport",
+        "to": "space",
+        "rule": "majority",
+        "votes": {
+          "space": 4,
+          "energy": 1,
+          "transport": 1
+        },
+        "confidence": "high"
       },
       {
         "id": 961,
@@ -2835,9 +2856,23 @@
         "rule": "majority",
         "votes": {
           "space": 3,
-          "transport": 1
+          "transport": 2
         },
         "confidence": "low"
+      },
+      {
+        "id": 3971,
+        "year": 2021,
+        "device": "Centrifuge artificial gravity",
+        "subject": "artificial gravity",
+        "from": "transport",
+        "to": "space",
+        "rule": "majority",
+        "votes": {
+          "space": 3,
+          "transport": 2
+        },
+        "confidence": "high"
       },
       {
         "id": 2630,

@@ -1,11 +1,11 @@
 {
-  "generated": "2026-08-06T04:34:43.279Z",
+  "generated": "2026-10-05T15:51:30.821Z",
   "source": "data.json (medium field)",
   "model": "qwen2.5:14b",
   "joinKey": "slug(novel) + \"--\" + slug(author) — identical to build-covers.js",
   "counts": {
-    "worksProcessed": 16,
-    "photoCovers": 12,
+    "worksProcessed": 17,
+    "photoCovers": 13,
     "rejectedNone": 1,
     "rejectedLowConfidence": 0,
     "rejectedByGuard": 0,
@@ -14,17 +14,17 @@
     "pipelineFailed": 0,
     "unsupportedMedium": 3
   },
-  "coveragePct": 75,
+  "coveragePct": 76.5,
   "existingCoversBeforeMerge": 586,
-  "coversAfterMerge": 586,
-  "totalCoverBytes": 1491019,
-  "wallClockMs": 5,
+  "coversAfterMerge": 587,
+  "totalCoverBytes": 1513849,
+  "wallClockMs": 7184,
   "llm": {
-    "calls": 0,
-    "ms": 0,
+    "calls": 1,
+    "ms": 3924,
     "errors": 0,
     "fallbacks": 0,
-    "avgCallMs": 0
+    "avgCallMs": 3924
   },
   "failures": [],
   "works": [
@@ -317,6 +317,26 @@
         "source": "anilist",
         "matchedTitle": "Chou Kaguya-hime!",
         "matchedYear": 2026
+      },
+      "error": null
+    },
+    {
+      "key": "project-hail-mary--andy-weir",
+      "novel": "Project Hail Mary",
+      "author": "Andy Weir",
+      "medium": "novel",
+      "status": "photo",
+      "candidates": 3,
+      "verdict": {
+        "choice": 1,
+        "confidence": "high",
+        "reason": "Matches title, author, and publication year exactly."
+      },
+      "guard": null,
+      "match": {
+        "source": "openlibrary",
+        "matchedTitle": "Project Hail Mary",
+        "matchedYear": 2021
       },
       "error": null
     }

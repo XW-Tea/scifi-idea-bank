@@ -4169,3 +4169,29 @@
 {"k":"6109a59b12ff86d6","v":{"domain":"mind","confidence":"high","vaultDomain":"intelligence","subject":"consciousness upload","fallback":false}}
 {"k":"c5778a7747dd233e","v":{"domain":"robots","confidence":"high","vaultDomain":"machines","subject":"android body","fallback":false}}
 {"k":"ee0bf246fea34f19","v":{"domain":"mind","confidence":"medium","vaultDomain":"culture","subject":"virtual pet","fallback":false}}
+{"k":"fa3d2689ff3e8234","v":{"domain":"bio","confidence":"high","vaultDomain":"planet","subject":"space organism","fallback":false}}
+{"k":"ca7a51b56ac0cd2d","v":{"domain":"energy","confidence":"high","vaultDomain":"planet","subject":"energy storage","fallback":false}}
+{"k":"f1a345cc7443994e","v":{"domain":"bio","confidence":"high","vaultDomain":"planet","subject":"neutrino regulation","fallback":false}}
+{"k":"e042ee283f5bf93f","v":{"domain":"materials","confidence":"high","vaultDomain":"planet","subject":"shielding","fallback":false}}
+{"k":"abb1135c3be1aa0f","v":{"domain":"space","confidence":"high","vaultDomain":"planet","subject":"migration trace","fallback":false}}
+{"k":"ce87b2f4d8c09129","v":{"domain":"transport","confidence":"high","vaultDomain":"planet","subject":"propulsion","fallback":false}}
+{"k":"167f62636b81d266","v":{"domain":"space","confidence":"high","vaultDomain":"planet","subject":"interstellar ship","fallback":false}}
+{"k":"8850864c241ed259","v":{"domain":"materials","confidence":"high","vaultDomain":"planet","subject":"fuel layer","fallback":false}}
+{"k":"7a97dc5520ddbc01","v":{"domain":"transport","confidence":"high","vaultDomain":"planet","subject":"artificial gravity","fallback":false}}
+{"k":"223177b1ab98a2fb","v":{"domain":"medicine","confidence":"high","vaultDomain":"health","subject":"coma pods","fallback":false}}
+{"k":"da95269daa6a2ff0","v":{"domain":"bio","confidence":"high","vaultDomain":"health","subject":"gene selection","fallback":false}}
+{"k":"9cd9ba93cb9fca0e","v":{"domain":"space","confidence":"high","vaultDomain":"planet","subject":"interstellar probe","fallback":false}}
+{"k":"e735c6983d9f8b42","v":{"domain":"space","confidence":"high","vaultDomain":"planet","subject":"telescope","fallback":false}}
+{"k":"314aafb6a8306233","v":{"domain":"bio","confidence":"high","vaultDomain":"health","subject":"lab kit","fallback":false}}
+{"k":"474937f0d00d5b57","v":{"domain":"materials","confidence":"high","vaultDomain":"machines","subject":"material","fallback":false}}
+{"k":"a90e18d164572aae","v":{"domain":"materials","confidence":"high","vaultDomain":"machines","subject":"tunnel","fallback":false}}
+{"k":"a6ee0a61d11cd5a2","v":{"domain":"materials","confidence":"high","vaultDomain":"machines","subject":"sampling chain","fallback":false}}
+{"k":"c757dcebbe18c068","v":{"domain":"bio","confidence":"high","vaultDomain":"health","subject":"predator","fallback":false}}
+{"k":"537e2c6aa7412fab","v":{"domain":"bio","confidence":"high","vaultDomain":"health","subject":"strain","fallback":false}}
+{"k":"e8c539d4185503fd","v":{"domain":"bio","confidence":"high","vaultDomain":"health","subject":"body","fallback":false}}
+{"k":"d60f4b6227fc84d9","v":{"domain":"space","confidence":"high","vaultDomain":"planet","subject":"habitat","fallback":false}}
+{"k":"e08370dbb8c86b54","v":{"domain":"mind","confidence":"high","vaultDomain":"intelligence","subject":"echolocation","fallback":false}}
+{"k":"905a4644c618b25d","v":{"domain":"comms","confidence":"high","vaultDomain":"culture","subject":"chord language","fallback":false}}
+{"k":"234da1845a3c215f","v":{"domain":"comms","confidence":"high","vaultDomain":"intelligence","subject":"translation software","fallback":false}}
+{"k":"949039355f510da8","v":{"domain":"comms","confidence":"high","vaultDomain":"machines","subject":"light camera","fallback":false}}
+{"k":"45f8b695c123b206","v":{"domain":"space","confidence":"high","vaultDomain":"machines","subject":"spaceship","fallback":false}}

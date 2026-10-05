@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-06T04:21:33.805Z",
+  "generated": "2026-10-05T15:51:14.828Z",
   "model": "qwen2.5:14b",
   "promptVersion": "v2",
   "laneOrder": [
@@ -34,8 +34,8 @@
     "comms": "Communication & Media",
     "computing": "Computing & Intelligence"
   },
-  "ideas": 3963,
-  "classified": 3963,
+  "ideas": 3989,
+  "classified": 3989,
   "byId": {
     "0": {
       "domain": "space",
@@ -6365,7 +6365,7 @@
       "subjectPass": {
         "from": "mind",
         "to": "comms",
-        "rule": "tie(comms/mind) -> earliest 1932 #3304"
+        "rule": "tie(comms/mind/space) -> earliest 1932 #3304"
       }
     },
     "883": {
@@ -28453,6 +28453,203 @@
       "confidence": "high",
       "vaultDomain": "culture",
       "subject": "escape",
+      "fallback": false
+    },
+    "3963": {
+      "domain": "bio",
+      "confidence": "high",
+      "vaultDomain": "planet",
+      "subject": "space organism",
+      "fallback": false
+    },
+    "3964": {
+      "domain": "energy",
+      "confidence": "high",
+      "vaultDomain": "planet",
+      "subject": "energy storage",
+      "fallback": false
+    },
+    "3965": {
+      "domain": "bio",
+      "confidence": "high",
+      "vaultDomain": "planet",
+      "subject": "neutrino regulation",
+      "fallback": false
+    },
+    "3966": {
+      "domain": "materials",
+      "confidence": "high",
+      "vaultDomain": "planet",
+      "subject": "shielding",
+      "fallback": false
+    },
+    "3967": {
+      "domain": "space",
+      "confidence": "high",
+      "vaultDomain": "planet",
+      "subject": "migration trace",
+      "fallback": false
+    },
+    "3968": {
+      "domain": "space",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "propulsion",
+      "fallback": false,
+      "subjectPass": {
+        "from": "transport",
+        "to": "space",
+        "rule": "majority"
+      }
+    },
+    "3969": {
+      "domain": "space",
+      "confidence": "high",
+      "vaultDomain": "planet",
+      "subject": "interstellar ship",
+      "fallback": false
+    },
+    "3970": {
+      "domain": "materials",
+      "confidence": "high",
+      "vaultDomain": "planet",
+      "subject": "fuel layer",
+      "fallback": false
+    },
+    "3971": {
+      "domain": "space",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "artificial gravity",
+      "fallback": false,
+      "subjectPass": {
+        "from": "transport",
+        "to": "space",
+        "rule": "majority"
+      }
+    },
+    "3972": {
+      "domain": "medicine",
+      "confidence": "high",
+      "vaultDomain": "health",
+      "subject": "coma pods",
+      "fallback": false
+    },
+    "3973": {
+      "domain": "bio",
+      "confidence": "high",
+      "vaultDomain": "health",
+      "subject": "gene selection",
+      "fallback": false
+    },
+    "3974": {
+      "domain": "space",
+      "confidence": "high",
+      "vaultDomain": "planet",
+      "subject": "interstellar probe",
+      "fallback": false
+    },
+    "3975": {
+      "domain": "comms",
+      "confidence": "high",
+      "vaultDomain": "culture",
+      "subject": "telescope",
+      "fallback": false,
+      "subjectPass": {
+        "from": "space",
+        "to": "comms",
+        "rule": "tie(comms/mind/space) -> earliest 1932 #3304"
+      }
+    },
+    "3976": {
+      "domain": "bio",
+      "confidence": "high",
+      "vaultDomain": "health",
+      "subject": "lab kit",
+      "fallback": false
+    },
+    "3977": {
+      "domain": "materials",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "material",
+      "fallback": false
+    },
+    "3978": {
+      "domain": "materials",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "tunnel",
+      "fallback": false
+    },
+    "3979": {
+      "domain": "materials",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "sampling chain",
+      "fallback": false
+    },
+    "3980": {
+      "domain": "bio",
+      "confidence": "high",
+      "vaultDomain": "health",
+      "subject": "predator",
+      "fallback": false
+    },
+    "3981": {
+      "domain": "bio",
+      "confidence": "high",
+      "vaultDomain": "health",
+      "subject": "strain",
+      "fallback": false
+    },
+    "3982": {
+      "domain": "bio",
+      "confidence": "high",
+      "vaultDomain": "health",
+      "subject": "body",
+      "fallback": false
+    },
+    "3983": {
+      "domain": "space",
+      "confidence": "high",
+      "vaultDomain": "planet",
+      "subject": "habitat",
+      "fallback": false
+    },
+    "3984": {
+      "domain": "mind",
+      "confidence": "high",
+      "vaultDomain": "intelligence",
+      "subject": "echolocation",
+      "fallback": false
+    },
+    "3985": {
+      "domain": "comms",
+      "confidence": "high",
+      "vaultDomain": "culture",
+      "subject": "chord language",
+      "fallback": false
+    },
+    "3986": {
+      "domain": "comms",
+      "confidence": "high",
+      "vaultDomain": "intelligence",
+      "subject": "translation software",
+      "fallback": false
+    },
+    "3987": {
+      "domain": "comms",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "light camera",
+      "fallback": false
+    },
+    "3988": {
+      "domain": "space",
+      "confidence": "high",
+      "vaultDomain": "machines",
+      "subject": "spaceship",
       "fallback": false
     }
   }
