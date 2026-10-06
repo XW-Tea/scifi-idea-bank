@@ -29,7 +29,7 @@ AniList and Steam and remain the property of their publishers.
 It must be served over HTTP (ES modules + `fetch`), not opened as a file.
 
 ```bash
-cd D:\SciFi\scifi-idea-bank
+cd scifi-idea-bank
 python -m http.server 8123
 ```
 
