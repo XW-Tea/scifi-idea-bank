@@ -85,6 +85,23 @@ h1,h2,.display,.pulp-btn,#hud-year,.badge,.load-title{
   margin:2px 0 0; font-size:11px; letter-spacing:.34em; text-transform:uppercase;
   color:var(--teal);
 }
+/* Attribution under the masthead. The data is someone else's work, so the
+   credit belongs on the page and not only in the README — but it sits a step
+   back from the title so it reads as a colophon rather than a second subtitle. */
+.mast-credit{
+  margin:5px 0 0; font-family:var(--mono, "Courier New", monospace);
+  font-size:10.5px; letter-spacing:.05em; color:var(--ink); opacity:.65;
+  pointer-events:auto;
+}
+.mast-credit a{ color:var(--rust); text-decoration:none; border-bottom:1px solid currentColor; }
+.mast-credit a:hover{ opacity:.75; }
+
+.help-credit-head{ margin-top:22px; }
+.help-credit{
+  margin:0 0 10px; font-size:12px; line-height:1.55; color:var(--ink); opacity:.78;
+}
+.help-credit a{ color:var(--rust); }
+
 .mast-right{ display:flex; gap:8px; padding-bottom:4px; align-items:flex-start; }
 
 /* ------------------------------------------------------------- search

@@ -1,12 +1,28 @@
 # THE SCI-FI IDEA BANK — Four Centuries of Tomorrow
 
-A 2.5D "river of time" browser for 3,746 science-fiction ideas (1634–2023),
-from the Technovelgy dataset compiled by Not Boring.
+A 2.5D "river of time" browser for 3,989 science-fiction ideas (1634–2025).
 
-Fly backwards through four centuries. Realized ideas settle low and trail a
-thread down to the year they actually came true; unrealized ones hover above
-you, still waiting. Ideas are laid out left-to-right by domain, running from
-matter to information.
+Fly backwards through four centuries. Realized ideas trail a thread down to the
+year they actually came true; unrealized ones drift and pulse, still waiting.
+The cross-section of the river is a constellation of fourteen domain islands,
+sweeping from raw matter on one side to pure information on the other.
+
+## Credit where it is due
+
+The spine of this dataset is the
+[**Sci-Fi Idea Bank**](https://www.notboring.co/p/sci-fi-idea-bank) — 3,567
+ideas compiled by **Packy McCormick** for *Not Boring* in August 2023, drawn
+from [**Technovelgy**](https://www.technovelgy.com/), Bill Christensen's
+long-running catalogue of invented technology in fiction.
+
+He published it hoping it would be "a starting point for people who want to
+bring sci-fi to life". This is one of those starts: the ideas are his and
+Technovelgy's, the spatial reading of them is what was built here.
+
+Added since: anime, manga, games and novels first published outside English,
+because the original record is book-shaped and anglophone — see
+[ADDING-WORKS.md](ADDING-WORKS.md). Cover images come from Open Library,
+AniList and Steam and remain the property of their publishers.
 
 ## Run it
 
